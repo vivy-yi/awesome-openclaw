@@ -5,7 +5,7 @@
 > A curated list of awesome OpenClaw (formerly Moltbot/Clawdbot) resources, tools, platforms, and community projects
 
 [![License](https://img.shields.io/badge/license-CC0--1.0-blue.svg)](LICENSE)
-[![Verify Links](https://github.com/yourusername/awesome-openclaw/actions/workflows/verify-links.yml/badge.svg)](https://github.com/yourusername/awesome-openclaw/actions/workflows/verify-links.yml)
+[![Verify Links](https://github.com/vivy-yi/awesome-openclaw/actions/workflows/verify-links.yml/badge.svg)](https://github.com/vivy-yi/awesome-openclaw/actions/workflows/verify-links.yml)
 
 [OpenClaw](https://github.com/openclaw/openclaw) | [Molt Ecosystem](https://moltbook.com) | [Contributing](#contributing)
 
@@ -320,7 +320,7 @@ To the extent possible under law, the authors of this work have waived all copyr
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/awesome-openclaw&type=Date)](https://star-history.com/#yourusername/awesome-openclaw&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=vivy-yi/awesome-openclaw&type=Date)](https://star-history.com/#vivy-yi/awesome-openclaw&Date)
 
 ---
 
