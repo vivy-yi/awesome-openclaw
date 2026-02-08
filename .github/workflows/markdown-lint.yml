@@ -1,0 +1,258 @@
+name: Markdown Quality Check
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '*.md'
+      - '**/*.md'
+  pull_request:
+    paths:
+      - '*.md'
+      - '**/*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  markdown-quality:
+    name: Check Markdown Quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install markdown linters
+        run: |
+          npm install -g markdownlint-cli2
+          pip3 install mdformat-gfm mdformat-tables mdformat-footnote
+
+      - name: Run markdownlint
+        id: markdownlint
+        continue-on-error: true
+        run: |
+          echo "# 📝 Markdown Lint Report" > lint_report.md
+          echo "" >> lint_report.md
+          echo "**Date**: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> lint_report.md
+          echo "" >> lint_report.md
+
+          # Create markdownlint config
+          cat > .markdownlint.json2 << 'EOF'
+          {
+            "config": {
+              "MD013": { "line_length": 400, "code_blocks": false, "tables": false },
+              "MD033": false,
+              "MD041": false,
+              "MD046": { "style": "consistent" }
+            }
+          }
+          EOF
+
+          echo "## markdownlint Results" >> lint_report.md
+          echo "" >> lint_report.md
+
+          # Check all markdown files
+          if markdownlint-cli2 "**/*.md" "README*.md" "CONTRIBUTING.md" "CONTRIBUTOR_GUIDE.md" ".github/**/*.md"; then
+            echo "✅ No markdownlint errors found!" >> lint_report.md
+            MARKDOWNLINT_ERRORS=0
+          else
+            echo "❌ markdownlint found issues:" >> lint_report.md
+            echo "" >> lint_report.md
+            echo "\`\`\`" >> lint_report.md
+            markdownlint-cli2 "**/*.md" "README*.md" "CONTRIBUTING.md" "CONTRIBUTOR_GUIDE.md" ".github/**/*.md" 2>&1 >> lint_report.md || true
+            echo "\`\`\`" >> lint_report.md
+            MARKDOWNLINT_ERRORS=1
+          fi
+
+          echo "" >> lint_report.md
+          cat lint_report.md
+          echo "markdownlint_errors=$MARKDOWNLINT_ERRORS" >> $GITHUB_OUTPUT
+
+      - name: Check markdown formatting
+        id: format_check
+        continue-on-error: true
+        run: |
+          echo "" >> lint_report.md
+          echo "## Format Check Results" >> lint_report.md
+          echo "" >> lint_report.md
+
+          FORMATTING_ISSUES=0
+
+          # Check each markdown file
+          for file in README*.md CONTRIBUTING.md CONTRIBUTOR_GUIDE.md; do
+            if [ -f "$file" ]; then
+              echo "### Checking $file" >> lint_report.md
+              echo "" >> lint_report.md
+
+              # Check for trailing whitespace
+              TRAILING=$(grep -l " $" "$file" || true)
+              if [ -n "$TRAILING" ]; then
+                echo "⚠️ Has trailing whitespace" >> lint_report.md
+                FORMATTING_ISSUES=$((FORMATTING_ISSUES + 1))
+              fi
+
+              # Check for line length (warn only)
+              LONG_LINES=$(awk 'length > 500 {print NR": "$0}' "$file" | head -5 || true)
+              if [ -n "$LONG_LINES" ]; then
+                echo "⚠️ Lines > 500 characters (first 5):" >> lint_report.md
+                echo "$LONG_LINES" >> lint_report.md
+                echo "" >> lint_report.md
+              fi
+
+              # Check for consistent line endings
+              CRLF=$(file "$file" | grep -c "CRLF" || true)
+              if [ "$CRLF" -gt 0 ]; then
+                echo "⚠️ Contains CRLF line endings" >> lint_report.md
+                FORMATTING_ISSUES=$((FORMATTING_ISSUES + 1))
+              fi
+            fi
+          done
+
+          if [ $FORMATTING_ISSUES -eq 0 ]; then
+            echo "✅ No formatting issues found" >> lint_report.md
+          fi
+
+          echo "formatting_issues=$FORMATTING_ISSUES" >> $GITHUB_OUTPUT
+
+      - name: Check internal link consistency
+        id: internal_links
+        continue-on-error: true
+        run: |
+          echo "" >> lint_report.md
+          echo "## Internal Link Check" >> lint_report.md
+          echo "" >> lint_report.md
+
+          BROKEN_INTERNAL=0
+
+          # Extract all internal links
+          grep -oP '\[.*?\]\(#[^)]+\)' README*.md | sort -u > internal_links.txt
+
+          echo "Checking internal links..." >> lint_report.md
+          echo "" >> lint_report.md
+
+          while read -r link; do
+            # Extract the anchor
+            anchor=$(echo "$link" | grep -oP '#\K[^)]+')
+
+            # Convert to lowercase and replace spaces with hyphens
+            anchor_lower=$(echo "$anchor" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+
+            # Check if anchor exists in any README
+            if ! grep -q "# $anchor" README*.md && ! grep -q "# $anchor_lower" README*.md; then
+              echo "❌ Possibly broken: $link" >> lint_report.md
+              BROKEN_INTERNAL=$((BROKEN_INTERNAL + 1))
+            fi
+          done < internal_links.txt
+
+          if [ $BROKEN_INTERNAL -eq 0 ]; then
+            echo "✅ All internal links look good" >> lint_report.md
+          fi
+
+          echo "broken_internal=$BROKEN_INTERNAL" >> $GITHUB_OUTPUT
+
+      - name: Generate quality score
+        id: score
+        run: |
+          # Calculate quality score (0-100)
+          SCORE=100
+
+          # Deductions
+          MARKDOWNLINT_ERRORS=${{ steps.markdownlint.outputs.markdownlint_errors }}
+          FORMATTING_ISSUES=${{ steps.format_check.outputs.formatting_issues }}
+          BROKEN_INTERNAL=${{ steps.internal_links.outputs.broken_internal }}
+
+          if [ "$MARKDOWNLINT_ERRORS" = "1" ]; then
+            SCORE=$((SCORE - 20))
+          fi
+
+          SCORE=$((SCORE - FORMATTING_ISSUES * 2))
+          SCORE=$((SCORE - BROKEN_INTERNAL * 5))
+
+          if [ $SCORE -lt 0 ]; then
+            SCORE=0
+          fi
+
+          echo "" >> lint_report.md
+          echo "---" >> lint_report.md
+          echo "" >> lint_report.md
+          echo "## 📊 Quality Score" >> lint_report.md
+          echo "" >> lint_report.md
+          echo "**Score**: $SCORE/100" >> lint_report.md
+          echo "" >> lint_report.md
+
+          if [ $SCORE -ge 90 ]; then
+            echo "🌟 **Excellent!** High quality markdown." >> lint_report.md
+          elif [ $SCORE -ge 70 ]; then
+            echo "👍 **Good.** Some improvements recommended." >> lint_report.md
+          elif [ $SCORE -ge 50 ]; then
+            echo "⚠️ **Fair.** Attention needed." >> lint_report.md
+          else
+            echo "❌ **Poor.** Significant improvements required." >> lint_report.md
+          fi
+
+          echo "quality_score=$SCORE" >> $GITHUB_OUTPUT
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" \
+            --body "## 📝 Markdown Quality Check
+
+          $(cat lint_report.md)
+
+          **Quality Score**: ${{ steps.score.outputs.quality_score }}/100
+
+          Please review the issues above and fix them if necessary." \
+            --repo "${{ github.repository }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Create quality issue (if poor score)
+        if: steps.score.outputs.quality_score < 70
+        run: |
+          cat > issue_body.md << EOF
+          ## 📝 Markdown Quality Issues Detected
+
+          Automated quality check found markdown issues that need attention.
+
+          **Quality Score**: ${{ steps.score.outputs.quality_score }}/100
+
+          $(cat lint_report.md)
+
+          ### Recommended Actions
+
+          1. **Fix markdownlint errors**: Run \`markdownlint **/*.md\` locally
+          2. **Fix formatting**: Remove trailing whitespace, normalize line endings
+          3. **Check internal links**: Ensure all anchors exist
+          4. **Test changes**: Preview markdown before committing
+
+          ### Tools
+
+          - **markdownlint**: https://github.com/igorshubovych/markdownlint-cli
+          - **mdformat**: https://github.com/executablebooks/mdformat
+          - **Online checker**: https://markdown-it.github.io/
+
+          *This issue was automatically created by the [markdown quality check workflow](https://github.com/${{ github.repository }}/actions/workflows/markdown-lint.yml)*
+          EOF
+
+          # Check if similar issue exists
+          EXISTING=$(gh issue list --label "markdown-quality" --state open --json number --jq '.[0].number' || echo "")
+
+          if [ -z "$EXISTING" ]; then
+            gh issue create \
+              --title "📝 Markdown Quality Issues - Score: ${{ steps.score.outputs.quality_score }}/100" \
+              --label "markdown-quality,automated" \
+              --body "$(cat issue_body.md)"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: markdown-quality-report
+          path: lint_report.md
+          retention-days: 30

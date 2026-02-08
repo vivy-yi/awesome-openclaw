@@ -1,0 +1,128 @@
+name: Dead Link Detection and Reporting
+
+on:
+  schedule:
+    # Run every Wednesday at 00:00 UTC
+    - cron: '0 0 * * 3'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'README*.md'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  detect-dead-links:
+    name: Detect Dead Links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install link checker
+        run: |
+          npm install -g markdown-link-check
+
+      - name: Check all README files
+        id: check
+        run: |
+          echo "# 🔍 Dead Link Detection Report" > dead_links_report.md
+          echo "" >> dead_links_report.md
+          echo "**Date**: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> dead_links_report.md
+          echo "" >> dead_links_report.md
+
+          DEAD_LINKS_FOUND=0
+
+          # Check all README files
+          for file in README*.md; do
+            echo "## Checking $file" >> dead_links_report.md
+            echo "" >> dead_links_report.md
+
+            # Run markdown-link-check
+            if markdown-link-check "$file" -q; then
+              echo "✅ No dead links found in $file" >> dead_links_report.md
+            else
+              echo "❌ Dead links found in $file" >> dead_links_report.md
+              echo "" >> dead_links_report.md
+              echo "\`\`\`" >> dead_links_report.md
+              markdown-link-check "$file" >> dead_links_report.md 2>&1 || true
+              echo "\`\`\`" >> dead_links_report.md
+              DEAD_LINKS_FOUND=$((DEAD_LINKS_FOUND + 1))
+            fi
+            echo "" >> dead_links_report.md
+          done
+
+          echo "dead_links_count=$DEAD_LINKS_FOUND" >> $GITHUB_OUTPUT
+
+          # Output summary
+          cat dead_links_report.md
+
+      - name: Create issue for dead links
+        if: steps.check.outputs.dead_links_count > 0
+        run: |
+          cat > issue_body.md << 'EOF'
+          ## ⚠️ Dead Links Detected
+
+          Automated link checking found dead or broken links in the repository.
+
+          **Files affected**: ${{ steps.check.outputs.dead_links_count }}
+
+          ---
+
+          $(cat dead_links_report.md)
+
+          ---
+
+          ### Action Required
+
+          Please review and fix the dead links:
+          1. Verify each link
+          2. Update or remove broken links
+          3. Add alternative links if available
+
+          **Tools**:
+          - Online link checker: https://validator.w3.org/checklink
+          - Manual verification in browser
+
+          *This issue was automatically created by the [dead link detection workflow](https://github.com/${{ github.repository }}/actions/workflows/dead-link-detection.yml)*
+          EOF
+
+          # Check if similar issue already exists
+          EXISTING=$(gh issue list --label "dead-links" --state open --json number --jq '.[0].number' || echo "")
+
+          if [ -z "$EXISTING" ]; then
+            gh issue create \
+              --title "⚠️ Dead Links Detected - $(date +'%Y-%m-%d')" \
+              --label "dead-links,automated,good first issue" \
+              --body "$(cat issue_body.md)"
+          else
+            # Comment on existing issue
+            gh issue comment "$EXISTING" \
+              --body "### New Scan Results - $(date +'%Y-%m-%d')\n\n$(cat dead_links_report.md)"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request' && steps.check.outputs.dead_links_count > 0
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" \
+            --body "⚠️ **Dead Links Warning**
+
+          This PR introduces or modifies README files that contain dead or broken links.
+
+          $(cat dead_links_report.md)
+
+          Please fix these links before merging." \
+            --repo "${{ github.repository }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: dead-links-report
+          path: dead_links_report.md
+          retention-days: 30

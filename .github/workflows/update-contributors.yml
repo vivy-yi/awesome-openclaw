@@ -1,0 +1,104 @@
+name: Update Contributors List
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-contributors:
+    name: Update Contributors
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate contributors list
+        run: |
+          # Install dependencies
+          npm install -g contributors-cli
+
+          # Generate contributors list
+          echo "# Contributors" > CONTRIBUTORS.md
+          echo "" >> CONTRIBUTORS.md
+          echo "Thank you to all the contributors who have helped make Awesome OpenClaw better!" >> CONTRIBUTORS.md
+          echo "" >> CONTRIBUTORS.md
+          echo "This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification." >> CONTRIBUTORS.md
+          echo "" >> CONTRIBUTORS.md
+          echo "## Contributors" >> CONTRIBUTORS.md
+          echo "" >> CONTRIBUTORS.md
+
+          # Use contributors-cli to generate list
+          contributors-for --repo vivy-yi/awesome-openclaw --format markdown >> CONTRIBUTORS.md 2>/dev/null || echo "Unable to fetch contributors list automatically"
+
+          # Add stats
+          echo "" >> CONTRIBUTORS.md
+          echo "---" >> CONTRIBUTORS.md
+          echo "" >> CONTRIBUTORS.md
+          echo "**Generated on**: $(date -u +'%Y-%m-%d')" >> CONTRIBUTORS.md
+          echo "**Total Contributors**: $(git shortlog -sn | wc -l)" >> CONTRIBUTORS.md
+
+          cat CONTRIBUTORS.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add CONTRIBUTORS.md
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update contributors list [skip ci]"
+            git push
+          fi
+
+      - name: Generate contributor stats
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          echo "# 📊 Contributor Statistics" > contributor_stats.md
+          echo "" >> contributor_stats.md
+          echo "**Date**: $(date -u +'%Y-%m-%d')" >> contributor_stats.md
+          echo "" >> contributor_stats.md
+
+          # Total contributors
+          TOTAL=$(git shortlog -sn | wc -l)
+          echo "**Total Contributors**: $TOTAL" >> contributor_stats.md
+          echo "" >> contributor_stats.md
+
+          # Top contributors
+          echo "## Top 10 Contributors" >> contributor_stats.md
+          echo "" >> contributor_stats.md
+          git shortlog -sn | head -10 | awk '{print "|", NR "|", $2 "|", $1 "|"}' \
+            | (echo "| Rank | Contributor | Commits |"; echo "|------|-------------|--------|"; cat -) >> contributor_stats.md
+
+          echo "" >> contributor_stats.md
+
+          # Recent activity (last 30 days)
+          echo "## Recent Activity (30 days)" >> contributor_stats.md
+          echo "" >> contributor_stats.md
+          RECENT=$(git log --since="30 days ago" --pretty=format:"%an" | sort | uniq -c | sort -rn | head -10)
+          if [ -n "$RECENT" ]; then
+            echo "$RECENT" | awk '{print "|", $2 "|", $1 "|"}' \
+              | (echo "| Contributor | Commits |"; echo "|-------------|--------|"; cat -) >> contributor_stats.md
+          else
+            echo "No commits in the last 30 days" >> contributor_stats.md
+          fi
+
+          cat contributor_stats.md
+
+      - name: Create stats issue
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          gh issue create \
+            --title "📊 Contributor Statistics - $(date +'%Y-%m-%d')" \
+            --label "statistics,automated" \
+            --body "$(cat contributor_stats.md)"
+        env:
+          GH_TOKEN: ${{ github.token }}

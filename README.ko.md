@@ -38,6 +38,7 @@
 ## 목차
 
 - [핵심 프로젝트](#핵심-프로젝트)
+- [OpenClaw에서 영감을 받은 프로젝트](#openclaw에서-영감을-받은-프로젝트)
 - [Molt 생태계 플랫폼](#molt-생태계-플랫폼)
 - [배포 및 설치](#배포-및-설치)
 - [플랫폼 통합](#플랫폼-통합)
@@ -73,6 +74,66 @@
 
 - [Clawdbot Archive](https://github.com/clawdbot) - 원본 Clawdbot 저장소 및 역사
 - [Moltbot Archive](https://github.com/molt-bot) - Moltbot 시대 저장소
+
+---
+
+## OpenClaw에서 영감을 받은 프로젝트
+
+OpenClaw 생태계는 수많은 대체 구현, Fork 및 유사한 프로젝트에 영감을 주었습니다. 이 프로젝트들은 AI 어시스턴트 커뮤니티에 대한 OpenClaw의 영향력을 보여줍니다.
+
+### 주요 프로젝트 ⭐
+
+| 프로젝트 | Stars | 설명 | 언어 | 독특한 기능 |
+|---------|-------|-------------|----------|-----------------|
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 활동 | 초경량 AI 어시스턴트 (~4K LOC vs 430K+) | Python | 다중 제공업체 LLM, vLLM 로컬, 4 채널 |
+| [ysz/nanoClaw](https://github.com/ysz/nanoClaw) | 활동 | 보안 경량 AI 어시스턴트 (~3K LOC) | Python | 6계층 보안, 2분 설정, 열린 포트 없음 |
+| [puremachinery/carapace](https://github.com/puremachinery/carapace) | 활동 | 보안 중심 개인 AI 어시스턴트 | Rust | WASM 플러그인, OS 샌드박싱, AES-256 암호화 |
+| [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | 활동 | 컨테이너 격리 AI 어시스턴트 | TypeScript | Apple 컨테이너/Docker, WhatsApp, Claude SDK |
+| [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | 활동 | 최소 200줄 OpenClaw 대안 | Python | Claude Code CLI 인증, 다중 모달, 571 테스트 |
+| [microclaw/microclaw](https://github.com/microclaw/microclaw) | 활동 | 완전한 도구 실행을 갖춘 에이전트 AI 어시스턴트 | Rust | 22+ 도구, 세션 재개, 스킬 호환 |
+
+### 경량 대안 (500-4,000 줄의 코드)
+
+- [nanobot](https://github.com/HKUDS/nanobot) - 다중 제공업체 (OpenRouter, Anthropic, DeepSeek), vLLM 지원, Telegram/Discord/WhatsApp/Feishu
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 6계층 보안 (FileGuard, ShellSandbox, PromptGuard), 설정 마법사
+- [ApeCodeAI/nanoclaw-py](https://github.com/ApeCodeAI/nanoclaw-py) - 최소 Python 구현 (~500 LOC), Telegram
+- [htlin222/mini-claw](https://github.com/htlin222/mini-claw) - 최소주의 중심 대안
+- [hankl/microbot](https://github.com/hankl/microbot) - TypeScript/Node.js, Feishu 통합
+
+### 보안 강화 변형 🔒
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM 플러그인 런타임, Ed25519 서명, Seatbelt/Landlock 샌드박싱
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 열린 포트 없음 (Telegram 폴링), 암호화된 자격 증명
+- [Dshubhambadola/Fortclaw](https://github.com/Dshubhambadola/Fortclaw) - 프로덕션 보안 제어
+- [princezuda/safeclaw](https://github.com/princezuda/safeclaw) - GenAI 없음 (VADER, regex, sumy)
+
+### Rust 구현 (성능)
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM 플러그인, 암호화된 비밀
+- [MicroClaw](https://github.com/microclaw/microclaw) - 세션 지속성, 컨텍스트 압축, 하위 에이전트 위임
+- [shimaenaga1123/rustclaw](https://github.com/shimaenaga1123/rustclaw) - Discord AI 어시스턴트, Docker 샌드박스
+- [PhillipTh0mas/crabbot](https://github.com/PhillipTh0mas/crabbot) - 로컬 우선, 파일 지원 상태
+
+### 언어/플랫폼 포트
+
+- [dyzdyz010/clawd_ex](https://github.com/dyzdyz010/clawd_ex) - Elixir/OTP 내결함성, Phoenix LiveView, pgvector
+- [bsakel/honeybadger](https://github.com/bsakel/honeybadger) - C# 최소 봇
+- [jimtin/zetherion-ai](https://github.com/jimtin/zetherion-ai) - Python, Discord, 벡터 메모리
+- [hmennen90/open-entity](https://github.com/hmennen90/open-entity) - PHP/Laravel 자치 개체, 의식 있음
+
+### Fork 및 커뮤니티 변형
+
+- [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) - 브랜드 재정의된 커뮤니티 Fork
+- [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) - 증강된 아키텍처 Moltbot Fork
+- [KinGP5471/clawdbot-feishu-plugin](https://github.com/KinGP5471/clawdbot-feishu-plugin) - Feishu/Lark 채널 플러그인
+- [rqrqrqrq/idea-clawdbot](https://github.com/rqrqrqrq/idea-clawdbot) - 비즈니스 아이디어 탐색 Fork
+- [droppingbeans/team-clawdbotarmy](https://github.com/droppingbeans/team-clawdbotarmy) - 암호화폰 거래 소프트웨어
+
+### 전문화된 구현
+
+- [f2daz/jarvis-reactor](https://github.com/f2daz/jarvis-reactor) - Arc Reactor 스타일 시각적 상태
+- [Neo-Revaea/Nebula](https://github.com/Neo-Revaea/Nebula) - 다중 IM 챗봇 인프라
+- [mroqa/Distributed-Clawdbot](https://github.com/mroqa/Distributed-Clawdbot) - Docker Compose 허브 앤드 스포크 아키텍처
 
 ---
 
