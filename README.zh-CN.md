@@ -60,15 +60,15 @@
 | 项目 | Stars | 描述 | 语言 |
 |---------|-------|-------------|----------|
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw) | 主项目个人 AI 助手 - "The lobster way" | TypeScript |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | - | 官方技能注册表，包含 700+ 社区技能 | TypeScript |
-| [openclaw/skills](https://github.com/openclaw/skills) | - | clawdhub.com 所有版本的技能存档 | TypeScript |
-| [openclaw/lobster](https://github.com/openclaw/lobster) | - | 可组合管道和自动化的工作流 Shell | TypeScript |
-| [openclaw/nix-openclaw](https://github.com/openclaw/nix-openclaw) | - | Nix 包管理器集成 | Nix |
-| [openclaw/openclaw-ansible](https://github.com/openclaw/openclaw-ansible) | - | 使用 Ansible 的自动化强化安装（Tailscale VPN、UFW、Docker） | Ansible |
-| [openclaw/clawdinators](https://github.com/openclaw/clawdinators) | - | CLAWTINATOR 主机的声明式基础设施 + NixOS 模块 | NixOS |
-| [openclaw/homebrew-tap](https://github.com/openclaw/homebrew-tap) | - | macOS 安装的 Homebrew tap | Shell |
-| [openclaw/openclaw.ai](https://github.com/openclaw/openclaw.ai) | - | 官方网站 (molt.bot) | TypeScript |
-| [openclaw/clawgo](https://github.com/openclaw/clawgo) | - | Go 语言实现的 Clawd 节点 | Go |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | ![Stars](https://img.shields.io/github/stars/openclaw/clawhub) | 官方技能注册表，包含 700+ 社区技能 | TypeScript |
+| [openclaw/skills](https://github.com/openclaw/skills) | ![Stars](https://img.shields.io/github/stars/openclaw/skills) | clawdhub.com 所有版本的技能存档 | TypeScript |
+| [openclaw/lobster](https://github.com/openclaw/lobster) | ![Stars](https://img.shields.io/github/stars/openclaw/lobster) | 可组合管道和自动化的工作流 Shell | TypeScript |
+| [openclaw/nix-openclaw](https://github.com/openclaw/nix-openclaw) | ![Stars](https://img.shields.io/github/stars/openclaw/nix-openclaw) | Nix 包管理器集成 | Nix |
+| [openclaw/openclaw-ansible](https://github.com/openclaw/openclaw-ansible) | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw-ansible) | 使用 Ansible 的自动化强化安装（Tailscale VPN、UFW、Docker） | Ansible |
+| [openclaw/clawdinators](https://github.com/openclaw/clawdinators) | ![Stars](https://img.shields.io/github/stars/openclaw/clawdinators) | CLAWTINATOR 主机的声明式基础设施 + NixOS 模块 | NixOS |
+| [openclaw/homebrew-tap](https://github.com/openclaw/homebrew-tap) | ![Stars](https://img.shields.io/github/stars/openclaw/homebrew-tap) | macOS 安装的 Homebrew tap | Shell |
+| [openclaw/openclaw.ai](https://github.com/openclaw/openclaw.ai) | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw.ai) | 官方网站 (molt.bot) | TypeScript |
+| [openclaw/clawgo](https://github.com/openclaw/clawgo) | ![Stars](https://img.shields.io/github/stars/openclaw/clawgo) | Go 语言实现的 Clawd 节点 | Go |
 
 ### 名称历史资源
 

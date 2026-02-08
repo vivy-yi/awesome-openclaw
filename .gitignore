@@ -12,3 +12,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Documentation and working files (local only)
+docs/
+*.md.bak
+update_inspired_section.sh
