@@ -38,6 +38,7 @@
 ## Contents
 
 - [Core Projects](#core-projects)
+- [OpenClaw-Inspired Projects](#openclaw-inspired-projects)
 - [Molt Ecosystem Platforms](#molt-ecosystem-platforms)
 - [Deployment & Installation](#deployment--installation)
 - [Platform Integrations](#platform-integrations)
@@ -73,6 +74,107 @@
 
 - [Clawdbot Archive](https://github.com/clawdbot) - Original Clawdbot repositories and history
 - [Moltbot Archive](https://github.com/molt-bot) - Moltbot era repositories
+
+---
+
+## OpenClaw-Inspired Projects
+
+The OpenClaw ecosystem has inspired numerous alternative implementations, forks, and similar projects. These projects demonstrate the impact and influence of OpenClaw on the AI assistant community.
+
+### Featured Projects ⭐
+
+| Project | Stars | Description | Language | Unique Features |
+|---------|-------|-------------|----------|-----------------|
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | Active | Ultra-lightweight AI assistant (~4K LOC vs 430K+) | Python | Multi-provider LLM, vLLM local, 4 channels |
+| [ysz/nanoClaw](https://github.com/ysz/nanoClaw) | Active | Secure lightweight AI assistant (~3K LOC) | Python | 6-layer security, 2-min setup, no open ports |
+| [puremachinery/carapace](https://github.com/puremachinery/carapace) | Active | Security-focused personal AI assistant | Rust | WASM plugins, OS sandboxing, AES-256 encryption |
+| [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | Active | Container-isolated AI assistant | TypeScript | Apple containers/Docker, WhatsApp, Claude SDK |
+| [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | Active | Minimal 200-line OpenClaw alternative | Python | Claude Code CLI auth, multimodal, 571 tests |
+| [microclaw/microclaw](https://github.com/microclaw/microclaw) | Active | Agentic AI assistant with full tool execution | Rust | 22+ tools, session resume, skills compatible |
+
+### Lightweight Alternatives (~500-4,000 LOC)
+
+- [nanobot](https://github.com/HKUDS/nanobot) - Multi-provider (OpenRouter, Anthropic, DeepSeek), vLLM support, Telegram/Discord/WhatsApp/Feishu
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 6 security layers (FileGuard, ShellSandbox, PromptGuard), setup wizard
+- [ApeCodeAI/nanoclaw-py](https://github.com/ApeCodeAI/nanoclaw-py) - Minimal Python implementation (~500 LOC), Telegram
+- [htlin222/mini-claw](https://github.com/htlin222/mini-claw) - Minimalism-focused alternative
+- [hankl/microbot](https://github.com/hankl/microbot) - TypeScript/Node.js with Feishu integration
+
+### Security-Hardened Variants 🔒
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM plugin runtime with Ed25519 signatures, Seatbelt/Landlock sandboxing
+- [nanoClaw](https://github.com/ysz/nanoClaw) - No open ports (Telegram polling), encrypted credentials
+- [Dshubhambadola/Fortclaw](https://github.com/Dshubhambadola/Fortclaw) - Production security controls
+- [princezuda/safeclaw](https://github.com/princezuda/safeclaw) - No GenAI (VADER, regex, sumy)
+
+### Rust Implementations (Performance)
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM plugins, encrypted secrets
+- [MicroClaw](https://github.com/microclaw/microclaw) - Session persistence, context compaction, sub-agent delegation
+- [shimaenaga1123/rustclaw](https://github.com/shimaenaga1123/rustclaw) - Discord AI assistant, Docker sandboxed
+- [PhillipTh0mas/crabbot](https://github.com/PhillipTh0mas/crabbot) - Local-first, file-backed state
+
+### Language/Platform Ports
+
+- [dyzdyz010/clawd_ex](https://github.com/dyzdyz010/clawd_ex) - Elixir/OTP fault tolerance, Phoenix LiveView, pgvector
+- [bsakel/honeybadger](https://github.com/bsakel/honeybadger) - C# minimal bot
+- [jimtin/zetherion-ai](https://github.com/jimtin/zetherion-ai) - Python with Discord, vector memory
+- [hmennen90/open-entity](https://github.com/hmennen90/open-entity) - PHP/Laravel autonomous entity with consciousness
+
+### Memory & Knowledge Extensions
+
+- [phenomenoner/openclaw-mem](https://github.com/phenomenoner/openclaw-mem) - Smart memory management
+- [phenomenoner/openclaw-agent-optimize](https://github.com/phenomenoner/openclaw-agent-optimize) - Agent optimization skill
+- [robbyczgw-cla/clawdbot-personas](https://github.com/robbyczgw-cla/clawdbot-personas) - 31 AI personalities
+- [wquguru/exoshell](https://github.com/wquguru/exoshell) - Atomic commit methodology
+
+### Forks & Community Variants
+
+- [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) - Rebranded community fork
+- [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) - Moltbot fork with augmented architecture
+- [KinGP5471/clawdbot-feishu-plugin](https://github.com/KinGP5471/clawdbot-feishu-plugin) - Feishu/Lark channel plugin
+- [rqrqrqrq/idea-clawdbot](https://github.com/rqrqrqrq/idea-clawdbot) - Business idea exploration fork
+- [droppingbeans/team-clawdbotarmy](https://github.com/droppingbeans/team-clawdbotarmy) - Crypto trading platform
+
+### Specialized Implementations
+
+- [f2daz/jarvis-reactor](https://github.com/f2daz/jarvis-reactor) - Arc Reactor style visual status
+- [Glitterstrafe/Gemini-Sentinel](https://github.com/Glitterstrafe/Gemini-Sentinel-OpenClaw-Security-Agent) - Security analysis with Gemini 3 Pro
+- [Neo-Revaea/Nebula](https://github.com/Neo-Revaea/Nebula) - Multi-IM chatbot infrastructure
+- [cloudwithax/crusty](https://github.com/cloudwithax/crusty) - Telegram with web browsing
+- [mroqa/Distributed-Clawdbot](https://github.com/mroqa/Distributed-Clawdbot) - Docker Compose hub-and-spoke architecture
+
+### Messaging Platform Integrations
+
+- [mistercrunch/agor-openclaw](https://github.com/mistercrunch/agor-openclaw) - Agor platform
+- [vnnkl/openclaw-nostr](https://github.com/vnnkl/openclaw-nostr) - Nostr decentralized social
+- [woutersmet/lobster-chat](https://github.com/woutersmet/lobster-chat) - Custom chat server + mobile app
+- [assumbl-team/clawdbot-googlechat](https://github.com/assumbl-team/clawdbot-googlechat) - Google Chat
+
+### Web3 & Blockchain Integration
+
+- [agent-bounty-board](https://github.com/your-repo/agent-bounty-board) - ERC-8004 implementation
+- [clawd-lobster](https://github.com/your-repo/clawd-lobster) - Base token integration
+- [clawdbot-skill-web3-pay](https://github.com/your-repo/clawdbot-skill-web3-pay) - Web3 payments
+
+### Language Statistics
+
+| Language | Projects | Notable Examples |
+|----------|----------|------------------|
+| Python | 15+ | nanobot, nanoClaw, HAL Claude |
+| Rust | 4 | Carapace, MicroClaw, rustclaw |
+| TypeScript/Node.js | 3 | nanoclaw, microbot |
+| Elixir | 1 | ClawdEx |
+| C# | 1 | Honeybadger |
+| PHP | 1 | OpenEntity |
+
+### Key Trends
+
+- **Security Focus**: Post-January 2026, many projects address OpenClaw vulnerabilities
+- **Minimalism**: Ultra-lightweight alternatives (200-4,000 LOC vs 430K+)
+- **Rust Adoption**: Performance and safety driving Rust implementations
+- **Container Isolation**: Apple containers, Docker, WASM sandboxing
+- **Multi-Provider**: Support for Anthropic, OpenAI, OpenRouter, local models
 
 ---
 
