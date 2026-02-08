@@ -15,5 +15,5 @@ Thumbs.db
 
 # Documentation and working files (local only)
 docs/
+scripts/
 *.md.bak
-update_inspired_section.sh
