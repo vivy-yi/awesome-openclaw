@@ -1,0 +1,150 @@
+name: Check Repository Milestones
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-milestones:
+    name: Check for Star Milestones
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check OpenClaw repository stars
+        id: stars
+        run: |
+          # Get current star count for openclaw/openclaw
+          STARS=$(gh repo view openclaw/openclaw --json stargazers --jq '.stargazers.totalCount')
+          echo "openclaw_stars=$STARS" >> $GITHUB_OUTPUT
+
+          # Milestone thresholds
+          MILESTONES=(100 500 1000 5000 10000 50000 100000 150000)
+
+          echo "# ⭐ OpenClaw Star Milestone Check" > milestone_report.md
+          echo "" >> milestone_report.md
+          echo "**Repository**: openclaw/openclaw" >> milestone_report.md
+          echo "**Current Stars**: $STARS" >> milestone_report.md
+          echo "**Check Date**: $(date -u +'%Y-%m-%d')" >> milestone_report.md
+          echo "" >> milestone_report.md
+
+          # Check for upcoming milestones
+          echo "## 🎯 Upcoming Milestones" >> milestone_report.md
+          echo "" >> milestone_report.md
+
+          REACHED_MILESTONE=""
+          for milestone in "${MILESTONES[@]}"; do
+            if [ $STARS -ge $milestone ]; then
+              echo "✅ **$milestone stars** - Achieved! 🎉" >> milestone_report.md
+              REACHED_MILESTONE=$milestone
+            else
+              REMAINING=$((milestone - STARS))
+              PERCENT=$((STARS * 100 / milestone))
+              echo "⏳ **$milestone stars** - $STARS/$milestone ($PERCENT%) - $REMAINING more to go" >> milestone_report.md
+            fi
+          done
+
+          echo "" >> milestone_report.md
+          echo "## 📊 Recent Growth" >> milestone_report.md
+
+          # Get star history for last 30 days
+          THIRTY_DAYS_AGO=$(date -d '30 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          RECENT_STARS=$(gh api repos/openclaw/openclaw/stargazers --paginate --since "$THIRTY_DAYS_AGO" | jq 'length')
+          echo "- **Last 30 days**: +$RECENT_STARS stars" >> milestone_report.md
+
+          # Calculate daily average
+          AVG_DAILY=$(echo "scale=1; $RECENT_STARS / 30" | bc)
+          echo "- **Daily average**: $AVG_DAILY stars/day" >> milestone_report.md
+
+          echo "" >> milestone_report.md
+          cat milestone_report.md
+
+      - name: Check awesome list stars
+        id: awesome_stars
+        run: |
+          # Get star count for our awesome list
+          STARS=$(gh repo view "${{ github.repository }}" --json stargazers --jq '.stargazers.totalCount')
+          echo "awesome_stars=$STARS" >> $GITHUB_OUTPUT
+
+          echo "" >> milestone_report.md
+          echo "## 🌟 Awesome OpenClaw Stars" >> milestone_report.md
+          echo "" >> milestone_report.md
+          echo "**Current Stars**: $STARS" >> milestone_report.md
+          echo "" >> milestone_report.md
+
+          # Milestones for the awesome list
+          if [ $STARS -ge 100 ]; then
+            echo "✅ **100 stars** - We made it! 🎉" >> milestone_report.md
+          else
+            REMAINING=$((100 - STARS))
+            echo "⏳ **100 stars milestone** - $STARS/100 ($((STARS))%) - $REMAINING more to go" >> milestone_report.md
+          fi
+
+      - name: Update README badge if milestone reached
+        if: steps.stars.outputs.reached_milestone != ''
+        run: |
+          MILESTONE=${{ steps.stars.outputs.reached_milestone }}
+          echo "🎉 Milestone reached: $MILESTONE stars!"
+          echo "Consider updating README to highlight this achievement."
+
+          # Note: This doesn't automatically update README to avoid churn
+          # Maintainers can manually update when significant milestones are reached
+
+      - name: Create milestone celebration issue
+        if: steps.stars.outputs.reached_milestone != ''
+        run: |
+          # Only create issue if we haven't celebrated this milestone yet
+          MILESTONE=${{ steps.stars.outputs.reached_milestone }}
+          EXISTING=$(gh issue list --search "milestone $MILESTONE" --state closed --json number --jq '.[0].number' || echo "")
+
+          if [ -z "$EXISTING" ]; then
+            cat > celebration.md << EOF
+            ## 🎉 Congratulations! $MILESTONE Stars Milestone Reached!
+
+            OpenClaw has reached **$MILESTONE stars** on GitHub! This is a significant achievement for the project.
+
+            $(cat milestone_report.md)
+
+            ### Celebration Ideas 🎊
+
+            - [ ] Update README to highlight milestone
+            - [ ] Create special announcement tweet/post
+            - [ ] Thank the community
+            - [ ] Plan next milestone celebration
+            - [ ] Consider releasing feature updates
+
+            ### Impact
+
+            This milestone demonstrates:
+            - Growing community interest
+            - Strong project momentum
+            - Real-world adoption
+            - Ecosystem vitality
+
+            ---
+
+            *Let's celebrate this achievement and keep building! 🚀*
+
+            *This issue was automatically created by the [milestone checker](https://github.com/${{ github.repository }}/actions/workflows/check-milestones.yml)*
+            EOF
+
+            gh issue create \
+              --title "🎉 Milestone Reached: $MILESTONE Stars for OpenClaw!" \
+              --label "milestone,celebration,automated" \
+              --body "$(cat celebration.md)"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Upload milestone report
+        uses: actions/upload-artifact@v4
+        with:
+          name: milestone-report
+          path: milestone_report.md
+          retention-days: 90

@@ -38,6 +38,7 @@
 ## 目录
 
 - [核心项目](#核心项目)
+- [OpenClaw 启发的项目](#openclaw-启发的项目)
 - [Molt 生态系统平台](#molt-生态系统平台)
 - [部署与安装](#部署与安装)
 - [平台集成](#平台集成)
@@ -73,6 +74,107 @@
 
 - [Clawdbot Archive](https://github.com/clawdbot) - 原始 Clawdbot 仓库和历史
 - [Moltbot Archive](https://github.com/molt-bot) - Moltbot 时代的仓库
+
+---
+
+## OpenClaw 启发的项目
+
+OpenClaw 生态系统启发了众多替代实现、Fork 和类似项目。这些项目展示了 OpenClaw 对 AI 助手社区的影响力和号召力。
+
+### 精选项目 ⭐
+
+| 项目 | Stars | 描述 | 语言 | 独特特性 |
+|---------|-------|-------------|----------|-----------------|
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 活跃 | 超轻量级 AI 助手（~4K 行代码 vs 430K+） | Python | 多提供商 LLM，vLLM 本地，4 通道 |
+| [ysz/nanoClaw](https://github.com/ysz/nanoClaw) | 活跃 | 安全轻量级 AI 助手（~3K 行代码） | Python | 6 层安全，2 分钟设置，无开放端口 |
+| [puremachinery/carapace](https://github.com/puremachinery/carapace) | 活跃 | 专注安全的个人 AI 助手 | Rust | WASM 插件，OS 沙箱，AES-256 加密 |
+| [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | 活跃 | 容器隔离的 AI 助手 | TypeScript | Apple 容器/Docker，WhatsApp，Claude SDK |
+| [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | 活跃 | 最小 200 行 OpenClaw 替代品 | Python | Claude Code CLI 认证，多模态，571 测试 |
+| [microclaw/microclaw](https://github.com/microclaw/microclaw) | 活跃 | 具有完整工具执行的代理式 AI 助手 | Rust | 22+ 工具，会话恢复，技能兼容 |
+
+### 轻量级替代方案（500-4,000 行代码）
+
+- [nanobot](https://github.com/HKUDS/nanobot) - 多提供商（OpenRouter、Anthropic、DeepSeek），vLLM 支持，Telegram/Discord/WhatsApp/飞书
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 6 层安全（FileGuard、ShellSandbox、PromptGuard），设置向导
+- [ApeCodeAI/nanoclaw-py](https://github.com/ApeCodeAI/nanoclaw-py) - 最小 Python 实现（~500 行代码），Telegram
+- [htlin222/mini-claw](https://github.com/htlin222/mini-claw) - 专注极简主义的替代方案
+- [hankl/microbot](https://github.com/hankl/microbot) - TypeScript/Node.js，集成飞书
+
+### 安全强化变体 🔒
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM 插件运行时，Ed25519 签名，Seatbelt/Landlock 沙箱
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 无开放端口（Telegram 轮询），加密凭证
+- [Dshubhambadola/Fortclaw](https://github.com/Dshubhambadola/Fortclaw) - 生产安全控制
+- [princezuda/safeclaw](https://github.com/princezuda/safeclaw) - 无 GenAI（VADER、regex、sumy）
+
+### Rust 实现（性能）
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM 插件，加密密钥
+- [MicroClaw](https://github.com/microclaw/microclaw) - 会话持久化，上下文压缩，子代理委派
+- [shimaenaga1123/rustclaw](https://github.com/shimaenaga1123/rustclaw) - Discord AI 助手，Docker 沙箱
+- [PhillipTh0mas/crabbot](https://github.com/PhillipTh0mas/crabbot) - 本地优先，文件支持状态
+
+### 语言/平台移植
+
+- [dyzdyz010/clawd_ex](https://github.com/dyzdyz010/clawd_ex) - Elixir/OTP 容错，Phoenix LiveView，pgvector
+- [bsakel/honeybadger](https://github.com/bsakel/honeybadger) - C# 最小机器人
+- [jimtin/zetherion-ai](https://github.com/jimtin/zetherion-ai) - Python，Discord，向量记忆
+- [hmennen90/open-entity](https://github.com/hmennen90/open-entity) - PHP/Laravel 自治实体，具有意识
+
+### 内存与知识扩展
+
+- [phenomenoner/openclaw-mem](https://github.com/phenomenoner/openclaw-mem) - 智能内存管理
+- [phenomenoner/openclaw-agent-optimize](https://github.com/phenomenoner/openclaw-agent-optimize) - 代理优化技能
+- [robbyczgw-cla/clawdbot-personas](https://github.com/robbyczgw-cla/clawdbot-personas) - 31 种 AI 个性
+- [wquguru/exoshell](https://github.com/wquguru/exoshell) - 原子提交方法学
+
+### Fork 和社区变体
+
+- [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) - 品牌重塑的社区 Fork
+- [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) - 增强架构的 Moltbot Fork
+- [KinGP5471/clawdbot-feishu-plugin](https://github.com/KinGP5471/clawdbot-feishu-plugin) - 飞书/Lark 通道插件
+- [rqrqrqrq/idea-clawdbot](https://github.com/rqrqrqrq/idea-clawdbot) - 商业创意探索 Fork
+- [droppingbeans/team-clawdbotarmy](https://github.com/droppingbeans/team-clawdbotarmy) - 加密交易平台
+
+### 专业化实现
+
+- [f2daz/jarvis-reactor](https://github.com/f2daz/jarvis-reactor) - Arc Reactor 风格可视化状态
+- [Glitterstrafe/Gemini-Sentinel](https://github.com/Glitterstrafe/Gemini-Sentinel-OpenClaw-Security-Agent) - 使用 Gemini 3 Pro 的安全分析
+- [Neo-Revaea/Nebula](https://github.com/Neo-Revaea/Nebula) - 多 IM 聊天机器人基础设施
+- [cloudwithax/crusty](https://github.com/cloudwithax/crusty) - 带网络浏览的 Telegram
+- [mroqa/Distributed-Clawdbot](https://github.com/mroqa/Distributed-Clawdbot) - Docker Compose 中心辐射架构
+
+### 消息平台集成
+
+- [mistercrunch/agor-openclaw](https://github.com/mistercrunch/agor-openclaw) - Agor 平台
+- [vnnkl/openclaw-nostr](https://github.com/vnnkl/openclaw-nostr) - Nostr 去中心化社交
+- [woutersmet/lobster-chat](https://github.com/woutersmet/lobster-chat) - 自定义聊天服务器 + 移动应用
+- [assumbl-team/clawdbot-googlechat](https://github.com/assumbl-team/clawdbot-googlechat) - Google Chat
+
+### Web3 与区块链集成
+
+- [agent-bounty-board](https://github.com/your-repo/agent-bounty-board) - ERC-8004 实现
+- [clawd-lobster](https://github.com/your-repo/clawd-lobster) - Base 代币集成
+- [clawdbot-skill-web3-pay](https://github.com/your-repo/clawdbot-skill-web3-pay) - Web3 支付
+
+### 语言统计
+
+| 语言 | 项目数 | 代表项目 |
+|----------|----------|------------------|
+| Python | 15+ | nanobot, nanoClaw, HAL Claude |
+| Rust | 4 | Carapace, MicroClaw, rustclaw |
+| TypeScript/Node.js | 3 | nanoclaw, microbot |
+| Elixir | 1 | ClawdEx |
+| C# | 1 | Honeybadger |
+| PHP | 1 | OpenEntity |
+
+### 关键趋势
+
+- **安全关注**: 2026 年 1 月后，许多项目解决 OpenClaw 漏洞
+- **极简主义**: 超轻量级替代方案（200-4,000 行代码 vs 430K+）
+- **Rust 采用**: 性能和安全性推动 Rust 实现
+- **容器隔离**: Apple 容器、Docker、WASM 沙箱
+- **多提供商**: 支持 Anthropic、OpenAI、OpenRouter、本地模型
 
 ---
 

@@ -1,0 +1,145 @@
+name: Check for New OpenClaw Projects
+
+on:
+  schedule:
+    # Run every Friday at 00:00 UTC
+    - cron: '0 0 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-new-projects:
+    name: Check for New Projects
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Search for new OpenClaw-inspired projects
+        id: search
+        run: |
+          # Create a list of projects already in our README
+          grep -oP 'github\.com/\K[^/]+/[^/]+' README.md | sort -u > existing_projects.txt
+
+          echo "🔍 Searching for new OpenClaw-inspired projects..."
+          echo "Current tracked projects: $(wc -l < existing_projects.txt)"
+
+          # Search queries for OpenClaw-inspired projects
+          QUERIES=(
+            "inspired+by+openclaw"
+            "inspired+by+clawd"
+            "inspired+by+moltbot"
+            "inspired+by+clawdbot"
+            "openclaw+alternative"
+            "similar+to+openclaw"
+            "ai+assistant+framework"
+            "personal+ai+agent"
+          )
+
+          # Search for repositories (using GitHub API through gh cli)
+          echo "" > new_candidates.md
+          echo "# 🔍 New OpenClaw-Inspired Project Candidates" >> new_candidates.md
+          echo "" >> new_candidates.md
+          echo "**Search Date**: $(date -u +'%Y-%m-%d')" >> new_candidates.md
+          echo "" >> new_candidates.md
+
+          FOUND_NEW=0
+
+          for query in "${QUERIES[@]}"; do
+            echo "Searching for: $query"
+
+            # Use gh search api (limit to avoid rate limiting)
+            results=$(gh search repos "$query" --limit 10 --json name,owner,url,description,updatedAt,createdAt --jq '.[] | select(.description | contains("openclaw") // contains("clawd") // contains("moltbot") // contains("AI assistant") // contains("AI agent") // true) | "[" + .owner.login + "/" + .name + "](" + .url + ") - " + .description + " (Updated: " + .updatedAt + ")"' 2>/dev/null || echo "")
+
+            if [ -n "$results" ]; then
+              echo "## Query: $query" >> new_candidates.md
+              echo "" >> new_candidates.md
+              echo "$results" >> new_candidates.md
+              echo "" >> new_candidates.md
+              FOUND_NEW=$((FOUND_NEW + 1))
+            fi
+
+            # Rate limiting - sleep between queries
+            sleep 2
+          done
+
+          echo "Found potential candidates from $FOUND_NEW queries"
+
+          # Check if any results
+          if [ -s new_candidates.md ] && [ "$FOUND_NEW" -gt 0 ]; then
+            echo "candidates_found=true" >> $GITHUB_OUTPUT
+            echo "candidates_count=$FOUND_NEW" >> $GITHUB_OUTPUT
+          else
+            echo "candidates_found=false" >> $GITHUB_OUTPUT
+            echo "candidates_count=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Review candidates and create issue
+        if: steps.search.outputs.candidates_found == 'true'
+        run: |
+          # Create an issue with candidates for manual review
+          cat > issue_body.md << 'EOF'
+          ## 🔍 New OpenClaw-Inspired Project Candidates Found
+
+          The automated search found potential new OpenClaw-inspired projects that need manual review.
+
+          **Next Steps**:
+          1. Review each candidate project
+          2. Check if it's genuinely OpenClaw-inspired or similar
+          3. Verify quality and activity
+          4. Add to appropriate category in README
+
+          ---
+
+          $(cat new_candidates.md)
+
+          ---
+
+          ### Instructions for Reviewers
+
+          For each candidate:
+          - [ ] Visit the repository and README
+          - [ ] Verify it's AI assistant related
+          - [ ] Check for OpenClaw/Clawd inspiration mentioned
+          - [ ] Verify project quality (stars, activity, documentation)
+          - [ ] Determine appropriate category
+          - [ ] Add to README if qualified
+
+          **Quality Thresholds**:
+          - ⭐ Stars > 5 (for new projects)
+          - 📅 Last updated within 3 months
+          - 📝 Has README or documentation
+          - 🔧 Runnable code
+
+          *This issue was automatically created by the [project discovery workflow](https://github.com/${{ github.repository }}/actions/workflows/check-for-new-projects.yml)*
+          EOF
+
+          # Check if similar issue already exists
+          EXISTING=$(gh issue list --label "project-discovery" --state open --json number --jq '.[0].number' || echo "")
+
+          if [ -z "$EXISTING" ]; then
+            gh issue create \
+              --title "🔍 New OpenClaw-Inspired Project Candidates - $(date +'%Y-%m-%d')" \
+              --label "project-discovery,automated,help wanted" \
+              --body "$(cat issue_body.md)"
+          else
+            # Comment on existing issue
+            gh issue comment "$EXISTING" \
+              --body "### 🔍 New Search Results - $(date +'%Y-%m-%d')
+
+          $(cat new_candidates.md)"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Summary
+        run: |
+          if [ "${{ steps.search.outputs.candidates_found }}" == "true" ]; then
+            echo "✅ Found ${{ steps.search.outputs.candidates_count }} candidate queries with results"
+            echo "📝 Issue created/reviewed for manual evaluation"
+          else
+            echo "ℹ️ No new candidates found this week"
+          fi

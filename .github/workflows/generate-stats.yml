@@ -1,0 +1,139 @@
+name: Generate Repository Statistics
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'README.md'
+      - 'README.zh-CN.md'
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+  schedule:
+    # Run every Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  generate-stats:
+    name: Generate Statistics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate statistics
+        id: stats
+        run: |
+          echo "# 📊 Awesome OpenClaw Statistics" > stats.md
+          echo "" >> stats.md
+          echo "Generated on: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> stats.md
+          echo "" >> stats.md
+
+          # Count total projects (links to github.com)
+          TOTAL_PROJECTS=$(grep -o 'https://github.com/[^/[:space:]]*/[^/[:space:]]*' README.md | sort -u | wc -l)
+          echo "## 📈 Overall Statistics" >> stats.md
+          echo "" >> stats.md
+          echo "- **Total Projects**: $TOTAL_PROJECTS" >> stats.md
+          echo "- **Categories**: 11 main categories" >> stats.md
+          echo "- **Languages**: 7 supported languages" >> stats.md
+
+          # Count OpenClaw-inspired projects
+          INSPIRED_START=$(grep -n "## OpenClaw-Inspired Projects" README.md | cut -d: -f1)
+          INSPIRED_END=$(grep -n "^## " README.md | awk -v start=$INSPIRED_START '$1 > start {print $1; exit}')
+          INSPIRED_PROJECTS=$(sed -n "${INSPIRED_START},${INSPIRED_END}p" README.md | grep -o 'https://github.com/[^/[:space:]]*/[^/[:space:]]*' | sort -u | wc -l)
+          echo "- **OpenClaw-Inspired Projects**: $INSPIRED_PROJECTS" >> stats.md
+          echo "" >> stats.md
+
+          # Language breakdown
+          echo "## 🌍 Language Support" >> stats.md
+          echo "" >> stats.md
+          echo "| Language | File | Status |" >> stats.md
+          echo "|----------|------|--------|" >> stats.md
+          echo "| 🇺🇸 English | README.md | ✅ |" >> stats.md
+          echo "| 🇨🇳 简体中文 | README.zh-CN.md | ✅ |" >> stats.md
+          echo "| 🇰🇷 한국어 | README.ko.md | ✅ |" >> stats.md
+          echo "| 🇯🇵 日本語 | README.ja.md | ✅ |" >> stats.md
+          echo "| 🇫🇷 Français | README.fr.md | ✅ |" >> stats.md
+          echo "| 🇪🇸 Español | README.es.md | ✅ |" >> stats.md
+          echo "| 🇩🇪 Deutsch | README.de.md | ✅ |" >> stats.md
+          echo "" >> stats.md
+
+          # Category breakdown
+          echo "## 📂 Category Breakdown" >> stats.md
+          echo "" >> stats.md
+
+          extract_category_count() {
+            CATEGORY_NAME=$1
+            HEADER=$2
+            START=$(grep -n "^## $HEADER" README.md | cut -d: -f1)
+            if [ -z "$START" ]; then
+              COUNT=0
+            else
+              END=$(grep -n "^## " README.md | awk -v start=$START '$1 > start {print $1; exit}')
+              if [ -z "$END" ]; then
+                END=$(wc -l < README.md)
+              fi
+              COUNT=$(sed -n "${START},${END}p" README.md | grep -o 'https://github.com/[^/[:space:]]*/[^/[:space:]]*' | sort -u | wc -l)
+            fi
+            echo "| **$CATEGORY_NAME** | $COUNT |" >> stats.md
+          }
+
+          echo "| Category | Project Count |" >> stats.md
+          echo "|----------|--------------|" >> stats.md
+          extract_category_count "Core Projects" "Core Projects"
+          extract_category_count "OpenClaw-Inspired" "OpenClaw-Inspired Projects"
+          extract_category_count "Molt Ecosystem" "Molt Ecosystem Platforms"
+          extract_category_count "Deployment" "Deployment & Installation"
+          extract_category_count "Platform Integrations" "Platform Integrations"
+          extract_category_count "Memory" "Memory & Storage"
+          extract_category_count "Monitoring" "Monitoring & Tools"
+          extract_category_count "Skills" "Skills & Extensions"
+          extract_category_count "Enterprise" "Enterprise Solutions"
+          extract_category_count "Localization" "Localization"
+          extract_category_count "Security" "Security & Research"
+          echo "" >> stats.md
+
+          # Output the stats
+          cat stats.md
+
+          # Save to output for use in other steps
+          echo "stats_created=true" >> $GITHUB_OUTPUT
+          echo "total_projects=$TOTAL_PROJECTS" >> $GITHUB_OUTPUT
+          echo "inspired_projects=$INSPIRED_PROJECTS" >> $GITHUB_OUTPUT
+
+      - name: Create statistics issue (monthly)
+        if: github.event_name == 'schedule' && github.ref == 'refs/heads/master'
+        run: |
+          # Check if there's already a stats issue this month
+          CURRENT_MONTH=$(date +'%Y-%m')
+          EXISTING=$(gh issue list --label "statistics" --state open --json number,title --jq ".[] | select(.title | contains(\"$CURRENT_MONTH\")) | .number" || echo "")
+
+          if [ -z "$EXISTING" ]; then
+            gh issue create \
+              --title "📊 Repository Statistics - $CURRENT_MONTH" \
+              --label "statistics,automated" \
+              --body "$(cat stats.md)" \
+              --repo "${{ github.repository }}"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Comment stats on PR
+        if: github.event_name == 'pull_request'
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" \
+            --body "$(cat stats.md)" \
+            --repo "${{ github.repository }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Upload statistics artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: repository-statistics
+          path: stats.md
+          retention-days: 30
