@@ -1,0 +1,262 @@
+name: Check i18n Synchronization
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-language-switchers:
+    name: Check Language Switchers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for language switchers
+        run: |
+          # List of expected README files
+          README_FILES=(
+            "README.md"
+            "README.zh-CN.md"
+            "README.ko.md"
+            "README.ja.md"
+            "README.fr.md"
+            "README.es.md"
+            "README.de.md"
+          )
+
+          # Expected language switcher pattern
+          SWITCHER_PATTERN="\*\*\[English\](README\.md) \| \[简体中文\](README\.zh-CN\.md) \| \[한국어\](README\.ko\.md) \| \[日本語\](README\.ja\.md) \| \[Français\](README\.fr\.md) \| \[Español\](README\.es\.md) \| \[Deutsch\](README\.de\.md)\*\*"
+
+          echo "Checking language switchers in README files..."
+
+          MISSING_SWITCHERS=()
+          for file in "${README_FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ File not found: $file"
+              MISSING_SWITCHERS+=("$file (MISSING FILE)")
+              continue
+            fi
+
+            if grep -q "$SWITCHER_PATTERN" "$file"; then
+              echo "✅ $file has correct language switcher"
+            else
+              echo "❌ $file is missing or has incorrect language switcher"
+              MISSING_SWITCHERS+=("$file")
+            fi
+          done
+
+          if [ ${#MISSING_SWITCHERS[@]} -gt 0 ]; then
+            echo ""
+            echo "❌ Language switcher check failed!"
+            echo "Files with issues:"
+            for file in "${MISSING_SWITCHERS[@]}"; do
+              echo "  - $file"
+            done
+            exit 1
+          else
+            echo ""
+            echo "✅ All README files have correct language switchers!"
+          fi
+
+  check-readme-sync:
+    name: Check README Synchronization
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get latest modification dates
+        id: dates
+        run: |
+          echo "ENGLISH_DATE=$(git log -1 --format=%ct README.md)" >> $GITHUB_OUTPUT
+          echo "CHINESE_DATE=$(git log -1 --format=%ct README.zh-CN.md)" >> $GITHUB_OUTPUT
+          echo "KOREAN_DATE=$(git log -1 --format=%ct README.ko.md)" >> $GITHUB_OUTPUT
+          echo "JAPANESE_DATE=$(git log -1 --format=%ct README.ja.md)" >> $GITHUB_OUTPUT
+          echo "FRENCH_DATE=$(git log -1 --format=%ct README.fr.md)" >> $GITHUB_OUTPUT
+          echo "SPANISH_DATE=$(git log -1 --format=%ct README.es.md)" >> $GITHUB_OUTPUT
+          echo "GERMAN_DATE=$(git log -1 --format=%ct README.de.md)" >> $GITHUB_OUTPUT
+
+      - name: Check translation lag
+        run: |
+          ENGLISH_DATE=${{ steps.dates.outputs.ENGLISH_DATE }}
+          CURRENT_DATE=$(date +%s)
+
+          # Threshold: 7 days in seconds
+          THRESHOLD=604800
+
+          check_lang_date() {
+            LANG_NAME=$1
+            LANG_DATE=$2
+            ENGLISH=$3
+
+            if [ -z "$LANG_DATE" ]; then
+              echo "⚠️  $LANG_NAME: Cannot determine modification date"
+              return
+            fi
+
+            DIFF=$((ENGLISH - LANG_DATE))
+            DAYS=$((DIFF / 86400))
+
+            if [ $DIFF -gt $THRESHOLD ]; then
+              echo "⚠️  $LANG_NAME: Last updated $DAYS days after English version"
+              echo "   Consider updating the translation to stay in sync"
+            else
+              echo "✅ $LANG_NAME: Up to date (within 7 days)"
+            fi
+          }
+
+          echo "Checking translation synchronization..."
+          echo "English README last modified: $(date -d @$ENGLISH_DATE +%Y-%m-%d)"
+          echo ""
+
+          check_lang_date "简体中文" "${{ steps.dates.outputs.CHINESE_DATE }}" "$ENGLISH_DATE"
+          check_lang_date "한국어" "${{ steps.dates.outputs.KOREAN_DATE }}" "$ENGLISH_DATE"
+          check_lang_date "日本語" "${{ steps.dates.outputs.JAPANESE_DATE }}" "$ENGLISH_DATE"
+          check_lang_date "Français" "${{ steps.dates.outputs.FRENCH_DATE }}" "$ENGLISH_DATE"
+          check_lang_date "Español" "${{ steps.dates.outputs.SPANISH_DATE }}" "$ENGLISH_DATE"
+          check_lang_date "Deutsch" "${{ steps.dates.outputs.GERMAN_DATE }}" "$ENGLISH_DATE"
+
+          echo ""
+          echo "ℹ️  This is a warning only and will not fail the workflow"
+
+  check-all-readmes-exist:
+    name: Check All READMEs Exist
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for all README files
+        run: |
+          REQUIRED_FILES=(
+            "README.md"
+            "README.zh-CN.md"
+            "README.ko.md"
+            "README.ja.md"
+            "README.fr.md"
+            "README.es.md"
+            "README.de.md"
+          )
+
+          echo "Checking for required README files..."
+
+          MISSING_FILES=()
+          for file in "${REQUIRED_FILES[@]}"; do
+            if [ -f "$file" ]; then
+              echo "✅ $file exists"
+            else
+              echo "❌ $file is missing!"
+              MISSING_FILES+=("$file")
+            fi
+          done
+
+          if [ ${#MISSING_FILES[@]} -gt 0 ]; then
+            echo ""
+            echo "❌ Missing README files:"
+            for file in "${MISSING_FILES[@]}"; do
+              echo "  - $file"
+            done
+            exit 1
+          else
+            echo ""
+            echo "✅ All required README files exist!"
+          fi
+
+  create-sync-issue:
+    name: Create Sync Issue (if needed)
+    runs-on: ubuntu-latest
+    needs: [check-readme-sync]
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    permissions:
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check if sync issue exists
+        id: check_issue
+        run: |
+          # Check if there's an open sync issue
+          EXISTING=$(gh issue list --label "i18n-sync" --state open --json number --jq '.[0].number' || echo "")
+          echo "existing=$EXISTING" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Create sync issue if needed
+        if: steps.check_issue.outputs.existing == ''
+        run: |
+          ENGLISH_DATE=$(git log -1 --format=%ct README.md)
+          CHINESE_DATE=$(git log -1 --format=%ct README.zh-CN.md)
+          KOREAN_DATE=$(git log -1 --format=%ct README.ko.md)
+          JAPANESE_DATE=$(git log -1 --format=%ct README.ja.md)
+          FRENCH_DATE=$(git log -1 --format=%ct README.fr.md)
+          SPANISH_DATE=$(git log -1 --format=%ct README.es.md)
+          GERMAN_DATE=$(git log -1 --format=%ct README.de.md)
+
+          CURRENT_DATE=$(date +%s)
+          THRESHOLD=604800  # 7 days
+
+          NEEDS_UPDATE=()
+
+          check_lang() {
+            NAME=$1
+            DATE=$2
+            if [ -z "$DATE" ]; then
+              return
+            fi
+            DIFF=$((ENGLISH_DATE - DATE))
+            if [ $DIFF -gt $THRESHOLD ]; then
+              NEEDS_UPDATE+=("$NAME: $((DIFF / 86400)) days behind")
+            fi
+          }
+
+          check_lang "简体中文" "$CHINESE_DATE"
+          check_lang "한국어" "$KOREAN_DATE"
+          check_lang "日本語" "$JAPANESE_DATE"
+          check_lang "Français" "$FRENCH_DATE"
+          check_lang "Español" "$SPANISH_DATE"
+          check_lang "Deutsch" "$GERMAN_DATE"
+
+          if [ ${#NEEDS_UPDATE[@]} -gt 0 ]; then
+            echo "Creating i18n sync issue..."
+
+            BODY="## 🌍 Internationalization Synchronization Reminder\n\n"
+            BODY+="The following translations may need to be updated to stay in sync with the English version:\n\n"
+
+            for item in "${NEEDS_UPDATE[@]}"; do
+              BODY+="⚠️ $item\n"
+            done
+
+            BODY+="\n---\n\n"
+            BODY+="### How to Update\n\n"
+            BODY+="1. Review the changes in [README.md](https://github.com/${{ github.repository }}/blob/main/README.md)\n"
+            BODY+="2. Update the respective language file(s)\n"
+            BODY+="3. Ensure the language switcher is present at the top\n"
+            BODY+="4. Test that all links work correctly\n\n"
+            BODY+="### Translators Needed\n\n"
+            BODY+="If you're fluent in any of these languages and can help with translations, please submit a PR!\n\n"
+            BODY+="---\n\n"
+            BODY+="*This issue was automatically created by the [i18n sync check](https://github.com/${{ github.repository }}/actions/workflows/check-i18n-sync.yml) workflow*"
+
+            gh issue create \
+              --title "🌍 i18n Synchronization Check - Translations May Need Updates" \
+              --label "i18n-sync,automated" \
+              --body "$BODY"
+
+            echo "✅ Sync issue created"
+          else
+            echo "✅ All translations are up to date"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**[English](README.md) | [简体中文](README.zh-CN.md) | [한국어](README.ko.md)**
+**[English](README.md) | [简体中文](README.zh-CN.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Español](README.es.md) | [Deutsch](README.de.md)**
 
 > 精选的 OpenClaw（曾用名 Moltbot/Clawdbot）资源、工具、平台和社区项目列表
 

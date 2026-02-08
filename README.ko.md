@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**[English](README.md) | [简体中文](README.zh-CN.md) | [한국어](README.ko.md)**
+**[English](README.md) | [简体中文](README.zh-CN.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Español](README.es.md) | [Deutsch](README.de.md)**
 
 > OpenClaw(이전 이름: Moltbot/Clawdbot) 리소스, 도구, 플랫폼 및 커뮤니티 프로젝트를 위한 엄선된 목록
 
