@@ -38,6 +38,7 @@
 ## 目次
 
 - [コアプロジェクト](#コアプロジェクト)
+- [OpenClaw に触発されたプロジェクト](#openclaw-に触発されたプロジェクト)
 - [Molt エコシステムプラットフォーム](#molt-エコシステムプラットフォーム)
 - [デプロイとインストール](#デプロイとインストール)
 - [プラットフォーム統合](#プラットフォーム統合)
@@ -73,6 +74,57 @@
 
 - [Clawdbot Archive](https://github.com/clawdbot) - オリジナルの Clawdbot リポジトリと履歴
 - [Moltbot Archive](https://github.com/molt-bot) - Moltbot 時代のリポジトリ
+
+---
+
+## OpenClaw に触発されたプロジェクト
+
+OpenClaw エコシステムは、多数の代替実装、Fork、類似プロジェクトに影響を与えました。これらのプロジェクトは、AI アシスタントコミュニティに対する OpenClaw の影響を示しています。
+
+### 注目プロジェクト ⭐
+
+| プロジェクト | Stars | 説明 | 言語 | 特徴 |
+|---------|-------|-------------|----------|-----------------|
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | ![Stars](https://img.shields.io/github/stars/HKUDS/nanobot) | 超軽量 AI アシスタント（~4K LOC vs 430K+） | Python | マルチプロバイダー LLM、vLLM ローカル、4 チャンネル |
+| [ysz/nanoClaw](https://github.com/ysz/nanoClaw) | ![Stars](https://img.shields.io/github/stars/ysz/nanoClaw) | セキュア軽量 AI アシスタント（~3K LOC） | Python | 6 層セキュリティ、2 分設定 |
+| [puremachinery/carapace](https://github.com/puremachinery/carapace) | ![Stars](https://img.shields.io/github/stars/puremachinery/carapace) | セキュア重視個人 AI アシスタント | Rust | WASM プラグイン、OS サンドボックス |
+| [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | ![Stars](https://img.shields.io/github/stars/gavrielc/nanoclaw) | コンテナ分離 AI アシスタント | TypeScript | Apple コンテナ/Docker、WhatsApp |
+| [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | ![Stars](https://img.shields.io/github/stars/puretensor/hal-claude) | 最小 200 行 OpenClaw 代替案 | Python | Claude Code CLI 認証、571 テスト |
+| [microclaw/microclaw](https://github.com/microclaw/microclaw) | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | 完全なツール実行を備えた AI アシスタント | Rust | 22+ ツール、セッション再開 |
+
+### 軽量代替案（500-4,000 行）
+
+- [nanobot](https://github.com/HKUDS/nanobot) - マルチプロバイダー、vLLM、4 チャンネル
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 6 セキュリティレイヤー、セットアップウィザード
+- [ApeCodeAI/nanoclaw-py](https://github.com/ApeCodeAI/nanoclaw-py) - 最小 Python 実装（~500 LOC）
+- [htlin222/mini-claw](https://github.com/htlin222/mini-claw) - 最小主義重視の代替案
+
+### セキュア強化変種 🔒
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM ランタイム、Ed25519 署名
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 開放ポートなし、暗号化資格情報
+- [Dshubhambadola/Fortclaw](https://github.com/Dshubhambadola/Fortclaw) - プロダクションセキュリティ制御
+- [princezuda/safeclaw](https://github.com/princezuda/safeclaw) - GenAI なし（VADER、regex）
+
+### Rust 実装（パフォーマンス）
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM プラグイン、暗号化
+- [MicroClaw](https://github.com/microclaw/microclaw) - セッション永続化、コンテキスト圧縮
+- [shimaenaga1123/rustclaw](https://github.com/shimaenaga1123/rustclaw) - Discord AI、Docker サンドボックス
+- [PhillipTh0mas/crabbot](https://github.com/PhillipTh0mas/crabbot) - ローカルファースト
+
+### 言語/プラットフォーム移植
+
+- [dyzdyz010/clawd_ex](https://github.com/dyzdyz010/clawd_ex) - Elixir/OTP 耐障害、Phoenix LiveView
+- [bsakel/honeybadger](https://github.com/bsakel/honeybadger) - C# 最小ボット
+- [jimtin/zetherion-ai](https://github.com/jimtin/zetherion-ai) - Python、Discord、ベクトルメモリ
+- [hmennen90/open-entity](https://github.com/hmennen90/open-entity) - PHP/Laravel 自律エンティティ
+
+### Fork とコミュニティ変種
+
+- [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) - ブランド変更コミュニティ Fork
+- [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) - 拡張アーキテクチャ Moltbot Fork
+- [KinGP5471/clawdbot-feishu-plugin](https://github.com/KinGP5471/clawdbot-feishu-plugin) - Feishu/Lark チャンネルプラグイン
 
 ---
 

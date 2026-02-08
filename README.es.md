@@ -76,6 +76,51 @@
 
 ---
 
+## Proyectos Inspirados en OpenClaw
+
+OpenClaw ha inspirado numerosas implementaciones alternativas, forks y proyectos similares.
+
+### Proyectos Destacados ⭐
+
+| Proyecto | Stars | Descripción | Idioma | Características Únicas |
+|---------|-------|-------------|----------|-----------------|
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | ![Stars](https://img.shields.io/github/stars/HKUDS/nanobot) | Asistente IA ultra ligero (~4K LOC vs 430K+) | Python | Multi-proveedor LLM, vLLM local |
+| [ysz/nanoClaw](https://github.com/ysz/nanoClaw) | ![Stars](https://img.shields.io/github/stars/ysz/nanoClaw) | Asistente IA ligero seguro (~3K LOC) | Python | 6 capas de seguridad |
+| [puremachinery/carapace](https://github.com/puremachinery/carapace) | ![Stars](https://img.shields.io/github/stars/puremachinery/carapace) | Asistente IA enfocado en seguridad | Rust | Plugins WASM, sandbox OS |
+| [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | ![Stars](https://img.shields.io/github/stars/gavrielc/nanoclaw) | Asistente IA aislado en contenedor | TypeScript | Contenedores Apple/Docker |
+| [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | ![Stars](https://img.shields.io/github/stars/puretensor/hal-claude) | Alternativa OpenClaw mínima (200 líneas) | Python | Auth CLI Claude Code |
+| [microclaw/microclaw](https://github.com/microclaw/microclaw) | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | Asistente IA agente con herramientas completas | Rust | 22+ herramientas, reanudación sesión |
+
+### Alternativas Ligeras (500-4,000 LOC)
+
+- [nanobot](https://github.com/HKUDS/nanobot) - Multi-proveedor, vLLM, 4 canales
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 6 capas seguridad, asistente configuración
+- [ApeCodeAI/nanoclaw-py](https://github.com/ApeCodeAI/nanoclaw-py) - Implementación Python mínima
+- [htlin222/mini-claw](https://github.com/htlin222/mini-claw) - Alternativa minimalista
+
+### Variantes Reforzadas en Seguridad 🔒
+
+- [Carapace](https://github.com/puremachinery/carapace) - Runtime WASM, firmas Ed25519
+- [nanoClaw](https://github.com/ysz/nanoClaw) - Sin puertos abiertos, credenciales cifradas
+- [Dshubhambadola/Fortclaw](https://github.com/Dshubhambadola/Fortclaw) - Controles de seguridad producción
+- [princezuda/safeclaw](https://github.com/princezuda/safeclaw) - Sin GenAI (VADER, regex)
+
+### Implementaciones Rust (Rendimiento)
+
+- [Carapace](https://github.com/puremachinery/carapace) - Plugins WASM, secretos cifrados
+- [MicroClaw](https://github.com/microclaw/microclaw) - Persistencia sesión, compresión contexto
+- [shimaenaga1123/rustclaw](https://github.com/shimaenaga1123/rustclaw) - Asistente IA Discord, sandbox Docker
+- [PhillipTh0mas/crabbot](https://github.com/PhillipTh0mas/crabbot) - Local-first, estado soportado archivos
+
+### Ports de Idioma/Plataforma
+
+- [dyzdyz010/clawd_ex](https://github.com/dyzdyz010/clawd_ex) - Elixir/OTP tolerancia a fallos
+- [bsakel/honeybadger](https://github.com/bsakel/honeybadger) - Bot minimal C#
+- [jimtin/zetherion-ai](https://github.com/jimtin/zetherion-ai) - Python, Discord, memoria vectorial
+- [hmennen90/open-entity](https://github.com/hmennen90/open-entity) - Entidad autónoma PHP/Laravel
+
+---
+
 ## Plataformas del ecosistema Molt
 
 El ecosistema Molt es una serie de plataformas donde los agentes de IA interactúan, socializan y comercian.

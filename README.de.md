@@ -76,6 +76,51 @@
 
 ---
 
+## Von OpenClaw Inspirierte Projekte
+
+Das OpenClaw-Ökosystem hat zahlreiche alternative Implementierungen, Forks und ähnliche Projekte inspiriert.
+
+### Vorgestellte Projekte ⭐
+
+| Projekt | Stars | Beschreibung | Sprache | Einzigartige Merkmale |
+|---------|-------|-------------|----------|-----------------|
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | ![Stars](https://img.shields.io/github/stars/HKUDS/nanobot) | Ultra-leichter KI-Assistent (~4K LOC vs 430K+) | Python | Multi-Provider LLM, vLLM lokal |
+| [ysz/nanoClaw](https://github.com/ysz/nanoClaw) | ![Stars](https://img.shields.io/github/stars/ysz/nanoClaw) | Sicherer leichter KI-Assistent (~3K LOC) | Python | 6 Sicherheitsschichten |
+| [puremachinery/carapace](https://github.com/puremachinery/carapace) | ![Stars](https://img.shields.io/github/stars/puremachinery/carapace) | Sicherheitsfokussierter KI-Assistent | Rust | WASM-Plugins, OS-Sandbox |
+| [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | ![Stars](https://img.shields.io/github/stars/gavrielc/nanoclaw) | Container-isolierter KI-Assistent | TypeScript | Apple-Container/Docker |
+| [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | ![Stars](https://img.shields.io/github/stars/puretensor/hal-claude) | Minimale 200-Zeilen OpenClaw-Alternative | Python | Claude Code CLI Auth |
+| [microclaw/microclaw](https://github.com/microclaw/microclaw) | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | Agenter KI-Assistent mit vollständigen Tools | Rust | 22+ Tools, Session-Wiederaufnahme |
+
+### Leichte Alternativen (500-4.000 Zeilen)
+
+- [nanobot](https://github.com/HKUDS/nanobot) - Multi-Provider, vLLM, 4 Kanäle
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 6 Sicherheitsschichten, Einrichtungsassistent
+- [ApeCodeAI/nanoclaw-py](https://github.com/ApeCodeAI/nanoclaw-py) | - Minimale Python-Implementierung
+- [htlin222/mini-claw](https://github.com/htlin222/mini-claw) - Minimalismus-fokussierte Alternative
+
+### Sicherheitsverstärkte Varianten 🔒
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM-Runtime, Ed25519-Signaturen
+- [nanoClaw](https://github.com/ysz/nanoClaw) - Keine offenen Ports, verschlüsselte Anmeldedaten
+- [Dshubhambadola/Fortclaw](https://github.com/Dshubhambadola/Fortclaw) - Prod-Sicherheitskontrollen
+- [princezuda/safeclaw](https://github.com/princezuda/safeclaw) - Kein GenAI (VADER, regex)
+
+### Rust-Implementierungen (Leistung)
+
+- [Carapace](https://github.com/puremachinery/carapace) - WASM-Plugins, verschlüsselte Secrets
+- [MicroClaw](https://github.com/microclaw/microclaw) - Session-Persistenz, Kontextkomprimierung
+- [shimaenaga1123/rustclaw](https://github.com/shimaenaga1123/rustclaw) - Discord-KI-Assistent, Docker-Sandbox
+- [PhillipTh0mas/crabbot](https://github.com/PhillipTh0mas/crabbot) | - Lokal-First, Datei-gestützter Status
+
+### Sprache/Plattform-Ports
+
+- [dyzdyz010/clawd_ex](https://github.com/dyzdyz010/clawd_ex) - Elixir/OTP Fehlertoleranz
+- [bsakel/honeybadger](https://github.com/bsakel/honeybadger) | - Minimaler C#-Bot
+- [jimtin/zetherion-ai](https://github.com/jimtin/zetherion-ai) | - Python, Discord, Vektorspeicher
+- [hmennen90/open-entity](https://github.com/hmennen90/open-entity) | - Autonome Entität PHP/Laravel
+
+---
+
 ## Molt-Ökosystem-Plattformen
 
 Das Molt-Ökosystem ist eine Reihe von Plattformen, auf denen KI-Agenten interagieren, sich sozialisieren und handeln.
