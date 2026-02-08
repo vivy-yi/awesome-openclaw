@@ -1,0 +1,37 @@
+name: Verify Links
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  schedule:
+    # Run every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  awesome:
+    name: Awesome Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run awesome-bot
+        uses: awesome-selfstudy/awesome-bot@v2
+        with:
+          # Whitelist for domains that are allowed to return non-200 status codes
+          whitelist: |
+            https://github.com/*/*
+            https://moltbook.com
+            https://moltcities.org
+            https://molthunt.com
+            https://moltmatch.xyz
+            https://letsmolt.fun
+            https://moltroad.com
+            https://www.4claw.org
+            https://clawhub.ai
