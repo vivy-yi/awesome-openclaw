@@ -90,41 +90,41 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [willbullen/openclaw-docker](https://github.com/willbullen/openclaw-docker) | - | Production Docker Compose with security hardening |
-| [khal3d/openclaw](https://github.com/khal3d/openclaw) | - | Docker & HELM deployment |
-| [jchen0824/clawdbot-docker-deploy](https://github.com/jchen0824/clawdbot-docker-deploy) | - | One-script VPS deployment |
-| [gravity182/clawdbot-docker](https://github.com/gravity182/clawdbot-docker) | - | Homelab Kubernetes deployment |
-| [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | - | Docker for Telegram/WhatsApp/Discord |
-| [essamamdani/openclaw-coolify](https://github.com/essamamdani/openclaw-coolify) | - | Coolify deployment template |
-| [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) | - | Containerized lightweight with memory & scheduled jobs |
-| [coollabsio/openclaw](https://github.com/coollabsio/openclaw) | - | Fully featured & automated Docker images |
-| [liam798/docker-openclawd](https://github.com/liam798/docker-openclawd) | - | 一键安装 Docker 部署方案 |
+| [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) | ![Stars](https://img.shields.io/github/stars/qwibitai/nanoclaw) | Containerized lightweight with memory & scheduled jobs |
+| [coollabsio/openclaw](https://github.com/coollabsio/openclaw) | ![Stars](https://img.shields.io/github/stars/coollabsio/openclaw) | Fully featured & automated Docker images |
+| [liam798/docker-openclawd](https://github.com/liam798/docker-openclawd) | ![Stars](https://img.shields.io/github/stars/liam798/docker-openclawd) | 一键安装 Docker 部署方案 |
+| [essamamdani/openclaw-coolify](https://github.com/essamamdani/openclaw-coolify) | ![Stars](https://img.shields.io/github/stars/essamamdani/openclaw-coolify) | Coolify deployment template |
+| [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | ![Stars](https://img.shields.io/github/stars/hayka-pacha/clawdbot-in-docker) | Docker for Telegram/WhatsApp/Discord |
+| [willbullen/openclaw-docker](https://github.com/willbullen/openclaw-docker) | ![Stars](https://img.shields.io/github/stars/willbullen/openclaw-docker) | Production Docker Compose with security hardening |
+| [khal3d/openclaw](https://github.com/khal3d/openclaw) | ![Stars](https://img.shields.io/github/stars/khal3d/openclaw) | Docker & HELM deployment |
+| [jchen0824/clawdbot-docker-deploy](https://github.com/jchen0824/clawdbot-docker-deploy) | ![Stars](https://img.shields.io/github/stars/jchen0824/clawdbot-docker-deploy) | One-script VPS deployment |
+| [gravity182/clawdbot-docker](https://github.com/gravity182/clawdbot-docker) | ![Stars](https://img.shields.io/github/stars/gravity182/clawdbot-docker) | Homelab Kubernetes deployment |
 
 ### 云平台
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | - | Run on Cloudflare Workers (official Cloudflare) |
-| [miantiao-me/cloud-claw](https://github.com/miantiao-me/cloud-claw) | - | One-click on Cloudflare Containers |
-| [aws-samples/sample-OpenClaw-on-AWS-with-Bedrock](https://github.com/aws-samples/sample-OpenClaw-on-AWS-with-Bedrock) | - | AWS Bedrock integration |
-| [digitalocean-labs/openclaw-appplatform](https://github.com/digitalocean-labs/openclaw-appplatform) | - | DigitalOcean App Platform |
-| [1Panel-dev/1Panel](https://github.com/1Panel-dev/1Panel) | 39K+ | VPS control panel with OpenClaw one-click deploy |
+| [1Panel-dev/1Panel](https://github.com/1Panel-dev/1Panel) | ![Stars](https://img.shields.io/github/stars/1Panel-dev/1Panel) | VPS control panel with OpenClaw one-click deploy |
+| [getumbrel/umbrel](https://github.com/getumbrel/umbrel) | ![Stars](https://img.shields.io/github/stars/getumbrel/umbrel) | Home server OS with OpenClaw support |
+| [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | ![Stars](https://img.shields.io/github/stars/cloudflare/moltworker) | Run on Cloudflare Workers (official Cloudflare) |
+| [aws-samples/sample-OpenClaw-on-AWS-with-Bedrock](https://github.com/aws-samples/sample-OpenClaw-on-AWS-with-Bedrock) | ![Stars](https://img.shields.io/github/stars/aws-samples/sample-OpenClaw-on-AWS-with-Bedrock) | AWS Bedrock integration |
+| [miantiao-me/cloud-claw](https://github.com/miantiao-me/cloud-claw) | ![Stars](https://img.shields.io/github/stars/miantiao-me/cloud-claw) | One-click on Cloudflare Containers |
+| [digitalocean-labs/openclaw-appplatform](https://github.com/digitalocean-labs/openclaw-appplatform) | ![Stars](https://img.shields.io/github/stars/digitalocean-labs/openclaw-appplatform) | DigitalOcean App Platform |
 
 ### 系统包管理
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [openclaw/openclaw-ansible](https://github.com/openclaw/openclaw-ansible) | - | Automated hardened installation with Ansible |
-| [openclaw/nix-openclaw](https://github.com/openclaw/nix-openclaw) | - | Nix package manager integration |
-| [openclaw/homebrew-tap](https://github.com/openclaw/homebrew-tap) | - | Homebrew tap for macOS |
+| [openclaw/nix-openclaw](https://github.com/openclaw/nix-openclaw) | ![Stars](https://img.shields.io/github/stars/openclaw/nix-openclaw) | Nix package manager integration |
+| [openclaw/openclaw-ansible](https://github.com/openclaw/openclaw-ansible) | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw-ansible) | Automated hardened installation with Ansible |
+| [openclaw/homebrew-tap](https://github.com/openclaw/homebrew-tap) | ![Stars](https://img.shields.io/github/stars/openclaw/homebrew-tap) | Homebrew tap for macOS |
 
 ### 一键部署工具
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [miaoxworld/OpenClawInstaller](https://github.com/miaoxworld/OpenClawInstaller) | - | Chinese one-click deployment tool |
-| [caopulan/fix-my-claw](https://github.com/caopulan/fix-my-claw) | - | 24/7 watchdog with automatic recovery |
-| [getumbrel/umbrel](https://github.com/getumbrel/umbrel) | 25K+ | Home server OS with OpenClaw support |
+| [miaoxworld/OpenClawInstaller](https://github.com/miaoxworld/OpenClawInstaller) | ![Stars](https://img.shields.io/github/stars/miaoxworld/OpenClawInstaller) | Chinese one-click deployment tool |
+| [caopulan/fix-my-claw](https://github.com/caopulan/fix-my-claw) | ![Stars](https://img.shields.io/github/stars/caopulan/fix-my-claw) | 24/7 watchdog with automatic recovery |
 
 ### 平台集成
 
@@ -132,31 +132,31 @@
 
 | Platform | Project | Stars | Description |
 |---------|---------|-------|-------------|
-| Telegram/Discord | [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | - | Docker setup |
-| Slack | [VizuaraAILabs/Slack-ClawdBot](https://github.com/VizuaraAILabs/Slack-ClawdBot) | - | Slack integration |
-| Windows | [shanselman/openclaw-windows-hub](https://github.com/shanselman/openclaw-windows-hub) | - | System Tray + PowerToys |
-| iOS Voice | [chrisherold/clawdy](https://github.com/chrisherold/clawdy) | - | Voice interface |
+| Windows | [shanselman/openclaw-windows-hub](https://github.com/shanselman/openclaw-windows-hub) | ![Stars](https://img.shields.io/github/stars/shanselman/openclaw-windows-hub) | System Tray + PowerToys |
+| Slack | [VizuaraAILabs/Slack-ClawdBot](https://github.com/VizuaraAILabs/Slack-ClawdBot) | ![Stars](https://img.shields.io/github/stars/VizuaraAILabs/Slack-ClawdBot) | Slack integration |
+| iOS Voice | [chrisherold/clawdy](https://github.com/chrisherold/clawdy) | ![Stars](https://img.shields.io/github/stars/chrisherold/clawdy) | Voice interface |
+| Telegram/Discord | [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | ![Stars](https://img.shields.io/github/stars/hayka-pacha/clawdbot-in-docker) | Docker setup |
 
 #### 中国平台
 
 | Platform | Project | Stars | Description |
 |---------|---------|-------|-------------|
-| Bundle | [BytePioneer-AI/openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) | - | Feishu, DingTalk, QQ, WeChat 插件集合 |
-| Bundle | [justlovemaki/OpenClaw-Docker-CN-IM](https://github.com/justlovemaki/OpenClaw-Docker-CN-IM) | - | Docker 多平台集成 |
-| 飞书/Lark | [AlexAnys/feishu-openclaw](https://github.com/AlexAnys/feishu-openclaw) | - | Feishu/Lark integration |
-| 飞书/Lark | [m1heng/clawdbot-feishu](https://github.com/m1heng/clawdbot-feishu) | - | Feishu integration |
-| 钉钉 | [soimy/openclaw-channel-dingtalk](https://github.com/soimy/openclaw-channel-dingtalk) | - | DingTalk channel |
-| 钉钉 | [DingTalk-Real-AI/dingtalk-moltbot-connector](https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector) | - | DingTalk with AI Card |
-| QQ | [constansino/openclaw_qq](https://github.com/constansino/openclaw_qq) | - | QQ (OneBot v11) |
-| 微信 | [freestylefly/openclaw-wechat](https://github.com/freestylefly/openclaw-wechat) | - | Personal WeChat |
-| 微信 | [11haonb/wecom-openclaw-plugin](https://github.com/11haonb/wecom-openclaw-plugin) | - | WeChat Work plugin |
-| 轻量 | [openmozi/openmozi](https://github.com/openmozi/openmozi) | - | 轻量级支持中文 IM |
+| 飞书/Lark | [m1heng/clawdbot-feishu](https://github.com/m1heng/clawdbot-feishu) | ![Stars](https://img.shields.io/github/stars/m1heng/clawdbot-feishu) | Feishu integration |
+| 钉钉 | [DingTalk-Real-AI/dingtalk-moltbot-connector](https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector) | ![Stars](https://img.shields.io/github/stars/DingTalk-Real-AI/dingtalk-moltbot-connector) | DingTalk with AI Card |
+| Bundle | [justlovemaki/OpenClaw-Docker-CN-IM](https://github.com/justlovemaki/OpenClaw-Docker-CN-IM) | ![Stars](https://img.shields.io/github/stars/justlovemaki/OpenClaw-Docker-CN-IM) | Docker 多平台集成 |
+| Bundle | [BytePioneer-AI/openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) | ![Stars](https://img.shields.io/github/stars/BytePioneer-AI/openclaw-china) | Feishu, DingTalk, QQ, WeChat 插件集合 |
+| 钉钉 | [soimy/openclaw-channel-dingtalk](https://github.com/soimy/openclaw-channel-dingtalk) | ![Stars](https://img.shields.io/github/stars/soimy/openclaw-channel-dingtalk) | DingTalk channel |
+| 飞书/Lark | [AlexAnys/feishu-openclaw](https://github.com/AlexAnys/feishu-openclaw) | ![Stars](https://img.shields.io/github/stars/AlexAnys/feishu-openclaw) | Feishu/Lark integration |
+| 微信 | [freestylefly/openclaw-wechat](https://github.com/freestylefly/openclaw-wechat) | ![Stars](https://img.shields.io/github/stars/freestylefly/openclaw-wechat) | Personal WeChat |
+| 微信 | [11haonb/wecom-openclaw-plugin](https://github.com/11haonb/wecom-openclaw-plugin) | ![Stars](https://img.shields.io/github/stars/11haonb/wecom-openclaw-plugin) | WeChat Work plugin |
+| QQ | [constansino/openclaw_qq](https://github.com/constansino/openclaw_qq) | ![Stars](https://img.shields.io/github/stars/constansino/openclaw_qq) | QQ (OneBot v11) |
+| 轻量 | [openmozi/openmozi](https://github.com/openmozi/openmozi) | ![Stars](https://img.shields.io/github/stars/openmozi/openmozi) | 轻量级支持中文 IM |
 
 #### 韩国平台
 
 | Platform | Project | Stars | Description |
 |---------|---------|-------|-------------|
-| KakaoTalk | [tornado1014/clawdbot-kakaotalk](https://github.com/tornado1014/clawdbot-kakaotalk) | - | KakaoTalk integration |
+| KakaoTalk | [tornado1014/clawdbot-kakaotalk](https://github.com/tornado1014/clawdbot-kakaotalk) | ![Stars](https://img.shields.io/github/stars/tornado1014/clawdbot-kakaotalk) | KakaoTalk integration |
 
 ### 运维监控
 
@@ -164,25 +164,24 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [ibelick/webclaw](https://github.com/ibelick/webclaw) | - | Fast web client |
-| [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) | - | Mission control for agents |
-| [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) | - | Studio/IDE |
+| [ibelick/webclaw](https://github.com/ibelick/webclaw) | ![Stars](https://img.shields.io/github/stars/ibelick/webclaw) | Fast web client |
+| [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) | ![Stars](https://img.shields.io/github/stars/grp06/openclaw-studio) | Studio/IDE |
+| [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) | ![Stars](https://img.shields.io/github/stars/clawdeckio/clawdeck) | Mission control for agents |
 
 #### 实时监控
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [luccast/crabwalk](https://github.com/luccast/crabwalk) | - | Real-time companion monitor |
-| [knostic/openclaw-telemetry](https://github.com/knostic/openclaw-telemetry) | - | Tool calls, LLM usage, lifecycle events |
-| [abhi1693/openclaw-mission-control](https://github.com/abhi1693/openclaw-mission-control) | - | AI Agent Orchestration Dashboard |
+| [luccast/crabwalk](https://github.com/luccast/crabwalk) | ![Stars](https://img.shields.io/github/stars/luccast/crabwalk) | Real-time companion monitor |
+| [abhi1693/openclaw-mission-control](https://github.com/abhi1693/openclaw-mission-control) | ![Stars](https://img.shields.io/github/stars/abhi1693/openclaw-mission-control) | AI Agent Orchestration Dashboard |
+| [knostic/openclaw-telemetry](https://github.com/knostic/openclaw-telemetry) | ![Stars](https://img.shields.io/github/stars/knostic/openclaw-telemetry) | Tool calls, LLM usage, lifecycle events |
 
 #### 成本追踪
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [junhoyeo/tokscale](https://github.com/junhoyeo/tokscale) | - | Token usage tracking CLI |
-| [bokonon23/clawdbot-cost-monitor](https://github.com/bokonon23/clawdbot-cost-monitor) | - | AI spending tracker |
-| [mnfst/manifest](https://github.com/mnfst/manifest) | - | Cost control |
+| [junhoyeo/tokscale](https://github.com/junhoyeo/tokscale) | ![Stars](https://img.shields.io/github/stars/junhoyeo/tokscale) | Token usage tracking CLI |
+| [bokonon23/clawdbot-cost-monitor](https://github.com/bokonon23/clawdbot-cost-monitor) | ![Stars](https://img.shields.io/github/stars/bokonon23/clawdbot-cost-monitor) | AI spending tracker |
 
 ---
 
@@ -194,15 +193,15 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [NevaMind-AI/memU](https://github.com/NevaMind-AI/memU) | - | Memory for 24/7 proactive agents |
-| [MemTensor/MemOS](https://github.com/MemTensor/MemOS) | - | AI memory OS for LLM and Agent systems |
-| [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | - | Perfect memory and recall |
-| [oceanbase/powermem](https://github.com/oceanbase/powermem) | - | AI-powered long-term memory |
-| [zilliztech/memsearch](https://github.com/zilliztech/memsearch) | - | Markdown-first memory system |
-| [memovai/memov](https://github.com/memovai/memov) | - | Git-like & traceable memory for coding agents |
-| [arosstale/openclaw-memory-template](https://github.com/arosstale/openclaw-memory-template) | - | Production-ready memory template |
-| [Vel-Labs/molting-memory](https://github.com/Vel-Labs/molting-memory) | - | QDrant-based vector database |
-| [nhevers/MoltBrain](https://github.com/nhevers/MoltBrain) | - | Long-term memory for MoltBook agents |
+| [NevaMind-AI/memU](https://github.com/NevaMind-AI/memU) | ![Stars](https://img.shields.io/github/stars/NevaMind-AI/memU) | Memory for 24/7 proactive agents |
+| [MemTensor/MemOS](https://github.com/MemTensor/MemOS) | ![Stars](https://img.shields.io/github/stars/MemTensor/MemOS) | AI memory OS for LLM and Agent systems |
+| [zilliztech/memsearch](https://github.com/zilliztech/memsearch) | ![Stars](https://img.shields.io/github/stars/zilliztech/memsearch) | Markdown-first memory system |
+| [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | ![Stars](https://img.shields.io/github/stars/supermemoryai/openclaw-supermemory) | Perfect memory and recall |
+| [oceanbase/powermem](https://github.com/oceanbase/powermem) | ![Stars](https://img.shields.io/github/stars/oceanbase/powermem) | AI-powered long-term memory |
+| [nhevers/MoltBrain](https://github.com/nhevers/MoltBrain) | ![Stars](https://img.shields.io/github/stars/nhevers/MoltBrain) | Long-term memory for MoltBook agents |
+| [memovai/memov](https://github.com/memovai/memov) | ![Stars](https://img.shields.io/github/stars/memovai/memov) | Git-like & traceable memory for coding agents |
+| [arosstale/openclaw-memory-template](https://github.com/arosstale/openclaw-memory-template) | ![Stars](https://img.shields.io/github/stars/arosstale/openclaw-memory-template) | Production-ready memory template |
+| [Vel-Labs/molting-memory](https://github.com/Vel-Labs/molting-memory) | ![Stars](https://img.shields.io/github/stars/Vel-Labs/molting-memory) | QDrant-based vector database |
 
 ### 技能库
 
@@ -232,12 +231,12 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [seojoonkim/prompt-guard](https://github.com/seojoonkim/prompt-guard) | - | Advanced prompt injection defense |
-| [NirDiamant/moltbook-agent-guard](https://github.com/NirDiamant/moltbook-agent-guard) | - | Real-time security for agents |
-| [fadidevv/clawdguard](https://github.com/fadidevv/clawdguard) | - | Security hardening patch |
-| [clawshell/clawshell](https://github.com/clawshell/clawshell) | - | Runtime Security Layer for PII & credentials |
-| [SuperagenticAI/superclaw](https://github.com/SuperagenticAI/superclaw) | - | Red-Team AI Agents |
-| [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce) | - | Security PoC (CVE-2026-25253) |
+| [SuperagenticAI/superclaw](https://github.com/SuperagenticAI/superclaw) | ![Stars](https://img.shields.io/github/stars/SuperagenticAI/superclaw) | Red-Team AI Agents |
+| [seojoonkim/prompt-guard](https://github.com/seojoonkim/prompt-guard) | ![Stars](https://img.shields.io/github/stars/seojoonkim/prompt-guard) | Advanced prompt injection defense |
+| [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce) | ![Stars](https://img.shields.io/github/stars/ethiack/moltbot-1click-rce) | Security PoC (CVE-2026-25253) |
+| [NirDiamant/moltbook-agent-guard](https://github.com/NirDiamant/moltbook-agent-guard) | ![Stars](https://img.shields.io/github/stars/NirDiamant/moltbook-agent-guard) | Real-time security for agents |
+| [clawshell/clawshell](https://github.com/clawshell/clawshell) | ![Stars](https://img.shields.io/github/stars/clawshell/clawshell) | Runtime Security Layer for PII & credentials |
+| [fadidevv/clawdguard](https://github.com/fadidevv/clawdguard) | ![Stars](https://img.shields.io/github/stars/fadidevv/clawdguard) | Security hardening patch |
 
 ---
 
