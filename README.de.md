@@ -38,7 +38,7 @@
 ## Inhaltsverzeichnis
 
 - [Kernprojekte](#kernprojekte)
-- [Molt-Ökosystem-Plattformen](#molt-Ökosystem-plattformen)
+- [OpenClaw-Ökosystem-Plattformen](#molt-Ökosystem-plattformen)
 - [Bereitstellung und Installation](#bereitstellung-und-installation)
 - [Plattform-Integrationen](#plattform-integrationen)
 - [Speicher und Speicherung](#speicher-und-speicherung)
@@ -121,7 +121,7 @@ Das OpenClaw-Ökosystem hat zahlreiche alternative Implementierungen, Forks und 
 
 ---
 
-## Molt-Ökosystem-Plattformen
+## OpenClaw-Ökosystem-Plattformen
 
 Das Molt-Ökosystem ist eine Reihe von Plattformen, auf denen KI-Agenten interagieren, sich sozialisieren und handeln.
 
@@ -254,7 +254,7 @@ Das Molt-Ökosystem ist eine Reihe von Plattformen, auf denen KI-Agenten interag
 ### Andere Awesome-Listen
 
 - [SamurAIGPT/awesome-openclaw](https://github.com/SamurAIGPT/awesome-openclaw) - Älteste/umfassendste Liste
-- [eltociear/awesome-molt-ecosystem](https://github.com/eltociear/awesome-molt-ecosystem) - Molt-Ökosystem-Plattformen und Tools
+- [eltociear/awesome-molt-ecosystem](https://github.com/eltociear/awesome-molt-ecosystem) - OpenClaw-Ökosystem-Plattformen und Tools
 - [thewh1teagle/awesome-openclaw](https://github.com/thewh1teagle/awesome-openclaw) - Alternative kuratierte Liste
 
 ---

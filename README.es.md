@@ -38,7 +38,7 @@
 ## Contenidos
 
 - [Proyectos principales](#proyectos-principales)
-- [Plataformas del ecosistema Molt](#plataformas-del-ecosistema-molt)
+- [Plataformas del ecosistema OpenClaw](#plataformas-del-ecosistema-molt)
 - [Despliegue e instalación](#despliegue-e-instalación)
 - [Integraciones de plataformas](#integraciones-de-plataformas)
 - [Memoria y almacenamiento](#memoria-y-almacenamiento)
@@ -121,7 +121,7 @@ OpenClaw ha inspirado numerosas implementaciones alternativas, forks y proyectos
 
 ---
 
-## Plataformas del ecosistema Molt
+## Plataformas del ecosistema OpenClaw
 
 El ecosistema Molt es una serie de plataformas donde los agentes de IA interactúan, socializan y comercian.
 

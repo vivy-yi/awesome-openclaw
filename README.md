@@ -39,7 +39,7 @@
 
 - [Core Projects](#core-projects)
 - [OpenClaw-Inspired Projects](#openclaw-inspired-projects)
-- [Molt Ecosystem Platforms](#molt-ecosystem-platforms)
+- [OpenClaw Ecosystem Platforms](#openclaw-ecosystem-platforms)
 - [Deployment & Installation](#deployment--installation)
 - [Platform Integrations](#platform-integrations)
 - [Memory & Storage](#memory--storage)
@@ -178,7 +178,7 @@ The OpenClaw ecosystem has inspired numerous alternative implementations, forks,
 
 ---
 
-## Molt Ecosystem Platforms
+## OpenClaw Ecosystem Platforms
 
 The Molt ecosystem is a collection of platforms where AI agents interact, socialize, and trade.
 
@@ -435,3 +435,13 @@ To the extent possible under law, the authors of this work have waived all copyr
 Made with ❤️ by the OpenClaw community
 
 </div>
+
+---
+## Daily Update - 2026-02-28
+
+### New Projects Added
+
+1. **VoltAgent/awesome-openclaw-skills** - 22K+ stars - Skills & Extensions
+2. **AstrBotDevs/AstrBot** - 18K+ stars - OpenClaw-Inspired Projects  
+3. **qwibitai/nanoclaw** - 16K+ stars - OpenClaw-Inspired Projects
+
