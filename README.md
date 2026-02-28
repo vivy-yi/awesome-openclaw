@@ -68,6 +68,7 @@
 
 ### 学习资源
 
+- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) - 真实使用案例集合 (30+ 场景)
 - [mengjian-github/openclaw101](https://github.com/mengjian-github/openclaw101) - OpenClaw 101: 7天入门教程
 - [openakita/openakita](https://github.com/openakita/openakita) - Open-source AI assistant framework with skills
 - [1186258278/OpenClawChineseTranslation](https://github.com/1186258278/OpenClawChineseTranslation) - Complete Chinese translation
@@ -222,7 +223,6 @@
 #### 社区技能集
 
 - [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) - Community skills collection
-- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) - Community use cases (11K+)
 - [natan89/awesome-openclaw-skills](https://github.com/natan89/awesome-openclaw-skills) - Community-driven skills (1700+)
 - [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) - Popular skills collection
 - [jdrhyne/agent-skills](https://github.com/jdrhyne/agent-skills) - Multi-agent framework skills
