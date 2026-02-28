@@ -68,11 +68,36 @@
 
 ### 学习资源
 
-- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) - 真实使用案例集合 (30+ 场景)
-- [EvoLinkAI/awesome-openclaw-usecases-moltbook](https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook) - Moltbook 社区真实案例 (70+ 场景)
-- [mengjian-github/openclaw101](https://github.com/mengjian-github/openclaw101) - OpenClaw 101: 7天入门教程
+#### GitHub 教程仓库
+
+| 仓库 | 描述 |
+|------|------|
+| [xianyu110/awesome-openclaw-tutorial](https://github.com/xianyu110/awesome-openclaw-tutorial) | 最全面的中文教程，涵盖安装、配置、实战案例和避坑指南 |
+| [yeasy/openclaw_guide](https://github.com/yeasy/openclaw_guide) | 入门和实战，从应用配置到实现原理 |
+| [marianasmall/openclaw-guide](https://github.com/marianasmall/openclaw-guide) | 安全优先的安装指南，含 SOUL.md/AGENTS.md 模板 |
+| [rfxlamia/openclaw-guideline](https://github.com/rfxlamia/openclaw-guideline) | CLAW 决策框架、安全模式、记忆架构 |
+| [JessAI2099/openclaw-guide](https://github.com/JessAI2099/openclaw-guide) | 深度实战指南，AI 自动化从入门到实战 |
+| [OpenClaw-Korea/openclaw-guide](https://github.com/OpenClaw-Korea/openclaw-guide) | 韩文完整指南，实战 60+ 技巧 |
+| [1186258278/OpenClawChineseTranslation](https://github.com/1186258278/OpenClawChineseTranslation) | Complete Chinese translation |
+
+#### 外部教程
+
+##### 视频教程
+
+- [B站 - OpenClaw 教程精选](https://www.bilibili.com/search?keyword=OpenClaw) - 搜索 OpenClaw 获取最新视频教程
+- [YouTube - OpenClaw Tutorial](https://www.youtube.com/results?search_query=OpenClaw+AI+agent) - 英文视频教程
+
+##### 文字教程
+
+- [DigitalOcean - How to Run OpenClaw](https://www.digitalocean.com/community/tutorials/how-to-run-openclaw) - 云平台部署教程
+- [Hostinger - How to Set Up OpenClaw](https://www.hostinger.com/tutorials/how-to-set-up-openclaw) - VPS 私有服务器部署
+
+#### 案例集合
+
+- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) - 真实使用案例 (30+ 场景)
+- [EvoLinkAI/awesome-openclaw-usecases-moltbook](https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook) - Moltbook 社区案例 (70+ 场景)
+- [mengjian-github/openclaw101](https://github.com/mengjian-github/openclaw101) - 7天入门教程
 - [openakita/openakita](https://github.com/openakita/openakita) - Open-source AI assistant framework with skills
-- [1186258278/OpenClawChineseTranslation](https://github.com/1186258278/OpenClawChineseTranslation) - Complete Chinese translation
 
 ---
 
@@ -300,6 +325,9 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
+| [moeru-ai/airi](https://github.com/moeru-ai/airi) | ![Stars](https://img.shields.io/github/stars/moeru-ai/airi) | AI agent framework (18K+ stars) |
+| [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) | ![Stars](https://img.shields.io/github/stars/agentscope-ai/CoPaw) | AgentScope-based OpenClaw variant (1.5K+ stars) |
+| [sseanliu/VisionClaw](https://github.com/sseanliu/VisionClaw) | ![Stars](https://img.shields.io/github/stars/sseanliu/VisionClaw) | Real-time AI for Meta Ray-Ban smart glasses (1.3K+ stars) |
 | [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) | ![Stars](https://img.shields.io/github/stars/clawd-meme/clawdbot) | Rebranded community fork |
 | [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) | ![Stars](https://img.shields.io/github/stars/skywalkerchn/clawdbot-augment) | Augmented architecture fork |
 
@@ -339,6 +367,7 @@
 
 ### 桌面与移动端
 
+- [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) - Free, local, open-source UI for multiple AI tools (17K+ stars)
 - [ValueCell-ai/ClawX](https://github.com/ValueCell-ai/ClawX) - Desktop app with GUI
 - [daxiondi/openclaw-desktop](https://github.com/daxiondi/openclaw-desktop) - Zero-dependency desktop (macOS/Windows/Linux)
 - [marshallrichards/ClawPhone](https://github.com/marshallrichards/ClawPhone) - Run on Android smartphones
@@ -365,7 +394,6 @@
 
 ### 相关项目
 
-- [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) - Free, local, open-source UI for multiple AI tools
 - [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) - AI Agent + Coding Agent desktop app
 - [ImGoodBai/goodable](https://github.com/ImGoodBai/goodable) - Local-first Desktop AI Workspace
 - [vstorm-co/pydantic-deepagents](https://github.com/vstorm-co/pydantic-deepagents) - Python Deep Agent framework
