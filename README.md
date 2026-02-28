@@ -88,73 +88,101 @@
 
 ### Docker & 容器
 
-- [willbullen/openclaw-docker](https://github.com/willbullen/openclaw-docker) - Production Docker Compose with security hardening
-- [khal3d/openclaw](https://github.com/khal3d/openclaw) - Docker & HELM deployment
-- [jchen0824/clawdbot-docker-deploy](https://github.com/jchen0824/clawdbot-docker-deploy) - One-script VPS deployment
-- [gravity182/clawdbot-docker](https://github.com/gravity182/clawdbot-docker) - Homelab Kubernetes deployment
-- [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) - Docker for Telegram/WhatsApp/Discord
-- [essamamdani/openclaw-coolify](https://github.com/essamamdani/openclaw-coolify) - Coolify deployment template
-- [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) - Containerized lightweight with memory & scheduled jobs
+| Project | Description |
+|---------|-------------|
+| [willbullen/openclaw-docker](https://github.com/willbullen/openclaw-docker) | Production Docker Compose with security hardening |
+| [khal3d/openclaw](https://github.com/khal3d/openclaw) | Docker & HELM deployment |
+| [jchen0824/clawdbot-docker-deploy](https://github.com/jchen0824/clawdbot-docker-deploy) | One-script VPS deployment |
+| [gravity182/clawdbot-docker](https://github.com/gravity182/clawdbot-docker) | Homelab Kubernetes deployment |
+| [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | Docker for Telegram/WhatsApp/Discord |
+| [essamamdani/openclaw-coolify](https://github.com/essamamdani/openclaw-coolify) | Coolify deployment template |
+| [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) | Containerized lightweight with memory & scheduled jobs |
+| [coollabsio/openclaw](https://github.com/coollabsio/openclaw) | Fully featured & automated Docker images |
+| [liam798/docker-openclawd](https://github.com/liam798/docker-openclawd) | 一键安装 Docker 部署方案 |
 
 ### 云平台
 
-- [cloudflare/moltworker](https://github.com/cloudflare/moltworker) - Run on Cloudflare Workers (official Cloudflare project)
-- [miantiao-me/cloud-claw](https://github.com/miantiao-me/cloud-claw) - One-click on Cloudflare Containers
-- [aws-samples/sample-OpenClaw-on-AWS-with-Bedrock](https://github.com/aws-samples/sample-OpenClaw-on-AWS-with-Bedrock) - AWS Bedrock integration
+| Project | Description |
+|---------|-------------|
+| [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | Run on Cloudflare Workers (official Cloudflare) |
+| [miantiao-me/cloud-claw](https://github.com/miantiao-me/cloud-claw) | One-click on Cloudflare Containers |
+| [aws-samples/sample-OpenClaw-on-AWS-with-Bedrock](https://github.com/aws-samples/sample-OpenClaw-on-AWS-with-Bedrock) | AWS Bedrock integration |
+| [digitalocean-labs/openclaw-appplatform](https://github.com/digitalocean-labs/openclaw-appplatform) | DigitalOcean App Platform |
+| [1Panel-dev/1Panel](https://github.com/1Panel-dev/1Panel) | VPS control panel with OpenClaw one-click deploy |
 
 ### 系统包管理
 
-- [openclaw/openclaw-ansible](https://github.com/openclaw/openclaw-ansible) - Automated hardened installation with Ansible
-- [openclaw/nix-openclaw](https://github.com/openclaw/nix-openclaw) - Nix package manager integration
-- [openclaw/homebrew-tap](https://github.com/openclaw/homebrew-tap) - Homebrew tap for macOS
+| Project | Description |
+|---------|-------------|
+| [openclaw/openclaw-ansible](https://github.com/openclaw/openclaw-ansible) | Automated hardened installation with Ansible |
+| [openclaw/nix-openclaw](https://github.com/openclaw/nix-openclaw) | Nix package manager integration |
+| [openclaw/homebrew-tap](https://github.com/openclaw/homebrew-tap) | Homebrew tap for macOS |
 
 ### 一键部署工具
 
-- [miaoxworld/OpenClawInstaller](https://github.com/miaoxworld/OpenClawInstaller) - Chinese one-click deployment tool
-- [caopulan/fix-my-claw](https://github.com/caopulan/fix-my-claw) - 24/7 watchdog with automatic recovery
+| Project | Description |
+|---------|-------------|
+| [miaoxworld/OpenClawInstaller](https://github.com/miaoxworld/OpenClawInstaller) | Chinese one-click deployment tool |
+| [caopulan/fix-my-claw](https://github.com/caopulan/fix-my-claw) | 24/7 watchdog with automatic recovery |
+| [getumbrel/umbrel](https://github.com/getumbrel/umbrel) | Home server OS with OpenClaw support |
 
 ### 平台集成
 
 #### 国际平台
 
-- **Telegram/Discord**: [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker)
-- **Slack**: [VizuaraAILabs/Slack-ClawdBot](https://github.com/VizuaraAILabs/Slack-ClawdBot)
-- **Windows**: [shanselman/openclaw-windows-hub](https://github.com/shanselman/openclaw-windows-hub)
-- **iOS Voice**: [chrisherold/clawdy](https://github.com/chrisherold/clawdy)
+| Platform | Project | Description |
+|---------|---------|-------------|
+| Telegram/Discord | [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | Docker setup |
+| Slack | [VizuaraAILabs/Slack-ClawdBot](https://github.com/VizuaraAILabs/Slack-ClawdBot) | Slack integration |
+| Windows | [shanselman/openclaw-windows-hub](https://github.com/shanselman/openclaw-windows-hub) | System Tray + PowerToys |
+| iOS Voice | [chrisherold/clawdy](https://github.com/chrisherold/clawdy) | Voice interface |
 
 #### 中国平台
 
-- [BytePioneer-AI/openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) - Feishu, DingTalk, QQ, WeChat 插件集合
-- [justlovemaki/OpenClaw-Docker-CN-IM](https://github.com/justlovemaki/OpenClaw-Docker-CN-IM) - Docker 多平台集成
-- **飞书/Lark**: [AlexAnys/feishu-openclaw](https://github.com/AlexAnys/feishu-openclaw), [m1heng/clawdbot-feishu](https://github.com/m1heng/clawdbot-feishu)
-- **钉钉**: [soimy/openclaw-channel-dingtalk](https://github.com/soimy/openclaw-channel-dingtalk), [DingTalk-Real-AI/dingtalk-moltbot-connector](https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector)
-- **QQ**: [constansino/openclaw_qq](https://github.com/constansino/openclaw_qq) (OneBot v11)
-- **微信**: [freestylefly/openclaw-wechat](https://github.com/freestylefly/openclaw-wechat), [11haonb/wecom-openclaw-plugin](https://github.com/11haonb/wecom-openclaw-plugin)
-- **轻量替代**: [openmozi/openmozi](https://github.com/openmozi/openmozi) - 轻量级支持中文 IM
+| Platform | Project | Description |
+|---------|---------|-------------|
+| Bundle | [BytePioneer-AI/openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) | Feishu, DingTalk, QQ, WeChat 插件集合 |
+| Bundle | [justlovemaki/OpenClaw-Docker-CN-IM](https://github.com/justlovemaki/OpenClaw-Docker-CN-IM) | Docker 多平台集成 |
+| 飞书/Lark | [AlexAnys/feishu-openclaw](https://github.com/AlexAnys/feishu-openclaw) | Feishu/Lark integration |
+| 飞书/Lark | [m1heng/clawdbot-feishu](https://github.com/m1heng/clawdbot-feishu) | Feishu integration |
+| 钉钉 | [soimy/openclaw-channel-dingtalk](https://github.com/soimy/openclaw-channel-dingtalk) | DingTalk channel |
+| 钉钉 | [DingTalk-Real-AI/dingtalk-moltbot-connector](https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector) | DingTalk with AI Card |
+| QQ | [constansino/openclaw_qq](https://github.com/constansino/openclaw_qq) | QQ (OneBot v11) |
+| 微信 | [freestylefly/openclaw-wechat](https://github.com/freestylefly/openclaw-wechat) | Personal WeChat |
+| 微信 | [11haonb/wecom-openclaw-plugin](https://github.com/11haonb/wecom-openclaw-plugin) | WeChat Work plugin |
+| 轻量 | [openmozi/openmozi](https://github.com/openmozi/openmozi) | 轻量级支持中文 IM |
 
 #### 韩国平台
 
-- [tornado1014/clawdbot-kakaotalk](https://github.com/tornado1014/clawdbot-kakaotalk) - KakaoTalk integration
+| Platform | Project | Description |
+|---------|---------|-------------|
+| KakaoTalk | [tornado1014/clawdbot-kakaotalk](https://github.com/tornado1014/clawdbot-kakaotalk) | KakaoTalk integration |
 
 ### 运维监控
 
 #### Web 管理界面
 
-- [ibelick/webclaw](https://github.com/ibelick/webclaw) - Fast web client for OpenClaw
-- [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) - Mission control for OpenClaw agents
-- [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) - Studio/IDE for OpenClaw
+| Project | Description |
+|---------|-------------|
+| [ibelick/webclaw](https://github.com/ibelick/webclaw) | Fast web client |
+| [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) | Mission control for agents |
+| [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) | Studio/IDE |
 
 #### 实时监控
 
-- [luccast/crabwalk](https://github.com/luccast/crabwalk) - Real-time companion monitor
-- [knostic/openclaw-telemetry](https://github.com/knostic/openclaw-telemetry) - Tool calls, LLM usage, lifecycle events
-- [abhi1693/openclaw-mission-control](https://github.com/abhi1693/openclaw-mission-control) - AI Agent Orchestration Dashboard
+| Project | Description |
+|---------|-------------|
+| [luccast/crabwalk](https://github.com/luccast/crabwalk) | Real-time companion monitor |
+| [knostic/openclaw-telemetry](https://github.com/knostic/openclaw-telemetry) | Tool calls, LLM usage, lifecycle events |
+| [abhi1693/openclaw-mission-control](https://github.com/abhi1693/openclaw-mission-control) | AI Agent Orchestration Dashboard |
 
 #### 成本追踪
 
-- [junhoyeo/tokscale](https://github.com/junhoyeo/tokscale) - Token usage tracking CLI
-- [bokonon23/clawdbot-cost-monitor](https://github.com/bokonon23/clawdbot-cost-monitor) - AI spending tracker
-- [mnfst/manifest](https://github.com/mnfst/manifest) - Take control of your OpenClaw costs
+| Project | Description |
+|---------|-------------|
+| [junhoyeo/tokscale](https://github.com/junhoyeo/tokscale) | Token usage tracking CLI |
+| [bokonon23/clawdbot-cost-monitor](https://github.com/bokonon23/clawdbot-cost-monitor) | AI spending tracker |
+| [mnfst/manifest](https://github.com/mnfst/manifest) | Cost control |
 
 ---
 
@@ -164,15 +192,17 @@
 
 ### 记忆系统
 
-- [NevaMind-AI/memU](https://github.com/NevaMind-AI/memU) - Memory for 24/7 proactive agents
-- [MemTensor/MemOS](https://github.com/MemTensor/MemOS) - AI memory OS for LLM and Agent systems
-- [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) - Perfect memory and recall
-- [oceanbase/powermem](https://github.com/oceanbase/powermem) - AI-powered long-term memory
-- [zilliztech/memsearch](https://github.com/zilliztech/memsearch) - Markdown-first memory system
-- [memovai/memov](https://github.com/memovai/memov) - Git-like & traceable memory for coding agents
-- [arosstale/openclaw-memory-template](https://github.com/arosstale/openclaw-memory-template) - Production-ready memory template
-- [Vel-Labs/molting-memory](https://github.com/Vel-Labs/molting-memory) - QDrant-based vector database
-- [nhevers/MoltBrain](https://github.com/nhevers/MoltBrain) - Long-term memory for MoltBook agents
+| Project | Description |
+|---------|-------------|
+| [NevaMind-AI/memU](https://github.com/NevaMind-AI/memU) | Memory for 24/7 proactive agents |
+| [MemTensor/MemOS](https://github.com/MemTensor/MemOS) | AI memory OS for LLM and Agent systems |
+| [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | Perfect memory and recall |
+| [oceanbase/powermem](https://github.com/oceanbase/powermem) | AI-powered long-term memory |
+| [zilliztech/memsearch](https://github.com/zilliztech/memsearch) | Markdown-first memory system |
+| [memovai/memov](https://github.com/memovai/memov) | Git-like & traceable memory for coding agents |
+| [arosstale/openclaw-memory-template](https://github.com/arosstale/openclaw-memory-template) | Production-ready memory template |
+| [Vel-Labs/molting-memory](https://github.com/Vel-Labs/molting-memory) | QDrant-based vector database |
+| [nhevers/MoltBrain](https://github.com/nhevers/MoltBrain) | Long-term memory for MoltBook agents |
 
 ### 技能库
 
@@ -200,12 +230,14 @@
 
 ### 安全加固
 
-- [seojoonkim/prompt-guard](https://github.com/seojoonkim/prompt-guard) - Advanced prompt injection defense
-- [NirDiamant/moltbook-agent-guard](https://github.com/NirDiamant/moltbook-agent-guard) - Real-time security for agents
-- [fadidevv/clawdguard](https://github.com/fadidevv/clawdguard) - Security hardening patch
-- [clawshell/clawshell](https://github.com/clawshell/clawshell) - Runtime Security Layer for PII & credentials
-- [SuperagenticAI/superclaw](https://github.com/SuperagenticAI/superclaw) - Red-Team AI Agents
-- [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce) - Security PoC (CVE-2026-25253)
+| Project | Description |
+|---------|-------------|
+| [seojoonkim/prompt-guard](https://github.com/seojoonkim/prompt-guard) | Advanced prompt injection defense |
+| [NirDiamant/moltbook-agent-guard](https://github.com/NirDiamant/moltbook-agent-guard) | Real-time security for agents |
+| [fadidevv/clawdguard](https://github.com/fadidevv/clawdguard) | Security hardening patch |
+| [clawshell/clawshell](https://github.com/clawshell/clawshell) | Runtime Security Layer for PII & credentials |
+| [SuperagenticAI/superclaw](https://github.com/SuperagenticAI/superclaw) | Red-Team AI Agents |
+| [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce) | Security PoC (CVE-2026-25253) |
 
 ---
 
