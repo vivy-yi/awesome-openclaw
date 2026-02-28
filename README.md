@@ -252,7 +252,6 @@
 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![Stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw) | Fast, small, autonomous AI assistant | Rust |
 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | ![Stars](https://img.shields.io/github/stars/HKUDS/nanobot) | Ultra-lightweight (~4K LOC) | Python |
 | [ysz/nanoClaw](https://github.com/ysz/nanoClaw) | ![Stars](https://img.shields.io/github/stars/ysz/nanoClaw) | Secure (~3K LOC), 6-layer security | Python |
-| [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | ![Stars](https://img.shields.io/github/stars/puretensor/hal-claude) | Minimal 200-line alternative | Python |
 | [ApeCodeAI/nanoclaw-py](https://github.com/ApeCodeAI/nanoclaw-py) | ![Stars](https://img.shields.io/github/stars/ApeCodeAI/nanoclaw-py) | ~500 LOC minimal Python | Python |
 | [voocel/openclaw-mini](https://github.com/voocel/openclaw-mini) | ![Stars](https://img.shields.io/github/stars/voocel/openclaw-mini) | Minimal core architecture | TypeScript |
 | [FoundDream/miniclawd](https://github.com/FoundDream/miniclawd) | ![Stars](https://img.shields.io/github/stars/FoundDream/miniclawd) | Lightweight TypeScript | TypeScript |
