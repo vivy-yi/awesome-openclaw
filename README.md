@@ -61,20 +61,6 @@
 | [openclaw/lobster](https://github.com/openclaw/lobster) | ![Stars](https://img.shields.io/github/stars/openclaw/lobster) | Workflow shell for pipelines and automations | TypeScript |
 | [openclaw/openclaw.ai](https://github.com/openclaw/openclaw.ai) | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw.ai) | Official website (molt.bot) | TypeScript |
 
-### 部署工具
-
-| Project | Stars | Description | Language |
-|---------|-------|-------------|----------|
-| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![Stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw) | Fast, small, autonomous AI assistant | Rust |
-| [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, Deployable AI assistant | Go |
-| [openclaw/clawgo](https://github.com/openclaw/clawgo) | ![Stars](https://img.shields.io/github/stars/openclaw/clawgo) | Clawd node implementation in Go | Go |
-
-### 模型集成
-
-| Project | Stars | Description |
-|---------|-------|-------------|
-| [badrisnarayanan/antigravity-claude-proxy](https://github.com/badrisnarayanan/antigravity-claude-proxy) | ![Stars](https://img.shields.io/github/stars/badrisnarayanan/antigravity-claude-proxy) | Proxy for Antigravity models in OpenClaw |
-
 ### 历史沿革
 
 - [Clawdbot Archive](https://github.com/clawdbot) - Original Clawdbot repositories and history
@@ -100,11 +86,6 @@
 | [coollabsio/openclaw](https://github.com/coollabsio/openclaw) | ![Stars](https://img.shields.io/github/stars/coollabsio/openclaw) | Fully featured & automated Docker images |
 | [liam798/docker-openclawd](https://github.com/liam798/docker-openclawd) | ![Stars](https://img.shields.io/github/stars/liam798/docker-openclawd) | 一键安装 Docker 部署方案 |
 | [essamamdani/openclaw-coolify](https://github.com/essamamdani/openclaw-coolify) | ![Stars](https://img.shields.io/github/stars/essamamdani/openclaw-coolify) | Coolify deployment template |
-| [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | ![Stars](https://img.shields.io/github/stars/hayka-pacha/clawdbot-in-docker) | Docker for Telegram/WhatsApp/Discord |
-| [willbullen/openclaw-docker](https://github.com/willbullen/openclaw-docker) | ![Stars](https://img.shields.io/github/stars/willbullen/openclaw-docker) | Production Docker Compose with security hardening |
-| [khal3d/openclaw](https://github.com/khal3d/openclaw) | ![Stars](https://img.shields.io/github/stars/khal3d/openclaw) | Docker & HELM deployment |
-| [jchen0824/clawdbot-docker-deploy](https://github.com/jchen0824/clawdbot-docker-deploy) | ![Stars](https://img.shields.io/github/stars/jchen0824/clawdbot-docker-deploy) | One-script VPS deployment |
-| [gravity182/clawdbot-docker](https://github.com/gravity182/clawdbot-docker) | ![Stars](https://img.shields.io/github/stars/gravity182/clawdbot-docker) | Homelab Kubernetes deployment |
 
 ### 云平台
 
@@ -149,7 +130,6 @@
 | Windows | [shanselman/openclaw-windows-hub](https://github.com/shanselman/openclaw-windows-hub) | ![Stars](https://img.shields.io/github/stars/shanselman/openclaw-windows-hub) | System Tray + PowerToys |
 | Slack | [VizuaraAILabs/Slack-ClawdBot](https://github.com/VizuaraAILabs/Slack-ClawdBot) | ![Stars](https://img.shields.io/github/stars/VizuaraAILabs/Slack-ClawdBot) | Slack integration |
 | iOS Voice | [chrisherold/clawdy](https://github.com/chrisherold/clawdy) | ![Stars](https://img.shields.io/github/stars/chrisherold/clawdy) | Voice interface |
-| Telegram/Discord | [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | ![Stars](https://img.shields.io/github/stars/hayka-pacha/clawdbot-in-docker) | Docker setup |
 
 #### 中国平台
 
@@ -277,6 +257,9 @@
 
 | Project | Stars | Description | Language |
 |---------|-------|-------------|----------|
+| [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, Deployable AI assistant | Go |
+| [openclaw/clawgo](https://github.com/openclaw/clawgo) | ![Stars](https://img.shields.io/github/stars/openclaw/clawgo) | Clawd node implementation in Go | Go |
+| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![Stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw) | Fast, small, autonomous AI assistant | Rust |
 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | ![Stars](https://img.shields.io/github/stars/HKUDS/nanobot) | Ultra-lightweight (~4K LOC) | Python |
 | [ysz/nanoClaw](https://github.com/ysz/nanoClaw) | ![Stars](https://img.shields.io/github/stars/ysz/nanoClaw) | Secure (~3K LOC), 6-layer security | Python |
 | [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | ![Stars](https://img.shields.io/github/stars/puretensor/hal-claude) | Minimal 200-line alternative | Python |
