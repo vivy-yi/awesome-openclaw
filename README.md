@@ -302,12 +302,7 @@
 |---------|-------|-------------|
 | [moeru-ai/airi](https://github.com/moeru-ai/airi) | ![Stars](https://img.shields.io/github/stars/moeru-ai/airi) | AI agent framework (18K+ stars) |
 | [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) | ![Stars](https://img.shields.io/github/stars/agentscope-ai/CoPaw) | AgentScope-based OpenClaw variant (1.5K+ stars) |
-| [neonone123/moltdirectory](https://github.com/neonone123/moltdirectory) | ![Stars](https://img.shields.io/github/stars/neonone123/moltdirectory) | Community directory |
-| [wy51ai/moltbotCNAPP](https://github.com/wy51ai/moltbotCNAPP) | ![Stars](https://img.shields.io/github/stars/wy51ai/moltbotCNAPP) | Chinese community app |
-| [appautomaton/openclaw-monorepo](https://github.com/appautomaton/openclaw-monorepo) | ![Stars](https://img.shields.io/github/stars/appautomaton/openclaw-monorepo) | Monorepo implementation |
-| [sugarforever/moltbot-warehouse](https://github.com/sugarforever/moltbot-warehouse) | ![Stars](https://img.shields.io/github/stars/sugarforever/moltbot-warehouse) | Community resource hub |
-| [askmojo/moltcraft](https://github.com/askmojo/moltcraft) | ![Stars](https://img.shields.io/github/stars/askmojo/moltcraft) | Community fork |
-| [ozbillwang/openclaw-in-docker](https://github.com/ozbillwang/openclaw-in-docker) | ![Stars](https://img.shields.io/github/stars/ozbillwang/openclaw-in-docker) | Docker container |
+| [sseanliu/VisionClaw](https://github.com/sseanliu/VisionClaw) | ![Stars](https://img.shields.io/github/stars/sseanliu/VisionClaw) | Real-time AI for Meta Ray-Ban smart glasses (1.3K+ stars) |
 | [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) | ![Stars](https://img.shields.io/github/stars/clawd-meme/clawdbot) | Rebranded community fork |
 | [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) | ![Stars](https://img.shields.io/github/stars/skywalkerchn/clawdbot-augment) | Augmented architecture fork |
 
