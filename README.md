@@ -126,6 +126,14 @@
 | [miaoxworld/OpenClawInstaller](https://github.com/miaoxworld/OpenClawInstaller) | ![Stars](https://img.shields.io/github/stars/miaoxworld/OpenClawInstaller) | Chinese one-click deployment tool |
 | [caopulan/fix-my-claw](https://github.com/caopulan/fix-my-claw) | ![Stars](https://img.shields.io/github/stars/caopulan/fix-my-claw) | 24/7 watchdog with automatic recovery |
 
+### 移动端 & 边缘部署
+
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [mithun50/openclaw-termux](https://github.com/mithun50/openclaw-termux) | ![Stars](https://img.shields.io/github/stars/mithun50/openclaw-termux) | Run on Android via Termux |
+| [AidanPark/openclaw-android](https://github.com/AidanPark/openclaw-android) | ![Stars](https://img.shields.io/github/stars/AidanPark/openclaw-android) | Run on Android with single command |
+| [joshavant/clawbox](https://github.com/joshavant/clawbox) | ![Stars](https://img.shields.io/github/stars/joshavant/clawbox) | OpenClaw-ready macOS VMs |
+
 ### 平台集成
 
 #### 国际平台
@@ -167,6 +175,9 @@
 | [ibelick/webclaw](https://github.com/ibelick/webclaw) | ![Stars](https://img.shields.io/github/stars/ibelick/webclaw) | Fast web client |
 | [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) | ![Stars](https://img.shields.io/github/stars/grp06/openclaw-studio) | Studio/IDE |
 | [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) | ![Stars](https://img.shields.io/github/stars/clawdeckio/clawdeck) | Mission control for agents |
+| [Curbob/LobsterBoard](https://github.com/Curbob/LobsterBoard) | ![Stars](https://img.shields.io/github/stars/Curbob/LobsterBoard) | Dashboard Builder - Create custom dashboards |
+| [carlosazaustre/tenacitOS](https://github.com/carlosazaustre/tenacitOS) | ![Stars](https://img.shields.io/github/stars/carlosazaustre/tenacitOS) | Mission Control Dashboard |
+| [madrzak/vidclaw](https://github.com/madrzak/vidclaw) | ![Stars](https://img.shields.io/github/stars/madrzak/vidclaw) | OpenClaw Dashboard |
 
 #### 实时监控
 
@@ -207,6 +218,7 @@
 | Project | Stars | Description |
 |---------|-------|-------------|
 | [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | ![Stars](https://img.shields.io/github/stars/HKUDS/ClawWork) | OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours |
+| [getclawe/clawe](https://github.com/getclawe/clawe) | ![Stars](https://img.shields.io/github/stars/getclawe/clawe) | Multi-agent coordination system: Trello for OpenClaw agents |
 
 ### 技能库
 
@@ -264,12 +276,15 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
+| [memovai/mimiclaw](https://github.com/memovai/mimiclaw) | ![Stars](https://img.shields.io/github/stars/memovai/mimiclaw) | Run on $5 chip - No OS, No Node.js, No Raspberry Pi |
 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | ![Stars](https://img.shields.io/github/stars/nearai/ironclaw) | Privacy-first Rust implementation with NEAR integration |
 | [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | ![Stars](https://img.shields.io/github/stars/BlockRunAI/ClawRouter) | Agent-native LLM router |
 | [snarktank/antfarm](https://github.com/snarktank/antfarm) | ![Stars](https://img.shields.io/github/stars/snarktank/antfarm) | Build your agent team with one command |
 | [SumeLabs/clawra](https://github.com/SumeLabs/clawra) | ![Stars](https://img.shields.io/github/stars/SumeLabs/clawra) | OpenClaw as your girlfriend |
 | [ComposioHQ/secure-openclaw](https://github.com/ComposioHQ/secure-openclaw) | ![Stars](https://img.shields.io/github/stars/ComposioHQ/secure-openclaw) | Secure self-hosted AI assistant |
 | [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | ![Stars](https://img.shields.io/github/stars/Gen-Verse/OpenClaw-RL) | Personalize OpenClaw by talking to it |
+| [rookiestar28/ComfyUI-OpenClaw](https://github.com/rookiestar28/ComfyUI-OpenClaw) | ![Stars](https://img.shields.io/github/stars/rookiestar28/ComfyUI-OpenClaw) | Your own personal AIGC Factory |
+| [andyhuo520/openclaw-assistant-mvp](https://github.com/andyhuo520/openclaw-assistant-mvp) | ![Stars](https://img.shields.io/github/stars/andyhuo520/openclaw-assistant-mvp) | Electron-based AI voice assistant with Live2D |
 
 ### Rust 实现
 
