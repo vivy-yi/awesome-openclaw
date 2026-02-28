@@ -61,7 +61,9 @@
 |---------|-------|-------------|----------|
 | [openclaw/openclaw](https://github.com/openclaw/openclaw)
 
-| [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, and Deployable AI assistant | Go | 20K+ stars, automation focused | | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw) | Main personal AI assistant - "The lobster way" | TypeScript |
+| [sipeed/picoclaw](https://github.com/sipeed/picoclaw)
+
+| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![Stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw) | Fast, small, fully autonomous AI assistant | Rust | 20K+ stars, deploy anywhere | | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, and Deployable AI assistant | Go | 20K+ stars, automation focused | | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw) | Main personal AI assistant - "The lobster way" | TypeScript |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | ![Stars](https://img.shields.io/github/stars/openclaw/clawhub) | Official skill registry with 700+ community skills | TypeScript |
 | [openclaw/skills](https://github.com/openclaw/skills) | ![Stars](https://img.shields.io/github/stars/openclaw/skills) | All versions of skills from clawdhub.com archived | TypeScript |
 | [openclaw/lobster](https://github.com/openclaw/lobster) | ![Stars](https://img.shields.io/github/stars/openclaw/lobster) | Workflow shell for composable pipelines and automations | TypeScript |
@@ -94,7 +96,9 @@ The OpenClaw ecosystem has inspired numerous alternative implementations, forks,
 | [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | ![Stars](https://img.shields.io/github/stars/puretensor/hal-claude) | Minimal 200-line OpenClaw alternative | Python | Claude Code CLI auth, multimodal, 571 tests |
 | [microclaw/microclaw](https://github.com/microclaw/microclaw)
 
-| [langbot-app/LangBot](https://github.com/langbot-app/LangBot) | ![Stars](https://img.shields.io/github/stars/langbot-app/LangBot) | Production-grade agentic IM bots | Python | 15K+ stars, Multi-platform | | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | Agentic AI assistant with full tool execution | Rust | 22+ tools, session resume, skills compatible |
+| [langbot-app/LangBot](https://github.com/langbot-app/LangBot)
+
+| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | ![Stars](https://img.shields.io/github/stars/RightNow-AI/openfang) | Open-source Agent Operating System | Rust | 4K+ stars, Agent OS | | ![Stars](https://img.shields.io/github/stars/langbot-app/LangBot) | Production-grade agentic IM bots | Python | 15K+ stars, Multi-platform | | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | Agentic AI assistant with full tool execution | Rust | 22+ tools, session resume, skills compatible |
 
 ### Lightweight Alternatives (~500-4,000 LOC)
 
@@ -445,7 +449,9 @@ Made with ❤️ by the OpenClaw community
 ## Deep Update - 2026-02-28
 
 ### New Projects Added
-1. **sipeed/picoclaw** (20K+ stars) - Core Projects - Tiny, Fast, Deployable AI assistant
-2. **langbot-app/LangBot** (15K+ stars) - OpenClaw-Inspired - Production-grade IM bots
-3. **refly-ai/refly** (6.8K stars) - Skills & Extensions - Agent skills builder
+1. **zeroclaw-labs/zeroclaw** (20K+ stars) - Core Projects - Fast, small, autonomous AI assistant (Rust)
+2. **sipeed/picoclaw** (20K+ stars) - Core Projects - Tiny, Fast, Deployable AI assistant (Go)
+3. **langbot-app/LangBot** (15K+ stars) - OpenClaw-Inspired - Production-grade IM bots (Python)
+4. **RightNow-AI/openfang** (4.2K stars) - OpenClaw-Inspired - Agent Operating System (Rust)
+5. **refly-ai/refly** (6.8K stars) - Skills & Extensions - Agent skills builder (TypeScript)
 
