@@ -179,6 +179,7 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
+| [mnfst/manifest](https://github.com/mnfst/manifest) | ![Stars](https://img.shields.io/github/stars/mnfst/manifest) | Take Control of Your OpenClaw Costs |
 | [junhoyeo/tokscale](https://github.com/junhoyeo/tokscale) | ![Stars](https://img.shields.io/github/stars/junhoyeo/tokscale) | Token usage tracking CLI |
 | [bokonon23/clawdbot-cost-monitor](https://github.com/bokonon23/clawdbot-cost-monitor) | ![Stars](https://img.shields.io/github/stars/bokonon23/clawdbot-cost-monitor) | AI spending tracker |
 
