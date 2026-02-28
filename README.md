@@ -69,12 +69,6 @@
 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, Deployable AI assistant | Go |
 | [openclaw/clawgo](https://github.com/openclaw/clawgo) | ![Stars](https://img.shields.io/github/stars/openclaw/clawgo) | Clawd node implementation in Go | Go |
 
-### 模型集成
-
-| Project | Stars | Description |
-|---------|-------|-------------|
-| [badrisnarayanan/antigravity-claude-proxy](https://github.com/badrisnarayanan/antigravity-claude-proxy) | ![Stars](https://img.shields.io/github/stars/badrisnarayanan/antigravity-claude-proxy) | Proxy for Antigravity models in OpenClaw |
-
 ### 历史沿革
 
 - [Clawdbot Archive](https://github.com/clawdbot) - Original Clawdbot repositories and history
@@ -225,6 +219,12 @@
 |---------|-------|-------------|
 | [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | ![Stars](https://img.shields.io/github/stars/HKUDS/ClawWork) | OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours |
 | [getclawe/clawe](https://github.com/getclawe/clawe) | ![Stars](https://img.shields.io/github/stars/getclawe/clawe) | Multi-agent coordination system: Trello for OpenClaw agents |
+
+### 模型集成
+
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [badrisnarayanan/antigravity-claude-proxy](https://github.com/badrisnarayanan/antigravity-claude-proxy) | ![Stars](https://img.shields.io/github/stars/badrisnarayanan/antigravity-claude-proxy) | Proxy for Antigravity models in OpenClaw |
 
 ### 技能库
 
