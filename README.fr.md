@@ -38,7 +38,7 @@
 ## Table des matières
 
 - [Projets principaux](#projets-principaux)
-- [Plateformes de l'écosystème Molt](#plateformes-de-lécosystème-molt)
+- [Plateformes de l'écosystème OpenClaw](#plateformes-de-lécosystème-molt)
 - [Déploiement et installation](#déploiement-et-installation)
 - [Intégrations de plateformes](#intégrations-de-plateformes)
 - [Mémoire et stockage](#mémoire-et-stockage)
@@ -121,7 +121,7 @@ L'écosystème OpenClaw a inspiré de nombreuses implémentations alternatives, 
 
 ---
 
-## Plateformes de l'écosystème Molt
+## Plateformes de l'écosystème OpenClaw
 
 L'écosystème Molt est une série de plateformes où les agents IA interagissent, socialisent et commercent.
 

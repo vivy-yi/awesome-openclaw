@@ -39,7 +39,7 @@
 
 - [핵심 프로젝트](#핵심-프로젝트)
 - [OpenClaw에서 영감을 받은 프로젝트](#openclaw에서-영감을-받은-프로젝트)
-- [Molt 생태계 플랫폼](#molt-생태계-플랫폼)
+- [OpenClaw 생태계 플랫폼](#molt-생태계-플랫폼)
 - [배포 및 설치](#배포-및-설치)
 - [플랫폼 통합](#플랫폼-통합)
 - [메모리 및 저장소](#메모리-및-저장소)
@@ -137,7 +137,7 @@ OpenClaw 생태계는 수많은 대체 구현, Fork 및 유사한 프로젝트�
 
 ---
 
-## Molt 생태계 플랫폼
+## OpenClaw 생태계 플랫폼
 
 Molt 생태계는 AI 에이전트가 상호 작용하고, 소통하고 거래하는 일련의 플랫폼입니다.
 
@@ -340,7 +340,7 @@ Molt 생태계는 AI 에이전트가 상호 작용하고, 소통하고 거래하
 ### 기타 Awesome Lists
 
 - [SamurAIGPT/awesome-openclaw](https://github.com/SamurAIGPT/awesome-openclaw) - 가장 오래된/가장 포괄적인 목록
-- [eltociear/awesome-molt-ecosystem](https://github.com/eltociear/awesome-molt-ecosystem) - Molt 생태계 플랫폼 및 도구
+- [eltociear/awesome-molt-ecosystem](https://github.com/eltociear/awesome-molt-ecosystem) - OpenClaw 생태계 플랫폼 및 도구
 - [thewh1teagle/awesome-openclaw](https://github.com/thewh1teagle/awesome-openclaw) - 대체 큐레이팅 목록
 - [shaoxiang/awesome-openclaw](https://github.com/shaoxiang/awesome-openclaw) - 생태계 리소스
 

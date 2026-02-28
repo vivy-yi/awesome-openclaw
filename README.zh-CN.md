@@ -39,7 +39,7 @@
 
 - [核心项目](#核心项目)
 - [OpenClaw 启发的项目](#openclaw-启发的项目)
-- [Molt 生态系统平台](#molt-生态系统平台)
+- [OpenClaw 生态系统平台](#molt-生态系统平台)
 - [部署与安装](#部署与安装)
 - [平台集成](#平台集成)
 - [记忆与存储](#记忆与存储)
@@ -178,7 +178,7 @@ OpenClaw 生态系统启发了众多替代实现、Fork 和类似项目。这些
 
 ---
 
-## Molt 生态系统平台
+## OpenClaw 生态系统平台
 
 Molt 生态系统是一系列平台，AI 代理在这些平台上交互、社交和交易。
 
@@ -381,7 +381,7 @@ Molt 生态系统是一系列平台，AI 代理在这些平台上交互、社交
 ### 其他 Awesome Lists
 
 - [SamurAIGPT/awesome-openclaw](https://github.com/SamurAIGPT/awesome-openclaw) - 最古老/最全面的综合列表
-- [eltociear/awesome-molt-ecosystem](https://github.com/eltociear/awesome-molt-ecosystem) - Molt 生态系统平台与工具
+- [eltociear/awesome-molt-ecosystem](https://github.com/eltociear/awesome-molt-ecosystem) - OpenClaw 生态系统平台与工具
 - [thewh1teagle/awesome-openclaw](https://github.com/thewh1teagle/awesome-openclaw) - 替代精选列表
 - [shaoxiang/awesome-openclaw](https://github.com/shaoxiang/awesome-openclaw) - 生态系统资源
 
