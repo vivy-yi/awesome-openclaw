@@ -69,6 +69,12 @@
 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, Deployable AI assistant | Go |
 | [openclaw/clawgo](https://github.com/openclaw/clawgo) | ![Stars](https://img.shields.io/github/stars/openclaw/clawgo) | Clawd node implementation in Go | Go |
 
+### 模型集成
+
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [badrisnarayanan/antigravity-claude-proxy](https://github.com/badrisnarayanan/antigravity-claude-proxy) | ![Stars](https://img.shields.io/github/stars/badrisnarayanan/antigravity-claude-proxy) | Proxy for Antigravity models in OpenClaw |
+
 ### 历史沿革
 
 - [Clawdbot Archive](https://github.com/clawdbot) - Original Clawdbot repositories and history
@@ -276,6 +282,7 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
+| [moeru-ai/airi](https://github.com/moeru-ai/airi) | ![Stars](https://img.shields.io/github/stars/moeru-ai/airi) | Self hosted AI companion with realtime voice chat, Minecraft, Factorio |
 | [memovai/mimiclaw](https://github.com/memovai/mimiclaw) | ![Stars](https://img.shields.io/github/stars/memovai/mimiclaw) | Run on $5 chip - No OS, No Node.js, No Raspberry Pi |
 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | ![Stars](https://img.shields.io/github/stars/nearai/ironclaw) | Privacy-first Rust implementation with NEAR integration |
 | [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | ![Stars](https://img.shields.io/github/stars/BlockRunAI/ClawRouter) | Agent-native LLM router |
