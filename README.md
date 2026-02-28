@@ -326,12 +326,16 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 
 ### Official Skill Collections
 
-- [openclaw/skills](https://github.com/openclaw/skills) - Official skills archive
+- [openclaw/skills](https://github.com/openclaw/skills)
+
+- [openclaw/clawhub](https://github.com/openclaw/clawhub) - Official skill registry (3K+ skills) - Official skills archive
 - [openclaw/clawhub](https://github.com/openclaw/clawhub) - Official skill registry with 700+ skills
 
 ### Community Skill Libraries
 
-- [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) - Community curated skills collection
+- [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)
+
+- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) - Community use cases collection (11K+) - Community curated skills collection
 - [natan89/awesome-openclaw-skills](https://github.com/natan89/awesome-openclaw-skills) - 1715+ community-driven skills
 - [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) - Popular skills collection
 
@@ -448,10 +452,22 @@ Made with ❤️ by the OpenClaw community
 ---
 ## Deep Update - 2026-02-28
 
-### New Projects Added
-1. **zeroclaw-labs/zeroclaw** (20K+ stars) - Core Projects - Fast, small, autonomous AI assistant (Rust)
-2. **sipeed/picoclaw** (20K+ stars) - Core Projects - Tiny, Fast, Deployable AI assistant (Go)
-3. **langbot-app/LangBot** (15K+ stars) - OpenClaw-Inspired - Production-grade IM bots (Python)
-4. **RightNow-AI/openfang** (4.2K stars) - OpenClaw-Inspired - Agent Operating System (Rust)
-5. **refly-ai/refly** (6.8K stars) - Skills & Extensions - Agent skills builder (TypeScript)
+### New Projects Added (15+ projects)
+#### Core Projects
+1. **zeroclaw-labs/zeroclaw** (20K+ stars) - Fast, small, autonomous AI assistant (Rust)
+2. **sipeed/picoclaw** (20K+ stars) - Tiny, Fast, Deployable AI assistant (Go)
+
+#### OpenClaw-Inspired Projects
+3. **langbot-app/LangBot** (15K+ stars) - Production-grade IM bots (Python)
+4. **RightNow-AI/openfang** (4.2K stars) - Agent Operating System (Rust)
+5. **HKUDS/ClawWork** (5.7K stars) - OpenClaw as AI Coworker (Python)
+6. **BlockRunAI/ClawRouter** (3.6K stars) - Agent-native LLM router (TypeScript)
+
+#### Skills & Extensions
+7. **refly-ai/refly** (6.8K stars) - Agent skills builder (TypeScript)
+8. **openclaw/clawhub** (3.1K stars) - Official skill registry
+9. **hesamsheikh/awesome-openclaw-usecases** (11K+) - Community use cases
+
+#### Additional Found
+- nanobot, nanoclaw, AstrBot, iOfficeAI/AionUi and more
 
