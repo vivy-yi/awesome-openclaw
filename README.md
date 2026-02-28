@@ -61,14 +61,6 @@
 | [openclaw/lobster](https://github.com/openclaw/lobster) | ![Stars](https://img.shields.io/github/stars/openclaw/lobster) | Workflow shell for pipelines and automations | TypeScript |
 | [openclaw/openclaw.ai](https://github.com/openclaw/openclaw.ai) | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw.ai) | Official website (molt.bot) | TypeScript |
 
-### 部署工具
-
-| Project | Stars | Description | Language |
-|---------|-------|-------------|----------|
-| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![Stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw) | Fast, small, autonomous AI assistant | Rust |
-| [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, Deployable AI assistant | Go |
-| [openclaw/clawgo](https://github.com/openclaw/clawgo) | ![Stars](https://img.shields.io/github/stars/openclaw/clawgo) | Clawd node implementation in Go | Go |
-
 ### 历史沿革
 
 - [Clawdbot Archive](https://github.com/clawdbot) - Original Clawdbot repositories and history
@@ -271,6 +263,9 @@
 
 | Project | Stars | Description | Language |
 |---------|-------|-------------|----------|
+| [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, Deployable AI assistant | Go |
+| [openclaw/clawgo](https://github.com/openclaw/clawgo) | ![Stars](https://img.shields.io/github/stars/openclaw/clawgo) | Clawd node implementation in Go | Go |
+| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![Stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw) | Fast, small, autonomous AI assistant | Rust |
 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | ![Stars](https://img.shields.io/github/stars/HKUDS/nanobot) | Ultra-lightweight (~4K LOC) | Python |
 | [ysz/nanoClaw](https://github.com/ysz/nanoClaw) | ![Stars](https://img.shields.io/github/stars/ysz/nanoClaw) | Secure (~3K LOC), 6-layer security | Python |
 | [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | ![Stars](https://img.shields.io/github/stars/puretensor/hal-claude) | Minimal 200-line alternative | Python |
