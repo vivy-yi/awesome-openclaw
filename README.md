@@ -59,7 +59,9 @@
 
 | Project | Stars | Description | Language |
 |---------|-------|-------------|----------|
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw) | Main personal AI assistant - "The lobster way" | TypeScript |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw)
+
+| [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, and Deployable AI assistant | Go | 20K+ stars, automation focused | | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw) | Main personal AI assistant - "The lobster way" | TypeScript |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | ![Stars](https://img.shields.io/github/stars/openclaw/clawhub) | Official skill registry with 700+ community skills | TypeScript |
 | [openclaw/skills](https://github.com/openclaw/skills) | ![Stars](https://img.shields.io/github/stars/openclaw/skills) | All versions of skills from clawdhub.com archived | TypeScript |
 | [openclaw/lobster](https://github.com/openclaw/lobster) | ![Stars](https://img.shields.io/github/stars/openclaw/lobster) | Workflow shell for composable pipelines and automations | TypeScript |
@@ -90,7 +92,9 @@ The OpenClaw ecosystem has inspired numerous alternative implementations, forks,
 | [puremachinery/carapace](https://github.com/puremachinery/carapace) | ![Stars](https://img.shields.io/github/stars/puremachinery/carapace) | Security-focused personal AI assistant | Rust | WASM plugins, OS sandboxing, AES-256 encryption |
 | [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | ![Stars](https://img.shields.io/github/stars/gavrielc/nanoclaw) | Container-isolated AI assistant | TypeScript | Apple containers/Docker, WhatsApp, Claude SDK |
 | [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | ![Stars](https://img.shields.io/github/stars/puretensor/hal-claude) | Minimal 200-line OpenClaw alternative | Python | Claude Code CLI auth, multimodal, 571 tests |
-| [microclaw/microclaw](https://github.com/microclaw/microclaw) | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | Agentic AI assistant with full tool execution | Rust | 22+ tools, session resume, skills compatible |
+| [microclaw/microclaw](https://github.com/microclaw/microclaw)
+
+| [langbot-app/LangBot](https://github.com/langbot-app/LangBot) | ![Stars](https://img.shields.io/github/stars/langbot-app/LangBot) | Production-grade agentic IM bots | Python | 15K+ stars, Multi-platform | | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | Agentic AI assistant with full tool execution | Rust | 22+ tools, session resume, skills compatible |
 
 ### Lightweight Alternatives (~500-4,000 LOC)
 
@@ -334,7 +338,8 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 - [runkids/skillshare](https://github.com/runkids/skillshare) - Sync skills across AI CLI tools
 - [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) - Manus-style persistent markdown planning
 - [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) - Obsidian agent skills
-- [lekt9/unbrowse-openclaw](https://github.com/lekt9/unbrowse-openclaw) - Self-learning API skill generator
+- [lekt9/unbrowse-openclaw](https://github.com/lekt9/unbrowse-openclaw)
+- [refly-ai/refly](https://github.com/refly-ai/refly) - Self-learning API skill generator
 
 ---
 
@@ -435,3 +440,12 @@ To the extent possible under law, the authors of this work have waived all copyr
 Made with ❤️ by the OpenClaw community
 
 </div>
+
+---
+## Deep Update - 2026-02-28
+
+### New Projects Added
+1. **sipeed/picoclaw** (20K+ stars) - Core Projects - Tiny, Fast, Deployable AI assistant
+2. **langbot-app/LangBot** (15K+ stars) - OpenClaw-Inspired - Production-grade IM bots
+3. **refly-ai/refly** (6.8K stars) - Skills & Extensions - Agent skills builder
+
