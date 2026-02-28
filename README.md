@@ -86,11 +86,6 @@
 | [coollabsio/openclaw](https://github.com/coollabsio/openclaw) | ![Stars](https://img.shields.io/github/stars/coollabsio/openclaw) | Fully featured & automated Docker images |
 | [liam798/docker-openclawd](https://github.com/liam798/docker-openclawd) | ![Stars](https://img.shields.io/github/stars/liam798/docker-openclawd) | 一键安装 Docker 部署方案 |
 | [essamamdani/openclaw-coolify](https://github.com/essamamdani/openclaw-coolify) | ![Stars](https://img.shields.io/github/stars/essamamdani/openclaw-coolify) | Coolify deployment template |
-| [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | ![Stars](https://img.shields.io/github/stars/hayka-pacha/clawdbot-in-docker) | Docker for Telegram/WhatsApp/Discord |
-| [willbullen/openclaw-docker](https://github.com/willbullen/openclaw-docker) | ![Stars](https://img.shields.io/github/stars/willbullen/openclaw-docker) | Production Docker Compose with security hardening |
-| [khal3d/openclaw](https://github.com/khal3d/openclaw) | ![Stars](https://img.shields.io/github/stars/khal3d/openclaw) | Docker & HELM deployment |
-| [jchen0824/clawdbot-docker-deploy](https://github.com/jchen0824/clawdbot-docker-deploy) | ![Stars](https://img.shields.io/github/stars/jchen0824/clawdbot-docker-deploy) | One-script VPS deployment |
-| [gravity182/clawdbot-docker](https://github.com/gravity182/clawdbot-docker) | ![Stars](https://img.shields.io/github/stars/gravity182/clawdbot-docker) | Homelab Kubernetes deployment |
 
 ### 云平台
 
@@ -135,7 +130,6 @@
 | Windows | [shanselman/openclaw-windows-hub](https://github.com/shanselman/openclaw-windows-hub) | ![Stars](https://img.shields.io/github/stars/shanselman/openclaw-windows-hub) | System Tray + PowerToys |
 | Slack | [VizuaraAILabs/Slack-ClawdBot](https://github.com/VizuaraAILabs/Slack-ClawdBot) | ![Stars](https://img.shields.io/github/stars/VizuaraAILabs/Slack-ClawdBot) | Slack integration |
 | iOS Voice | [chrisherold/clawdy](https://github.com/chrisherold/clawdy) | ![Stars](https://img.shields.io/github/stars/chrisherold/clawdy) | Voice interface |
-| Telegram/Discord | [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) | ![Stars](https://img.shields.io/github/stars/hayka-pacha/clawdbot-in-docker) | Docker setup |
 
 #### 中国平台
 
