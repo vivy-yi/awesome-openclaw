@@ -69,6 +69,7 @@
 ### 学习资源
 
 - [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) - 真实使用案例集合 (30+ 场景)
+- [EvoLinkAI/awesome-openclaw-usecases-moltbook](https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook) - Moltbook 社区真实案例 (70+ 场景)
 - [mengjian-github/openclaw101](https://github.com/mengjian-github/openclaw101) - OpenClaw 101: 7天入门教程
 - [openakita/openakita](https://github.com/openakita/openakita) - Open-source AI assistant framework with skills
 - [1186258278/OpenClawChineseTranslation](https://github.com/1186258278/OpenClawChineseTranslation) - Complete Chinese translation
