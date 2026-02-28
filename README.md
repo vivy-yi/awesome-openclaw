@@ -59,11 +59,9 @@
 
 | Project | Stars | Description | Language |
 |---------|-------|-------------|----------|
-| [openclaw/openclaw](https://github.com/openclaw/openclaw)
-
-| [sipeed/picoclaw](https://github.com/sipeed/picoclaw)
-
-| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![Stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw) | Fast, small, fully autonomous AI assistant | Rust | 20K+ stars, deploy anywhere | | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, and Deployable AI assistant | Go | 20K+ stars, automation focused | | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw) | Main personal AI assistant - "The lobster way" | TypeScript |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw) | Main personal AI assistant - "The lobster way" | TypeScript |
+| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![Stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw) | Fast, small, fully autonomous AI assistant | Rust | 20K+ stars, deploy anywhere |
+| [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![Stars](https://img.shields.io/github/stars/sipeed/picoclaw) | Tiny, Fast, and Deployable AI assistant | Go | 20K+ stars, automation focused |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | ![Stars](https://img.shields.io/github/stars/openclaw/clawhub) | Official skill registry with 700+ community skills | TypeScript |
 | [openclaw/skills](https://github.com/openclaw/skills) | ![Stars](https://img.shields.io/github/stars/openclaw/skills) | All versions of skills from clawdhub.com archived | TypeScript |
 | [openclaw/lobster](https://github.com/openclaw/lobster) | ![Stars](https://img.shields.io/github/stars/openclaw/lobster) | Workflow shell for composable pipelines and automations | TypeScript |
@@ -73,6 +71,11 @@
 | [openclaw/homebrew-tap](https://github.com/openclaw/homebrew-tap) | ![Stars](https://img.shields.io/github/stars/openclaw/homebrew-tap) | Homebrew tap for macOS installation | Shell |
 | [openclaw/openclaw.ai](https://github.com/openclaw/openclaw.ai) | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw.ai) | Official website (molt.bot) | TypeScript |
 | [openclaw/clawgo](https://github.com/openclaw/clawgo) | ![Stars](https://img.shields.io/github/stars/openclaw/clawgo) | Clawd node implementation in Go | Go |
+
+### Cloud & Edge Deployment
+
+- [cloudflare/moltworker](https://github.com/cloudflare/moltworker) - Run OpenClaw on Cloudflare Workers (official Cloudflare project)
+- [miantiao-me/cloud-claw](https://github.com/miantiao-me/cloud-claw) - One-click deployment on Cloudflare Containers
 
 ### Name History Resources
 
@@ -94,11 +97,23 @@ The OpenClaw ecosystem has inspired numerous alternative implementations, forks,
 | [puremachinery/carapace](https://github.com/puremachinery/carapace) | ![Stars](https://img.shields.io/github/stars/puremachinery/carapace) | Security-focused personal AI assistant | Rust | WASM plugins, OS sandboxing, AES-256 encryption |
 | [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | ![Stars](https://img.shields.io/github/stars/gavrielc/nanoclaw) | Container-isolated AI assistant | TypeScript | Apple containers/Docker, WhatsApp, Claude SDK |
 | [puretensor/hal-claude](https://github.com/puretensor/hal-claude) | ![Stars](https://img.shields.io/github/stars/puretensor/hal-claude) | Minimal 200-line OpenClaw alternative | Python | Claude Code CLI auth, multimodal, 571 tests |
-| [microclaw/microclaw](https://github.com/microclaw/microclaw)
+| [microclaw/microclaw](https://github.com/microclaw/microclaw) | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | Agentic AI assistant with full tool execution | Rust | 22+ tools, session resume, skills compatible |
+| [langbot-app/LangBot](https://github.com/langbot-app/LangBot) | ![Stars](https://img.shields.io/github/stars/langbot-app/LangBot) | Production-grade agentic IM bots | Python | 15K+ stars, Multi-platform |
+| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | ![Stars](https://img.shields.io/github/stars/RightNow-AI/openfang) | Open-source Agent Operating System | Rust | 4K+ stars, Agent OS |
+| [nearai/ironclaw](https://github.com/nearai/ironclaw) | ![Stars](https://img.shields.io/github/stars/nearai/ironclaw) | Privacy & security-focused implementation | Rust | Privacy-first, NEAR integration |
+| [moltis-org/moltis](https://github.com/moltis-org/moltis) | ![Stars](https://img.shields.io/github/stars/moltis-org/moltis) | Rust-native you can trust | Rust | Single binary, sandboxed, voice, memory, MCP |
+| [poco-ai/poco-agent](https://github.com/poco-ai/poco-agent) | ![Stars](https://img.shields.io/github/stars/poco-ai/poco-agent) | Beautiful alternative with sandboxed runtime | TypeScript | Nice Web UI, built-in IM, Claude Code agent |
+| [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) | ![Stars](https://img.shields.io/github/stars/AstrBotDevs/AstrBot) | Agentic IM Chatbot infrastructure | Python | Multi-IM platforms, plugins, AI features |
 
-| [langbot-app/LangBot](https://github.com/langbot-app/LangBot)
+### Lightweight Implementations (~200-4,000 LOC)
 
-| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | ![Stars](https://img.shields.io/github/stars/RightNow-AI/openfang) | Open-source Agent Operating System | Rust | 4K+ stars, Agent OS | | ![Stars](https://img.shields.io/github/stars/langbot-app/LangBot) | Production-grade agentic IM bots | Python | 15K+ stars, Multi-platform | | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | Agentic AI assistant with full tool execution | Rust | 22+ tools, session resume, skills compatible |
+- [nanobot](https://github.com/HKUDS/nanobot) - Multi-provider (OpenRouter, Anthropic, DeepSeek), vLLM support, Telegram/Discord/WhatsApp/Feishu
+- [nanoClaw](https://github.com/ysz/nanoClaw) - 6 security layers (FileGuard, ShellSandbox, PromptGuard), setup wizard
+- [ApeCodeAI/nanoclaw-py](https://github.com/ApeCodeAI/nanoclaw-py) - Minimal Python implementation (~500 LOC), Telegram
+- [voocel/openclaw-mini](https://github.com/voocel/openclaw-mini) - Minimal reproduction of OpenClaw core architecture
+- [FoundDream/miniclawd](https://github.com/FoundDream/miniclawd) - Lightweight TypeScript implementation
+- [htlin222/mini-claw](https://github.com/htlin222/mini-claw) - Minimalism-focused alternative
+- [hankl/microbot](https://github.com/hankl/microbot) - TypeScript/Node.js with Feishu integration
 
 ### Lightweight Alternatives (~500-4,000 LOC)
 
@@ -119,6 +134,10 @@ The OpenClaw ecosystem has inspired numerous alternative implementations, forks,
 
 - [Carapace](https://github.com/puremachinery/carapace) - WASM plugins, encrypted secrets
 - [MicroClaw](https://github.com/microclaw/microclaw) - Session persistence, context compaction, sub-agent delegation
+- [nearai/ironclaw](https://github.com/nearai/ironclaw) - Privacy & security-focused, NEAR integration
+- [moltis-org/moltis](https://github.com/moltis-org/moltis) - Single binary, sandboxed, voice, memory, MCP tools
+- [opencrust-org/opencrust](https://github.com/opencrust-org/opencrust) - Personal AI assistant platform, rewritten in Rust
+- [rexlunae/RustyClaw](https://github.com/rexlunae/RustyClaw) - Super-lightweight with improved security
 - [shimaenaga1123/rustclaw](https://github.com/shimaenaga1123/rustclaw) - Discord AI assistant, Docker sandboxed
 - [PhillipTh0mas/crabbot](https://github.com/PhillipTh0mas/crabbot) - Local-first, file-backed state
 
@@ -169,9 +188,10 @@ The OpenClaw ecosystem has inspired numerous alternative implementations, forks,
 
 | Language | Projects | Notable Examples |
 |----------|----------|------------------|
-| Python | 15+ | nanobot, nanoClaw, HAL Claude |
-| Rust | 4 | Carapace, MicroClaw, rustclaw |
-| TypeScript/Node.js | 3 | nanoclaw, microbot |
+| TypeScript/Node.js | 25+ | OpenClaw, ClawX, poco-agent |
+| Python | 20+ | nanobot, nanoClaw, LangBot, AstrBot |
+| Rust | 10+ | Carapace, MicroClaw, Moltis, IronClaw, OpenCrust |
+| Go | 3 | picoclaw, ClawGo |
 | Elixir | 1 | ClawdEx |
 | C# | 1 | Honeybadger |
 | PHP | 1 | OpenEntity |
@@ -234,10 +254,16 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 - [gravity182/clawdbot-docker](https://github.com/gravity182/clawdbot-docker) - Homelab Kubernetes deployment
 - [hayka-pacha/clawdbot-in-docker](https://github.com/hayka-pacha/clawdbot-in-docker) - Docker for Telegram/WhatsApp/Discord
 - [essamamdani/openclaw-coolify](https://github.com/essamamdani/openclaw-coolify) - Coolify deployment template
+- [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) - Containerized lightweight alternative with memory & scheduled jobs
 
 ### Cloud Platforms
 
 - [cloudflare/moltworker](https://github.com/cloudflare/moltworker) - Run OpenClaw on Cloudflare Workers (official Cloudflare project)
+- [miantiao-me/cloud-claw](https://github.com/miantiao-me/cloud-claw) - One-click on Cloudflare Containers
+
+### Edge & Serverless
+
+- [aws-samples/sample-OpenClaw-on-AWS-with-Bedrock](https://github.com/aws-samples/sample-OpenClaw-on-AWS-with-Bedrock) - AWS Bedrock integration
 
 ### Configuration Management
 
@@ -248,6 +274,7 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 ### Installation Tools
 
 - [miaoxworld/OpenClawInstaller](https://github.com/miaoxworld/OpenClawInstaller) - Chinese one-click deployment tool
+- [caopulan/fix-my-claw](https://github.com/caopulan/fix-my-claw) - 24/7 watchdog with automatic recovery
 
 ---
 
@@ -272,6 +299,7 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 **Feishu (Lark):**
 - [AlexAnys/feishu-openclaw](https://github.com/AlexAnys/feishu-openclaw) - Feishu/Lark integration
 - [m1heng/clawdbot-feishu](https://github.com/m1heng/clawdbot-feishu) - Feishu integration
+- [BytePioneer-AI/openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) - Chinese plugin bundle (Feishu, DingTalk, QQ, WeChat)
 
 **DingTalk:**
 - [soimy/openclaw-channel-dingtalk](https://github.com/soimy/openclaw-channel-dingtalk) - DingTalk channel
@@ -280,7 +308,8 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 **QQ:**
 - [constansino/openclaw_qq](https://github.com/constansino/openclaw_qq) - QQ (OneBot v11)
 
-**WeChat Work (WeCom):**
+**WeChat:**
+- [freestylefly/openclaw-wechat](https://github.com/freestylefly/openclaw-wechat) - Personal WeChat integration
 - [11haonb/wecom-openclaw-plugin](https://github.com/11haonb/wecom-openclaw-plugin) - WeChat Work plugin
 
 ### Korean Platforms
@@ -297,6 +326,9 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 - [MemTensor/MemOS](https://github.com/MemTensor/MemOS) - AI memory OS for LLM and Agent systems
 - [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) - Perfect memory and recall
 - [oceanbase/powermem](https://github.com/oceanbase/powermem) - AI-powered long-term memory
+- [zilliztech/memsearch](https://github.com/zilliztech/memsearch) - Markdown-first memory system for AI agents
+- [memovai/memov](https://github.com/memovai/memov) - Git-like & traceable memory for coding agents
+- [arosstale/openclaw-memory-template](https://github.com/arosstale/openclaw-memory-template) - Production-ready memory template
 - [Vel-Labs/molting-memory](https://github.com/Vel-Labs/molting-memory) - QDrant-based vector database
 - [nhevers/MoltBrain](https://github.com/nhevers/MoltBrain) - Long-term memory layer for MoltBook agents
 
@@ -310,15 +342,19 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 - [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) - Mission control for OpenClaw agents
 - [crshdn/mission-control](https://github.com/crshdn/mission-control) - AI Agent Orchestration Dashboard
 - [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) - Studio/IDE for OpenClaw
+- [abhi1693/openclaw-mission-control](https://github.com/abhi1693/openclaw-mission-control) - AI Agent Orchestration Dashboard
+- [zhixianio/clawpal](https://github.com/zhixianio/clawpal) - Visual interface for managing agents, models, configs
 
 ### Monitoring & Observability
 
 - [luccast/crabwalk](https://github.com/luccast/crabwalk) - Real-time companion monitor for OpenClaw agents
+- [knostic/openclaw-telemetry](https://github.com/knostic/openclaw-telemetry) - Tool calls, LLM usage, agent lifecycle events
 
 ### Cost Tracking
 
 - [junhoyeo/tokscale](https://github.com/junhoyeo/tokscale) - Token usage tracking CLI
 - [bokonon23/clawdbot-cost-monitor](https://github.com/bokonon23/clawdbot-cost-monitor) - AI spending tracker in real-time
+- [mnfst/manifest](https://github.com/mnfst/manifest) - Take control of your OpenClaw costs
 
 ---
 
@@ -326,37 +362,61 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 
 ### Official Skill Collections
 
-- [openclaw/skills](https://github.com/openclaw/skills)
-
-- [openclaw/clawhub](https://github.com/openclaw/clawhub) - Official skill registry (3K+ skills) - Official skills archive
+- [openclaw/skills](https://github.com/openclaw/skills) - All versions of skills archived
 - [openclaw/clawhub](https://github.com/openclaw/clawhub) - Official skill registry with 700+ skills
 
 ### Community Skill Libraries
 
-- [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)
-
-- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) - Community use cases collection (11K+) - Community curated skills collection
+- [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) - Community skills collection
+- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) - Community use cases collection (11K+)
 - [natan89/awesome-openclaw-skills](https://github.com/natan89/awesome-openclaw-skills) - 1715+ community-driven skills
 - [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) - Popular skills collection
+- [jdrhyne/agent-skills](https://github.com/jdrhyne/agent-skills) - Multi-agent framework skills
 
 ### Specialized Skills
 
 - [BankrBot/openclaw-skills](https://github.com/BankrBot/openclaw-skills) - Trading & DeFi focused skills
-- [jdrhyne/agent-skills](https://github.com/jdrhyne/agent-skills) - Multi-agent framework skills
 - [runkids/skillshare](https://github.com/runkids/skillshare) - Sync skills across AI CLI tools
 - [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) - Manus-style persistent markdown planning
 - [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) - Obsidian agent skills
-- [lekt9/unbrowse-openclaw](https://github.com/lekt9/unbrowse-openclaw)
+- [lekt9/unbrowse-openclaw](https://github.com/lekt9/unbrowse-openclaw) - Browser automation skill
 - [refly-ai/refly](https://github.com/refly-ai/refly) - Self-learning API skill generator
+- [win4r/team-tasks](https://github.com/win4r/team-tasks) - Multi-agent pipeline coordination
+
+### Skill Development Tools
+
+- [unbrowse-ai/unbrowse](https://github.com/unbrowse-ai/unbrowse) - Agent-native browser skill, auto-discovers APIs
+- [lekt9/openclaw-foundry](https://github.com/lekt9/openclaw-foundry) - Self-writing meta-extension for OpenClaw
 
 ---
 
 ## Enterprise Solutions
 
+### Management & Orchestration
+
 - [archestra-ai/archestra](https://github.com/archestra-ai/archestra) - OpenClaw for Enterprise with RBAC, MCP, A2A
+- [abhi1693/openclaw-mission-control](https://github.com/abhi1693/openclaw-mission-control) - AI Agent Orchestration Dashboard
+- [zhixianio/clawpal](https://github.com/zhixianio/clawpal) - Visual interface for agents, models, configs
+
+### Security & Compliance
+
 - [backbay-labs/clawdstrike](https://github.com/backbay-labs/clawdstrike) - Swarm Detection & Response (SDR) platform
 - [knostic/openclaw-detect](https://github.com/knostic/openclaw-detect) - MDM detection scripts for OpenClaw
 - [TheSethRose/Clawdbot-Security-Check](https://github.com/TheSethRose/Clawdbot-Security-Check) - Security audit skill
+
+### Desktop & Mobile
+
+- [ValueCell-ai/ClawX](https://github.com/ValueCell-ai/ClawX) - Desktop app with GUI for OpenClaw agents
+- [daxiondi/openclaw-desktop](https://github.com/daxiondi/openclaw-desktop) - Zero-dependency desktop app (macOS/Windows/Linux)
+- [marshallrichards/ClawPhone](https://github.com/marshallrichards/ClawPhone) - Run OpenClaw on Android smartphones
+- [joshavant/clawbox](https://github.com/joshavant/clawbox) - OpenClaw-ready macOS VMs
+
+### Developer Tools
+
+- [OpenKnots/openclaw-extension](https://github.com/OpenKnots/openclaw-extension) - VS Code Extension for controlling OpenClaw
+- [unbrowse-ai/unbrowse](https://github.com/unbrowse-ai/unbrowse) - Agent-native browser skill, auto-discovers APIs
+- [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) - Agent-native LLM router
+- [lekt9/openclaw-foundry](https://github.com/lekt9/openclaw-foundry) - Self-writing meta-extension
 
 ---
 
@@ -369,6 +429,7 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 - [bbylw/clawdbot-cn](https://github.com/bbylw/clawdbot-cn) - Chinese Clawdbot version
 - [lllooollpp/clawdbot-cn](https://github.com/lllooollpp/clawdbot-cn) - Electron desktop Chinese version
 - [mengjian-github/xiaomo-starter-kit](https://github.com/mengjian-github/xiaomo-starter-kit) - Chinese AI assistant template
+- [openmozi/openmozi](https://github.com/openmozi/openmozi) - Lightweight clawdbot with Chinese IM support
 
 ### Korean (한국어)
 
@@ -384,8 +445,11 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 
 ### Defense & Protection
 
-- [seojoonkim/prompt-guard](https://github.com/seojoonkim/prompt-guard) - Prompt injection defense system
+- [seojoonkim/prompt-guard](https://github.com/seojoonkim/prompt-guard) - Advanced prompt injection defense system
 - [NirDiamant/moltbook-agent-guard](https://github.com/NirDiamant/moltbook-agent-guard) - Real-time security for agents
+- [fadidevv/clawdguard](https://github.com/fadidevv/clawdguard) - Security hardening patch, detects/fixes exposed gateways
+- [clawshell/clawshell](https://github.com/clawshell/clawshell) - Runtime Security Layer for PII & credential protection
+- [SuperagenticAI/superclaw](https://github.com/SuperagenticAI/superclaw) - Red-Team AI Agents Before They Red-Team You
 
 ---
 
@@ -402,6 +466,7 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 
 - [mergisi/awesome-openclaw-agents](https://github.com/mergisi/awesome-openclaw-agents) - AI agent templates
 - [ThisIsJeron/awesome-openclaw-plugins](https://github.com/ThisIsJeron/awesome-openclaw-plugins) - Plugin collection
+- [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) - Top OpenClaw skills collection
 
 ### Alternative & Related Projects
 
@@ -411,6 +476,11 @@ The Molt ecosystem is a collection of platforms where AI agents interact, social
 - [ImGoodBai/goodable](https://github.com/ImGoodBai/goodable) - Local-first Desktop AI Workspace
 - [vstorm-co/pydantic-deepagents](https://github.com/vstorm-co/pydantic-deepagents) - Python Deep Agent framework
 - [wecode-ai/Wegent](https://github.com/wecode-ai/Wegent) - AI-native operating system for agent teams
+
+### Learning & Resources
+
+- [mengjian-github/openclaw101](https://github.com/mengjian-github/openclaw101) - OpenClaw 101: 7-day tutorial from zero
+- [openakita/openakita](https://github.com/openakita/openakita) - Open-source AI assistant framework with skills
 
 ---
 
@@ -452,22 +522,67 @@ Made with ❤️ by the OpenClaw community
 ---
 ## Deep Update - 2026-02-28
 
-### New Projects Added (15+ projects)
-#### Core Projects
-1. **zeroclaw-labs/zeroclaw** (20K+ stars) - Fast, small, autonomous AI assistant (Rust)
-2. **sipeed/picoclaw** (20K+ stars) - Tiny, Fast, Deployable AI assistant (Go)
+### New Projects Added (60+ projects)
 
-#### OpenClaw-Inspired Projects
-3. **langbot-app/LangBot** (15K+ stars) - Production-grade IM bots (Python)
-4. **RightNow-AI/openfang** (4.2K stars) - Agent Operating System (Rust)
-5. **HKUDS/ClawWork** (5.7K stars) - OpenClaw as AI Coworker (Python)
-6. **BlockRunAI/ClawRouter** (3.6K stars) - Agent-native LLM router (TypeScript)
+#### Core & Cloud Deployment
+- **cloudflare/moltworker** - Official Cloudflare Workers deployment
+- **miantiao-me/cloud-claw** - One-click Cloudflare Containers
+- **aws-samples/sample-OpenClaw-on-AWS-with-Bedrock** - AWS Bedrock integration
 
-#### Skills & Extensions
-7. **refly-ai/refly** (6.8K stars) - Agent skills builder (TypeScript)
-8. **openclaw/clawhub** (3.1K stars) - Official skill registry
-9. **hesamsheikh/awesome-openclaw-usecases** (11K+) - Community use cases
+#### Lightweight Alternatives (Python)
+- **HKUDS/nanobot** - Ultra-lightweight (~4K LOC), multi-provider LLM
+- **ApeCodeAI/nanoclaw-py** - ~500 LOC minimal Python implementation
+- **voocel/openclaw-mini** - Minimal OpenClaw core architecture
+- **FoundDream/miniclawd** - Lightweight TypeScript build
 
-#### Additional Found
-- nanobot, nanoclaw, AstrBot, iOfficeAI/AionUi and more
+#### Rust Implementations
+- **puremachinery/carapace** - Security-focused with WASM plugins
+- **nearai/ironclaw** - Privacy & security-focused
+- **moltis-org/moltis** - Single binary, sandboxed, voice, memory, MCP
+- **opencrust-org/opencrust** - Rewritten in Rust from OpenClaw
+- **rexlunae/RustyClaw** - Super-lightweight with improved security
+
+#### UI & Desktop
+- **ValueCell-ai/ClawX** - Desktop GUI app for OpenClaw
+- **daxiondi/openclaw-desktop** - Zero-dependency desktop (macOS/Windows/Linux)
+- **marshallrichards/ClawPhone** - Run on Android smartphones
+- **joshavant/clawbox** - OpenClaw-ready macOS VMs
+- **zhixianio/clawpal** - Visual agent management interface
+
+#### Developer Tools
+- **OpenKnots/openclaw-extension** - VS Code Extension
+- **unbrowse-ai/unbrowse** - Agent-native browser skill, auto-discovers APIs
+- **BlockRunAI/ClawRouter** - Agent-native LLM router
+- **lekt9/openclaw-foundry** - Self-writing meta-extension
+
+#### Memory & Storage
+- **zilliztech/memsearch** - Markdown-first memory system
+- **memovai/memov** - Git-like traceable memory for coding agents
+- **arosstale/openclaw-memory-template** - Production-ready template
+- **NevaMind-AI/memU** - Memory for 24/7 proactive agents
+- **MemTensor/MemOS** - AI memory OS
+
+#### Security
+- **seojoonkim/prompt-guard** - Prompt injection defense
+- **fadidevv/clawdguard** - Security hardening patch
+- **clawshell/clawshell** - Runtime Security Layer
+- **SuperagenticAI/superclaw** - Red-Team AI Agents
+
+#### Monitoring & Observability
+- **luccast/crabwalk** - Real-time companion monitor
+- **knostic/openclaw-telemetry** - Tool calls, LLM usage events
+- **abhi1693/openclaw-mission-control** - AI Agent Orchestration
+- **mnfst/manifest** - Cost control for OpenClaw
+
+#### Chinese IM Platforms
+- **BytePioneer-AI/openclaw-china** - Bundle (Feishu, DingTalk, QQ, WeChat)
+- **openmozi/openmozi** - Lightweight with Chinese IM support
+- **freestylefly/openclaw-wechat** - Personal WeChat integration
+- **constansino/openclaw_qq** - QQ (OneBot v11)
+
+#### Enterprise & Specialized
+- **poco-ai/poco-agent** - Beautiful alternative with sandboxed runtime
+- **AstrBotDevs/AstrBot** - Agentic IM Chatbot infrastructure
+- **caopulan/fix-my-claw** - 24/7 watchdog with auto-recovery
+- **win4r/team-tasks** - Multi-agent pipeline coordination
 
