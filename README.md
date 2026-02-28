@@ -78,6 +78,7 @@
 | [rfxlamia/openclaw-guideline](https://github.com/rfxlamia/openclaw-guideline) | CLAW 决策框架、安全模式、记忆架构 |
 | [JessAI2099/openclaw-guide](https://github.com/JessAI2099/openclaw-guide) | 深度实战指南，AI 自动化从入门到实战 |
 | [OpenClaw-Korea/openclaw-guide](https://github.com/OpenClaw-Korea/openclaw-guide) | 韩文完整指南，实战 60+ 技巧 |
+| [1186258278/OpenClawChineseTranslation](https://github.com/1186258278/OpenClawChineseTranslation) | Complete Chinese translation |
 
 #### 外部教程
 
@@ -96,6 +97,7 @@
 - [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) - 真实使用案例 (30+ 场景)
 - [EvoLinkAI/awesome-openclaw-usecases-moltbook](https://github.com/EvoLinkAI/awesome-openclaw-usecases-moltbook) - Moltbook 社区案例 (70+ 场景)
 - [mengjian-github/openclaw101](https://github.com/mengjian-github/openclaw101) - 7天入门教程
+- [openakita/openakita](https://github.com/openakita/openakita) - Open-source AI assistant framework with skills
 
 ---
 
