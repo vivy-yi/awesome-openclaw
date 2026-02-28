@@ -274,36 +274,36 @@
 
 ### Rust 实现
 
-- [puremachinery/carapace](https://github.com/puremachinery/carapace) - Security-focused with WASM plugins
-- [microclaw/microclaw](https://github.com/microclaw/microclaw) - Session persistence, 22+ tools
-- [moltis-org/moltis](https://github.com/moltis-org/moltis) - Single binary, sandboxed, voice, memory, MCP
-- [opencrust-org/opencrust](https://github.com/opencrust-org/opencrust) - Rewritten in Rust
-- [rexlunae/RustyClaw](https://github.com/rexlunae/RustyClaw) - Super-lightweight with improved security
-- [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) - Agent Operating System
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | ![Stars](https://img.shields.io/github/stars/RightNow-AI/openfang) | Agent Operating System |
+| [moltis-org/moltis](https://github.com/moltis-org/moltis) | ![Stars](https://img.shields.io/github/stars/moltis-org/moltis) | Single binary, sandboxed, voice, memory, MCP |
+| [microclaw/microclaw](https://github.com/microclaw/microclaw) | ![Stars](https://img.shields.io/github/stars/microclaw/microclaw) | Session persistence, 22+ tools |
+| [puremachinery/carapace](https://github.com/puremachinery/carapace) | ![Stars](https://img.shields.io/github/stars/puremachinery/carapace) | Security-focused with WASM plugins |
 
 ### 其他语言实现
 
-- [langbot-app/LangBot](https://github.com/langbot-app/LangBot) - Production-grade IM bots (Python)
-- [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) - Agentic IM Chatbot infrastructure (Python)
-- [poco-ai/poco-agent](https://github.com/poco-ai/poco-agent) - Beautiful alternative with sandboxed runtime
-- [dyzdyz010/clawd_ex](https://github.com/dyzdyz010/clawd_ex) - Elixir/OTP fault tolerance
-- [bsakel/honeybadger](https://github.com/bsakel/honeybadger) - C# minimal bot
-- [hmennen90/open-entity](https://github.com/hmennen90/open-entity) - PHP/Laravel autonomous entity
-- [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) - Container-isolated (TypeScript)
+| Project | Stars | Description | Language |
+|---------|-------|-------------|----------|
+| [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) | ![Stars](https://img.shields.io/github/stars/AstrBotDevs/AstrBot) | Agentic IM Chatbot infrastructure | Python |
+| [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | ![Stars](https://img.shields.io/github/stars/gavrielc/nanoclaw) | Container-isolated | TypeScript |
+| [langbot-app/LangBot](https://github.com/langbot-app/LangBot) | ![Stars](https://img.shields.io/github/stars/langbot-app/LangBot) | Production-grade IM bots | Python |
+| [poco-ai/poco-agent](https://github.com/poco-ai/poco-agent) | ![Stars](https://img.shields.io/github/stars/poco-ai/poco-agent) | Beautiful alternative with sandboxed runtime | Python |
 
 ### 开发者工具
 
-- [OpenKnots/openclaw-extension](https://github.com/OpenKnots/openclaw-extension) - VS Code Extension
-- [unbrowse-ai/unbrowse](https://github.com/unbrowse-ai/unbrowse) - Agent-native browser, auto-discovers APIs
-- [lekt9/openclaw-foundry](https://github.com/lekt9/openclaw-foundry) - Self-writing meta-extension
-- [refly-ai/refly](https://github.com/refly-ai/refly) - Self-learning API skill generator
-- [win4r/claude-code-clawdbot-skill](https://github.com/win4r/claude-code-clawdbot-skill) - Claude Code integration
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [refly-ai/refly](https://github.com/refly-ai/refly) | ![Stars](https://img.shields.io/github/stars/refly-ai/refly) | Self-learning API skill generator |
+| [lekt9/openclaw-foundry](https://github.com/lekt9/openclaw-foundry) | ![Stars](https://img.shields.io/github/stars/lekt9/openclaw-foundry) | Self-writing meta-extension |
+| [unbrowse-ai/unbrowse](https://github.com/unbrowse-ai/unbrowse) | ![Stars](https://img.shields.io/github/stars/unbrowse-ai/unbrowse) | Agent-native browser, auto-discovers APIs |
 
 ### 分支与变体
 
-- [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) - Rebranded community fork
-- [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) - Augmented architecture fork
-- [KinGP5471/clawdbot-feishu-plugin](https://github.com/KinGP5471/clawdbot-feishu-plugin) - Feishu/Lark channel plugin
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) | ![Stars](https://img.shields.io/github/stars/clawd-meme/clawdbot) | Rebranded community fork |
+| [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) | ![Stars](https://img.shields.io/github/stars/skywalkerchn/clawdbot-augment) | Augmented architecture fork |
 
 ---
 
