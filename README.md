@@ -300,6 +300,14 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
+| [moeru-ai/airi](https://github.com/moeru-ai/airi) | ![Stars](https://img.shields.io/github/stars/moeru-ai/airi) | AI agent framework (18K+ stars) |
+| [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) | ![Stars](https://img.shields.io/github/stars/agentscope-ai/CoPaw) | AgentScope-based OpenClaw variant (1.5K+ stars) |
+| [neonone123/moltdirectory](https://github.com/neonone123/moltdirectory) | ![Stars](https://img.shields.io/github/stars/neonone123/moltdirectory) | Community directory |
+| [wy51ai/moltbotCNAPP](https://github.com/wy51ai/moltbotCNAPP) | ![Stars](https://img.shields.io/github/stars/wy51ai/moltbotCNAPP) | Chinese community app |
+| [appautomaton/openclaw-monorepo](https://github.com/appautomaton/openclaw-monorepo) | ![Stars](https://img.shields.io/github/stars/appautomaton/openclaw-monorepo) | Monorepo implementation |
+| [sugarforever/moltbot-warehouse](https://github.com/sugarforever/moltbot-warehouse) | ![Stars](https://img.shields.io/github/stars/sugarforever/moltbot-warehouse) | Community resource hub |
+| [askmojo/moltcraft](https://github.com/askmojo/moltcraft) | ![Stars](https://img.shields.io/github/stars/askmojo/moltcraft) | Community fork |
+| [ozbillwang/openclaw-in-docker](https://github.com/ozbillwang/openclaw-in-docker) | ![Stars](https://img.shields.io/github/stars/ozbillwang/openclaw-in-docker) | Docker container |
 | [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) | ![Stars](https://img.shields.io/github/stars/clawd-meme/clawdbot) | Rebranded community fork |
 | [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) | ![Stars](https://img.shields.io/github/stars/skywalkerchn/clawdbot-augment) | Augmented architecture fork |
 
@@ -339,6 +347,7 @@
 
 ### 桌面与移动端
 
+- [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) - Free, local, open-source UI for multiple AI tools (17K+ stars)
 - [ValueCell-ai/ClawX](https://github.com/ValueCell-ai/ClawX) - Desktop app with GUI
 - [daxiondi/openclaw-desktop](https://github.com/daxiondi/openclaw-desktop) - Zero-dependency desktop (macOS/Windows/Linux)
 - [marshallrichards/ClawPhone](https://github.com/marshallrichards/ClawPhone) - Run on Android smartphones
@@ -365,7 +374,6 @@
 
 ### 相关项目
 
-- [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) - Free, local, open-source UI for multiple AI tools
 - [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) - AI Agent + Coding Agent desktop app
 - [ImGoodBai/goodable](https://github.com/ImGoodBai/goodable) - Local-first Desktop AI Workspace
 - [vstorm-co/pydantic-deepagents](https://github.com/vstorm-co/pydantic-deepagents) - Python Deep Agent framework
