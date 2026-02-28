@@ -203,6 +203,12 @@
 | [arosstale/openclaw-memory-template](https://github.com/arosstale/openclaw-memory-template) | ![Stars](https://img.shields.io/github/stars/arosstale/openclaw-memory-template) | Production-ready memory template |
 | [Vel-Labs/molting-memory](https://github.com/Vel-Labs/molting-memory) | ![Stars](https://img.shields.io/github/stars/Vel-Labs/molting-memory) | QDrant-based vector database |
 
+### 工作流 & 生产力
+
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | ![Stars](https://img.shields.io/github/stars/HKUDS/ClawWork) | OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours |
+
 ### 技能库
 
 #### 官方技能
