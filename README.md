@@ -200,7 +200,6 @@
 | [nhevers/MoltBrain](https://github.com/nhevers/MoltBrain) | ![Stars](https://img.shields.io/github/stars/nhevers/MoltBrain) | Long-term memory for MoltBook agents |
 | [memovai/memov](https://github.com/memovai/memov) | ![Stars](https://img.shields.io/github/stars/memovai/memov) | Git-like & traceable memory for coding agents |
 | [arosstale/openclaw-memory-template](https://github.com/arosstale/openclaw-memory-template) | ![Stars](https://img.shields.io/github/stars/arosstale/openclaw-memory-template) | Production-ready memory template |
-| [Vel-Labs/molting-memory](https://github.com/Vel-Labs/molting-memory) | ![Stars](https://img.shields.io/github/stars/Vel-Labs/molting-memory) | QDrant-based vector database |
 ### 工作流 & 生产力
 
 | Project | Stars | Description |
@@ -235,7 +234,6 @@
 | [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce) | ![Stars](https://img.shields.io/github/stars/ethiack/moltbot-1click-rce) | Security PoC (CVE-2026-25253) |
 | [NirDiamant/moltbook-agent-guard](https://github.com/NirDiamant/moltbook-agent-guard) | ![Stars](https://img.shields.io/github/stars/NirDiamant/moltbook-agent-guard) | Real-time security for agents |
 | [clawshell/clawshell](https://github.com/clawshell/clawshell) | ![Stars](https://img.shields.io/github/stars/clawshell/clawshell) | Runtime Security Layer for PII & credentials |
-| [fadidevv/clawdguard](https://github.com/fadidevv/clawdguard) | ![Stars](https://img.shields.io/github/stars/fadidevv/clawdguard) | Security hardening patch |
 
 ---
 
