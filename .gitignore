@@ -16,3 +16,6 @@ Thumbs.db
 # Documentation and working files (local only)
 docs/
 *.md.bak
+
+# Scripts (local only)
+scripts/
