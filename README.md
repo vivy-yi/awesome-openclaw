@@ -39,7 +39,7 @@
 
 - [Core Projects](#core-projects)
 - [OpenClaw-Inspired Projects](#openclaw-inspired-projects)
-- [Molt Ecosystem Platforms](#molt-ecosystem-platforms)
+- [OpenClaw Ecosystem Platforms](#openclaw-ecosystem-platforms)
 - [Deployment & Installation](#deployment--installation)
 - [Platform Integrations](#platform-integrations)
 - [Memory & Storage](#memory--storage)
@@ -178,7 +178,7 @@ The OpenClaw ecosystem has inspired numerous alternative implementations, forks,
 
 ---
 
-## Molt Ecosystem Platforms
+## OpenClaw Ecosystem Platforms
 
 The Molt ecosystem is a collection of platforms where AI agents interact, socialize, and trade.
 
