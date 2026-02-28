@@ -260,11 +260,21 @@
 | [voocel/openclaw-mini](https://github.com/voocel/openclaw-mini) | ![Stars](https://img.shields.io/github/stars/voocel/openclaw-mini) | Minimal core architecture | TypeScript |
 | [FoundDream/miniclawd](https://github.com/FoundDream/miniclawd) | ![Stars](https://img.shields.io/github/stars/FoundDream/miniclawd) | Lightweight TypeScript | TypeScript |
 
+### 特色变体
+
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [nearai/ironclaw](https://github.com/nearai/ironclaw) | ![Stars](https://img.shields.io/github/stars/nearai/ironclaw) | Privacy-first Rust implementation with NEAR integration |
+| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | ![Stars](https://img.shields.io/github/stars/BlockRunAI/ClawRouter) | Agent-native LLM router |
+| [snarktank/antfarm](https://github.com/snarktank/antfarm) | ![Stars](https://img.shields.io/github/stars/snarktank/antfarm) | Build your agent team with one command |
+| [SumeLabs/clawra](https://github.com/SumeLabs/clawra) | ![Stars](https://img.shields.io/github/stars/SumeLabs/clawra) | OpenClaw as your girlfriend |
+| [ComposioHQ/secure-openclaw](https://github.com/ComposioHQ/secure-openclaw) | ![Stars](https://img.shields.io/github/stars/ComposioHQ/secure-openclaw) | Secure self-hosted AI assistant |
+| [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | ![Stars](https://img.shields.io/github/stars/Gen-Verse/OpenClaw-RL) | Personalize OpenClaw by talking to it |
+
 ### Rust 实现
 
 - [puremachinery/carapace](https://github.com/puremachinery/carapace) - Security-focused with WASM plugins
 - [microclaw/microclaw](https://github.com/microclaw/microclaw) - Session persistence, 22+ tools
-- [nearai/ironclaw](https://github.com/nearai/ironclaw) - Privacy-first, NEAR integration
 - [moltis-org/moltis](https://github.com/moltis-org/moltis) - Single binary, sandboxed, voice, memory, MCP
 - [opencrust-org/opencrust](https://github.com/opencrust-org/opencrust) - Rewritten in Rust
 - [rexlunae/RustyClaw](https://github.com/rexlunae/RustyClaw) - Super-lightweight with improved security
@@ -284,7 +294,6 @@
 
 - [OpenKnots/openclaw-extension](https://github.com/OpenKnots/openclaw-extension) - VS Code Extension
 - [unbrowse-ai/unbrowse](https://github.com/unbrowse-ai/unbrowse) - Agent-native browser, auto-discovers APIs
-- [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) - Agent-native LLM router
 - [lekt9/openclaw-foundry](https://github.com/lekt9/openclaw-foundry) - Self-writing meta-extension
 - [refly-ai/refly](https://github.com/refly-ai/refly) - Self-learning API skill generator
 - [win4r/claude-code-clawdbot-skill](https://github.com/win4r/claude-code-clawdbot-skill) - Claude Code integration
