@@ -216,26 +216,15 @@
 
 ### 技能库
 
-#### 官方技能
-
-- [openclaw/clawhub](https://github.com/openclaw/clawhub) - Official skill registry (700+ skills)
-- [openclaw/skills](https://github.com/openclaw/skills) - All versions of skills archived
-
-#### 社区技能集
-
-- [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) - Community skills collection
-- [natan89/awesome-openclaw-skills](https://github.com/natan89/awesome-openclaw-skills) - Community-driven skills (1700+)
-- [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) - Popular skills collection
-- [jdrhyne/agent-skills](https://github.com/jdrhyne/agent-skills) - Multi-agent framework skills
-- [clawdbot-ai/awesome-openclaw-skills-zh](https://github.com/clawdbot-ai/awesome-openclaw-skills-zh) - Chinese skills library
-
-#### 专业技能
-
-- [BankrBot/openclaw-skills](https://github.com/BankrBot/openclaw-skills) - Trading & DeFi focused skills
-- [runkids/skillshare](https://github.com/runkids/skillshare) - Sync skills across AI CLI tools
-- [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) - Manus-style persistent markdown planning
-- [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) - Obsidian agent skills
-- [win4r/team-tasks](https://github.com/win4r/team-tasks) - Multi-agent pipeline coordination
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | ![Stars](https://img.shields.io/github/stars/openclaw/clawhub) | Official skill registry (700+ skills) |
+| [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | ![Stars](https://img.shields.io/github/stars/VoltAgent/awesome-openclaw-skills) | Community skills collection |
+| [clawdbot-ai/awesome-openclaw-skills-zh](https://github.com/clawdbot-ai/awesome-openclaw-skills-zh) | ![Stars](https://img.shields.io/github/stars/clawdbot-ai/awesome-openclaw-skills-zh) | Chinese skills library |
+| [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) | ![Stars](https://img.shields.io/github/stars/sundial-org/awesome-openclaw-skills) | Popular skills collection |
+| [BankrBot/openclaw-skills](https://github.com/BankrBot/openclaw-skills) | ![Stars](https://img.shields.io/github/stars/BankrBot/openclaw-skills) | Trading & DeFi skills |
+| [jdrhyne/agent-skills](https://github.com/jdrhyne/agent-skills) | ![Stars](https://img.shields.io/github/stars/jdrhyne/agent-skills) | Multi-agent framework skills |
+| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | ![Stars](https://img.shields.io/github/stars/kepano/obsidian-skills) | Obsidian agent skills |
 
 ### 安全加固
 
