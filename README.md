@@ -185,6 +185,7 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
+| [ringhyacinth/Star-Office-UI](https://github.com/ringhyacinth/Star-Office-UI) | ![Stars](https://img.shields.io/github/stars/ringhyacinth/Star-Office-UI) | Pixel office - visualize AI agent work status |
 | [ibelick/webclaw](https://github.com/ibelick/webclaw) | ![Stars](https://img.shields.io/github/stars/ibelick/webclaw) | Fast web client |
 | [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) | ![Stars](https://img.shields.io/github/stars/grp06/openclaw-studio) | Studio/IDE |
 | [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) | ![Stars](https://img.shields.io/github/stars/clawdeckio/clawdeck) | Mission control for agents |
