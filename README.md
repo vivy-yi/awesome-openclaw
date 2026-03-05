@@ -153,17 +153,18 @@
 | iOS Voice | [chrisherold/clawdy](https://github.com/chrisherold/clawdy) | ![Stars](https://github.com/chrisherold/clawdy/stargazers) | Voice interface | Swift | TypeScript |
 #### 中国平台
 
-| Platform | Project | Stars | Description | Language |
-----------|---------|-------|-------------|----------|
-| 飞书/Lark | [m1heng/clawdbot-feishu](https://github.com/m1heng/clawdbot-feishu) | ![Stars](https://github.com/m1heng/clawdbot-feishu/stargazers) | Feishu integration | TypeScript | TypeScript |
-| Bundle | [justlovemaki/OpenClaw-Docker-CN-IM](https://github.com/justlovemaki/OpenClaw-Docker-CN-IM) | ![Stars](https://github.com/justlovemaki/OpenClaw-Docker-CN-IM/stargazers) | Docker 多平台集成 | TypeScript | TypeScript |
-| Bundle | [BytePioneer-AI/openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) | ![Stars](https://github.com/BytePioneer-AI/openclaw-china/stargazers) | Feishu, DingTalk, QQ, WeChat 插件集合 | TypeScript | TypeScript |
-| 钉钉 | [soimy/openclaw-channel-dingtalk](https://github.com/soimy/openclaw-channel-dingtalk) | ![Stars](https://github.com/soimy/openclaw-channel-dingtalk/stargazers) | DingTalk channel | TypeScript | TypeScript |
-| 飞书/Lark | [AlexAnys/feishu-openclaw](https://github.com/AlexAnys/feishu-openclaw) | ![Stars](https://github.com/AlexAnys/feishu-openclaw/stargazers) | Feishu/Lark integration | TypeScript | TypeScript |
-| 微信 | [freestylefly/openclaw-wechat](https://github.com/freestylefly/openclaw-wechat) | ![Stars](https://github.com/freestylefly/openclaw-wechat/stargazers) | Personal WeChat | TypeScript | TypeScript |
-| 微信 | [11haonb/wecom-openclaw-plugin](https://github.com/11haonb/wecom-openclaw-plugin) | ![Stars](https://github.com/11haonb/wecom-openclaw-plugin/stargazers) | WeChat Work plugin | TypeScript | TypeScript |
-| QQ | [constansino/openclaw_qq](https://github.com/constansino/openclaw_qq) | ![Stars](https://github.com/constansino/openclaw_qq/stargazers) | QQ (OneBot v11) | Python | TypeScript |
-| 轻量 | [openmozi/openmozi](https://github.com/openmozi/openmozi) | ![Stars](https://github.com/openmozi/openmozi/stargazers) | 轻量级支持中文 IM | Python | TypeScript |
+| Platform | Project | Stars | Description |
+|---------|---------|-------|-------------|
+| 飞书/Lark | [m1heng/clawdbot-feishu](https://github.com/m1heng/clawdbot-feishu) | ![Stars](https://img.shields.io/github/stars/m1heng/clawdbot-feishu) | Feishu integration |
+| Bundle | [justlovemaki/OpenClaw-Docker-CN-IM](https://github.com/justlovemaki/OpenClaw-Docker-CN-IM) | ![Stars](https://img.shields.io/github/stars/justlovemaki/OpenClaw-Docker-CN-IM) | Docker 多平台集成 |
+| Bundle | [BytePioneer-AI/openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) | ![Stars](https://img.shields.io/github/stars/BytePioneer-AI/openclaw-china) | Feishu, DingTalk, QQ, WeChat 插件集合 |
+| 钉钉 | [soimy/openclaw-channel-dingtalk](https://github.com/soimy/openclaw-channel-dingtalk) | ![Stars](https://img.shields.io/github/stars/soimy/openclaw-channel-dingtalk) | DingTalk channel |
+| 飞书/Lark | [AlexAnys/feishu-openclaw](https://github.com/AlexAnys/feishu-openclaw) | ![Stars](https://img.shields.io/github/stars/AlexAnys/feishu-openclaw) | Feishu/Lark integration |
+| 微信 | [freestylefly/openclaw-wechat](https://github.com/freestylefly/openclaw-wechat) | ![Stars](https://img.shields.io/github/stars/freestylefly/openclaw-wechat) | Personal WeChat |
+| 微信 | [11haonb/wecom-openclaw-plugin](https://github.com/11haonb/wecom-openclaw-plugin) | ![Stars](https://img.shields.io/github/stars/11haonb/wecom-openclaw-plugin) | WeChat Work plugin |
+| QQ | [constansino/openclaw_qq](https://github.com/constansino/openclaw_qq) | ![Stars](https://img.shields.io/github/stars/constansino/openclaw_qq) | QQ (OneBot v11) |
+| 轻量 | [openmozi/openmozi](https://github.com/openmozi/openmozi) | ![Stars](https://img.shields.io/github/stars/openmozi/openmozi) | 轻量级支持中文 IM |
+
 #### 韩国平台
 
 | Platform | Project | Stars | Description | Language |
@@ -173,15 +174,16 @@
 
 #### Web 管理界面
 
-| Project | Stars | Description | Language |
-----------|-------|-------------|----------|
-| [ringhyacinth/Star-Office-UI](https://github.com/ringhyacinth/Star-Office-UI) | ![Stars](https://github.com/ringhyacinth/Star-Office-UI/stargazers) | Pixel office - visualize AI agent work status | TypeScript | TypeScript |
-| [ibelick/webclaw](https://github.com/ibelick/webclaw) | ![Stars](https://github.com/ibelick/webclaw/stargazers) | Fast web client | TypeScript | TypeScript |
-| [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) | ![Stars](https://github.com/grp06/openclaw-studio/stargazers) | Studio/IDE | TypeScript | TypeScript |
-| [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) | ![Stars](https://github.com/clawdeckio/clawdeck/stargazers) | Mission control for agents | TypeScript | TypeScript |
-| [Curbob/LobsterBoard](https://github.com/Curbob/LobsterBoard) | ![Stars](https://github.com/Curbob/LobsterBoard/stargazers) | Dashboard Builder - Create custom dashboards | TypeScript | TypeScript |
-| [carlosazaustre/tenacitOS](https://github.com/carlosazaustre/tenacitOS) | ![Stars](https://github.com/carlosazaustre/tenacitOS/stargazers) | Mission Control Dashboard | TypeScript | TypeScript |
-| [madrzak/vidclaw](https://github.com/madrzak/vidclaw) | ![Stars](https://github.com/madrzak/vidclaw/stargazers) | OpenClaw Dashboard | TypeScript | TypeScript |
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [ringhyacinth/Star-Office-UI](https://github.com/ringhyacinth/Star-Office-UI) | ![Stars](https://img.shields.io/github/stars/ringhyacinth/Star-Office-UI) | Pixel office - visualize AI agent work status |
+| [ibelick/webclaw](https://github.com/ibelick/webclaw) | ![Stars](https://img.shields.io/github/stars/ibelick/webclaw) | Fast web client |
+| [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) | ![Stars](https://img.shields.io/github/stars/grp06/openclaw-studio) | Studio/IDE |
+| [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) | ![Stars](https://img.shields.io/github/stars/clawdeckio/clawdeck) | Mission control for agents |
+| [Curbob/LobsterBoard](https://github.com/Curbob/LobsterBoard) | ![Stars](https://img.shields.io/github/stars/Curbob/LobsterBoard) | Dashboard Builder - Create custom dashboards |
+| [carlosazaustre/tenacitOS](https://github.com/carlosazaustre/tenacitOS) | ![Stars](https://img.shields.io/github/stars/carlosazaustre/tenacitOS) | Mission Control Dashboard |
+| [madrzak/vidclaw](https://github.com/madrzak/vidclaw) | ![Stars](https://img.shields.io/github/stars/madrzak/vidclaw) | OpenClaw Dashboard |
+
 #### 实时监控
 
 | Project | Stars | Description | Language |
@@ -227,22 +229,24 @@
 | [badrisnarayanan/antigravity-claude-proxy](https://github.com/badrisnarayanan/antigravity-claude-proxy) | ![Stars](https://github.com/badrisnarayanan/antigravity-claude-proxy/stargazers) | Proxy for Antigravity models in OpenClaw | TypeScript |
 ### 技能库
 
-| Project | Stars | Description | Language |
-----------|-------|-------|-------------|
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | ![Stars](https://github.com/openclaw/clawhub/stargazers) | Official skill registry (700+ skills) | TypeScript |
-| [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | ![Stars](https://github.com/VoltAgent/awesome-openclaw-skills/stargazers) | Community skills collection | TypeScript |
-| [clawdbot-ai/awesome-openclaw-skills-zh](https://github.com/clawdbot-ai/awesome-openclaw-skills-zh) | ![Stars](https://github.com/clawdbot-ai/awesome-openclaw-skills-zh/stargazers) | Chinese skills library | TypeScript |
-| [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) | ![Stars](https://github.com/sundial-org/awesome-openclaw-skills/stargazers) | Popular skills collection | TypeScript |
-| [jdrhyne/agent-skills](https://github.com/jdrhyne/agent-skills) | ![Stars](https://github.com/jdrhyne/agent-skills/stargazers) | Multi-agent framework skills | TypeScript |
-| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | ![Stars](https://github.com/kepano/obsidian-skills/stargazers) | Obsidian agent skills | TypeScript |
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | ![Stars](https://img.shields.io/github/stars/openclaw/clawhub) | Official skill registry (700+ skills) |
+| [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | ![Stars](https://img.shields.io/github/stars/VoltAgent/awesome-openclaw-skills) | Community skills collection |
+| [clawdbot-ai/awesome-openclaw-skills-zh](https://github.com/clawdbot-ai/awesome-openclaw-skills-zh) | ![Stars](https://img.shields.io/github/stars/clawdbot-ai/awesome-openclaw-skills-zh) | Chinese skills library |
+| [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) | ![Stars](https://img.shields.io/github/stars/sundial-org/awesome-openclaw-skills) | Popular skills collection |
+| [jdrhyne/agent-skills](https://github.com/jdrhyne/agent-skills) | ![Stars](https://img.shields.io/github/stars/jdrhyne/agent-skills) | Multi-agent framework skills |
+| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | ![Stars](https://img.shields.io/github/stars/kepano/obsidian-skills) | Obsidian agent skills |
+
 ### 安全加固
 
-| Project | Stars | Description | Language |
-----------|-------|-------|-------------|
-| [SuperagenticAI/superclaw](https://github.com/SuperagenticAI/superclaw) | ![Stars](https://github.com/SuperagenticAI/superclaw/stargazers) | Red-Team AI Agents | TypeScript |
-| [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce) | ![Stars](https://github.com/ethiack/moltbot-1click-rce/stargazers) | Security PoC (CVE-2026-25253) | TypeScript |
-| [NirDiamant/moltbook-agent-guard](https://github.com/NirDiamant/moltbook-agent-guard) | ![Stars](https://github.com/NirDiamant/moltbook-agent-guard/stargazers) | Real-time security for agents | TypeScript |
-| [clawshell/clawshell](https://github.com/clawshell/clawshell) | ![Stars](https://github.com/clawshell/clawshell/stargazers) | Runtime Security Layer for PII & credentials | TypeScript |
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [SuperagenticAI/superclaw](https://github.com/SuperagenticAI/superclaw) | ![Stars](https://img.shields.io/github/stars/SuperagenticAI/superclaw) | Red-Team AI Agents |
+| [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce) | ![Stars](https://img.shields.io/github/stars/ethiack/moltbot-1click-rce) | Security PoC (CVE-2026-25253) |
+| [NirDiamant/moltbook-agent-guard](https://github.com/NirDiamant/moltbook-agent-guard) | ![Stars](https://img.shields.io/github/stars/NirDiamant/moltbook-agent-guard) | Real-time security for agents |
+| [clawshell/clawshell](https://github.com/clawshell/clawshell) | ![Stars](https://img.shields.io/github/stars/clawshell/clawshell) | Runtime Security Layer for PII & credentials |
+
 ---
 
 ## 4. 开发构建
@@ -286,10 +290,11 @@
 ### 其他语言实现
 
 | Project | Stars | Description | Language |
-----------|-------|-------------|----------|
-| [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) | ![Stars](https://github.com/AstrBotDevs/AstrBot/stargazers) | Agentic IM Chatbot infrastructure | Python | TypeScript |
-| [langbot-app/LangBot](https://github.com/langbot-app/LangBot) | ![Stars](https://github.com/langbot-app/LangBot/stargazers) | Production-grade IM bots | Python | TypeScript |
-| [poco-ai/poco-agent](https://github.com/poco-ai/poco-agent) | ![Stars](https://github.com/poco-ai/poco-agent/stargazers) | Beautiful alternative with sandboxed runtime | Python | TypeScript |
+|---------|-------|-------------|----------|
+| [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) | ![Stars](https://img.shields.io/github/stars/AstrBotDevs/AstrBot) | Agentic IM Chatbot infrastructure | Python |
+| [langbot-app/LangBot](https://github.com/langbot-app/LangBot) | ![Stars](https://img.shields.io/github/stars/langbot-app/LangBot) | Production-grade IM bots | Python |
+| [poco-ai/poco-agent](https://github.com/poco-ai/poco-agent) | ![Stars](https://img.shields.io/github/stars/poco-ai/poco-agent) | Beautiful alternative with sandboxed runtime | Python |
+
 ### 开发者工具
 
 | Project | Stars | Description | Language |
@@ -299,13 +304,14 @@
 | [unbrowse-ai/unbrowse](https://github.com/unbrowse-ai/unbrowse) | ![Stars](https://github.com/unbrowse-ai/unbrowse/stargazers) | Agent-native browser, auto-discovers APIs | TypeScript |
 ### 分支与变体
 
-| Project | Stars | Description | Language |
-----------|-------|-------|-------------|
-| [moeru-ai/airi](https://github.com/moeru-ai/airi) | ![Stars](https://github.com/moeru-ai/airi/stargazers) | AI agent framework (18K+ stars) | TypeScript |
-| [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) | ![Stars](https://github.com/agentscope-ai/CoPaw/stargazers) | AgentScope-based OpenClaw variant (1.5K+ stars) | TypeScript |
-| [sseanliu/VisionClaw](https://github.com/sseanliu/VisionClaw) | ![Stars](https://github.com/sseanliu/VisionClaw/stargazers) | Real-time AI for Meta Ray-Ban smart glasses (1.3K+ stars) | TypeScript |
-| [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) | ![Stars](https://github.com/clawd-meme/clawdbot/stargazers) | Rebranded community fork | TypeScript |
-| [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) | ![Stars](https://github.com/skywalkerchn/clawdbot-augment/stargazers) | Augmented architecture fork | TypeScript |
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [moeru-ai/airi](https://github.com/moeru-ai/airi) | ![Stars](https://img.shields.io/github/stars/moeru-ai/airi) | AI agent framework (18K+ stars) |
+| [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) | ![Stars](https://img.shields.io/github/stars/agentscope-ai/CoPaw) | AgentScope-based OpenClaw variant (1.5K+ stars) |
+| [sseanliu/VisionClaw](https://github.com/sseanliu/VisionClaw) | ![Stars](https://img.shields.io/github/stars/sseanliu/VisionClaw) | Real-time AI for Meta Ray-Ban smart glasses (1.3K+ stars) |
+| [clawd-meme/clawdbot](https://github.com/clawd-meme/clawdbot) | ![Stars](https://img.shields.io/github/stars/clawd-meme/clawdbot) | Rebranded community fork |
+| [skywalkerchn/clawdbot-augment](https://github.com/skywalkerchn/clawdbot-augment) | ![Stars](https://img.shields.io/github/stars/skywalkerchn/clawdbot-augment) | Augmented architecture fork |
+
 ---
 
 ## 5. 生态周边
