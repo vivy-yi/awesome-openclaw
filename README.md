@@ -163,7 +163,6 @@
 | Platform | Project | Stars | Description |
 |---------|---------|-------|-------------|
 | 飞书/Lark | [m1heng/clawdbot-feishu](https://github.com/m1heng/clawdbot-feishu) | ![Stars](https://img.shields.io/github/stars/m1heng/clawdbot-feishu) | Feishu integration |
-| 钉钉 | [DingTalk-Real-AI/dingtalk-moltbot-connector](https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector) | ![Stars](https://img.shields.io/github/stars/DingTalk-Real-AI/dingtalk-moltbot-connector) | DingTalk with AI Card |
 | Bundle | [justlovemaki/OpenClaw-Docker-CN-IM](https://github.com/justlovemaki/OpenClaw-Docker-CN-IM) | ![Stars](https://img.shields.io/github/stars/justlovemaki/OpenClaw-Docker-CN-IM) | Docker 多平台集成 |
 | Bundle | [BytePioneer-AI/openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) | ![Stars](https://img.shields.io/github/stars/BytePioneer-AI/openclaw-china) | Feishu, DingTalk, QQ, WeChat 插件集合 |
 | 钉钉 | [soimy/openclaw-channel-dingtalk](https://github.com/soimy/openclaw-channel-dingtalk) | ![Stars](https://img.shields.io/github/stars/soimy/openclaw-channel-dingtalk) | DingTalk channel |
@@ -185,6 +184,7 @@
 
 | Project | Stars | Description |
 |---------|-------|-------------|
+| [ringhyacinth/Star-Office-UI](https://github.com/ringhyacinth/Star-Office-UI) | ![Stars](https://img.shields.io/github/stars/ringhyacinth/Star-Office-UI) | Pixel office - visualize AI agent work status |
 | [ibelick/webclaw](https://github.com/ibelick/webclaw) | ![Stars](https://img.shields.io/github/stars/ibelick/webclaw) | Fast web client |
 | [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) | ![Stars](https://img.shields.io/github/stars/grp06/openclaw-studio) | Studio/IDE |
 | [clawdeckio/clawdeck](https://github.com/clawdeckio/clawdeck) | ![Stars](https://img.shields.io/github/stars/clawdeckio/clawdeck) | Mission control for agents |
@@ -247,7 +247,6 @@
 | [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | ![Stars](https://img.shields.io/github/stars/VoltAgent/awesome-openclaw-skills) | Community skills collection |
 | [clawdbot-ai/awesome-openclaw-skills-zh](https://github.com/clawdbot-ai/awesome-openclaw-skills-zh) | ![Stars](https://img.shields.io/github/stars/clawdbot-ai/awesome-openclaw-skills-zh) | Chinese skills library |
 | [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) | ![Stars](https://img.shields.io/github/stars/sundial-org/awesome-openclaw-skills) | Popular skills collection |
-| [BankrBot/openclaw-skills](https://github.com/BankrBot/openclaw-skills) | ![Stars](https://img.shields.io/github/stars/BankrBot/openclaw-skills) | Trading & DeFi skills |
 | [jdrhyne/agent-skills](https://github.com/jdrhyne/agent-skills) | ![Stars](https://img.shields.io/github/stars/jdrhyne/agent-skills) | Multi-agent framework skills |
 | [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | ![Stars](https://img.shields.io/github/stars/kepano/obsidian-skills) | Obsidian agent skills |
 
@@ -256,7 +255,6 @@
 | Project | Stars | Description |
 |---------|-------|-------------|
 | [SuperagenticAI/superclaw](https://github.com/SuperagenticAI/superclaw) | ![Stars](https://img.shields.io/github/stars/SuperagenticAI/superclaw) | Red-Team AI Agents |
-| [seojoonkim/prompt-guard](https://github.com/seojoonkim/prompt-guard) | ![Stars](https://img.shields.io/github/stars/seojoonkim/prompt-guard) | Advanced prompt injection defense |
 | [ethiack/moltbot-1click-rce](https://github.com/ethiack/moltbot-1click-rce) | ![Stars](https://img.shields.io/github/stars/ethiack/moltbot-1click-rce) | Security PoC (CVE-2026-25253) |
 | [NirDiamant/moltbook-agent-guard](https://github.com/NirDiamant/moltbook-agent-guard) | ![Stars](https://img.shields.io/github/stars/NirDiamant/moltbook-agent-guard) | Real-time security for agents |
 | [clawshell/clawshell](https://github.com/clawshell/clawshell) | ![Stars](https://img.shields.io/github/stars/clawshell/clawshell) | Runtime Security Layer for PII & credentials |
@@ -309,7 +307,6 @@
 | Project | Stars | Description | Language |
 |---------|-------|-------------|----------|
 | [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) | ![Stars](https://img.shields.io/github/stars/AstrBotDevs/AstrBot) | Agentic IM Chatbot infrastructure | Python |
-| [gavrielc/nanoclaw](https://github.com/gavrielc/nanoclaw) | ![Stars](https://img.shields.io/github/stars/gavrielc/nanoclaw) | Container-isolated | TypeScript |
 | [langbot-app/LangBot](https://github.com/langbot-app/LangBot) | ![Stars](https://img.shields.io/github/stars/langbot-app/LangBot) | Production-grade IM bots | Python |
 | [poco-ai/poco-agent](https://github.com/poco-ai/poco-agent) | ![Stars](https://img.shields.io/github/stars/poco-ai/poco-agent) | Beautiful alternative with sandboxed runtime | Python |
 
